@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  # This name uniquely identifies the stateful set
+  name: ai-days-website-stateful
+  labels:
+    app: ai-days-website
+spec:
+  serviceName: ai-days-website
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ai-days-website
+  template:
+    metadata:
+      labels:
+        app: ai-days-website
+    spec:
+      containers:
+      - name: ai-days-website
+        # To use the development image, change the next line to `image: ghcr.io/swiss-ai-center/core-engine-frontend-dev:latest`
+        image: ghcr.io/swiss-ai-center/ai-days-website:latest
+        # If you build the image locally, change the next line to `imagePullPolicy: Never` - there is no need to pull the image
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 80
+

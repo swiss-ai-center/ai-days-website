@@ -1,0 +1,18 @@
+services:
+  frontend:
+    container_name: ai-days-website
+    build:
+      context: .
+      dockerfile: development.Dockerfile
+    command: |
+      bash -c "
+        # Install the dependencies
+        npm install &&
+        # Run the frontend
+        npm run start --host 0.0.0.0
+      "
+    ports:
+      - 3000:3000
+    working_dir: /workspaces/ai-days-website
+    volumes:
+      - .:/workspaces/ai-days-website
