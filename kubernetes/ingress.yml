@@ -16,7 +16,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: core-engine-frontend-service
+                name: ai-days-website-service
                 port:
                   number: 80
   tls:
