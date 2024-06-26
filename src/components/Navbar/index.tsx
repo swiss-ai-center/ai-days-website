@@ -194,7 +194,7 @@ function Navbar() {
                             onClose={() => handleLanguageMenuClose(i18n.language)}
                         >
                             {languages.map((language) => (
-                                <MenuItem key={language.flag} onClick={() => handleLanguageMenuClose(language.lang)}>
+                                <MenuItem key={language.flag} onClick={() => handleLanguageMenuClose(language.lang)} value={i18n.language}>
                                     <Typography textAlign="center">{language.name + " " + language.flag}</Typography>
                                 </MenuItem>
                             ))}
