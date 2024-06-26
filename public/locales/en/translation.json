@@ -3,39 +3,45 @@
     {
       "year": "2025",
       "title": "AI Days @ HES-SO",
-      "dates": "27 to 29 January",
+      "event_dates": "27 to 29 January",
       "location": "Geneva and Lausanne",
       "organizer": "Swiss Artificial Intelligence Centre for SMEs (CSIA-PME)",
       "menu": {
         "pages": [
           {
             "name": "Home",
+            "component": "home",
             "enabled": "true",
             "url": "/"
           },
           {
-            "name": "About",
+            "name": "Dates",
+            "component": "dates",
             "enabled": "true",
-            "url": "/about"
+            "url": "/dates"
           },
           {
-            "name": "Program",
+            "name": "Schedule",
+            "component": "schedule",
             "enabled": "false",
-            "url": "/program"
+            "url": "/schedule"
           },
           {
             "name": "Speakers",
+            "component": "speakers",
             "enabled": "false",
             "url": "/speakers"
           },
           {
             "name": "Partners",
+            "component": "partners",
             "enabled": "false",
             "url": "/partners"
           },
           {
             "name": "Contact",
-            "enabled": "false",
+            "component": "contact",
+            "enabled": "true",
             "url": "/contact"
           }
         ],
@@ -69,12 +75,13 @@
           "end": "Participation is free, but registration is mandatory."
         }
       },
-      "about": {
-        "title": "About",
-        "dates_title": "Important dates",
+      "dates": {
+        "title": "Important dates",
+        "dates_title": "Key dates",
+        "description": "The precise dates will be announced during September.",
         "dates": [
           {
-            "date": "1st September 2024",
+            "date": "Early September 2024",
             "points": [
               "Announcement of workshops (titles, leaders and committees, times)",
               "Announcement of the call for papers",
@@ -82,7 +89,7 @@
             ]
           },
           {
-            "date": "1st November 2024",
+            "date": "Early November 2024",
             "points": [
               "Deadline for submitting entries",
               "Opening of entries"
@@ -97,7 +104,58 @@
           {
             "date": "Early January 2025",
             "points": [
-              "Final program announcement"
+              "Final schedule announcement"
+            ]
+          }
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "contact_title": "Organisation Committee",
+        "members": [
+          {
+            "role": "Chairman of the committee",
+            "icon": "GavelRounded",
+            "members": [
+              "Sébastien Rumley, HEIA-FR, HES-SO"
+            ]
+          },
+          {
+            "role": "Finance and sponsoring",
+            "icon": "PaymentsRounded",
+            "members": [
+              "Bertil Chapuis, HEIG-VD, HES-SO"
+            ]
+          },
+          {
+            "role": "On-site organisation",
+            "icon": "ApartmentRounded",
+            "members": [
+              "Andres Upegui, HEPIA, HES-SO",
+              "Reza Etemad, EHL, HES-SO"
+            ]
+          },
+          {
+            "role": "Schedule",
+            "icon": "ViewTimelineRounded",
+            "members": [
+              "Pamela Delgado, ISE Sion, HES-SO",
+              "Valérie Schürch Todeschini, He-Arc, HES-SO"
+            ]
+          },
+          {
+            "role": "Communication / Media",
+            "icon": "InterestsRounded",
+            "members": [
+              "Francesco Carrino, ISE Sion HES-SO",
+              "Sébastien Bourqui, Office de Promotion des Industries et des Technologies, Genève"
+            ]
+          },
+          {
+            "role": "Committee member",
+            "icon": "Groups3Rounded",
+            "members": [
+              "Jean Hennebert, lead CSIA-PME, HES-SO (ex-officio)"
             ]
           }
         ]

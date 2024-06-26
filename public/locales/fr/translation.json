@@ -3,39 +3,45 @@
     {
       "year": "2025",
       "title": "AI Days @ HES-SO",
-      "dates": "27-29 janvier 2025",
+      "event_dates": "27-29 janvier 2025",
       "location": "Genève et Lausanne",
       "organizer": "Centre suisse d’intelligence artificielle pour les PMEs (CSIA-PME)",
       "menu": {
         "pages": [
           {
             "name": "Accueil",
+            "component": "home",
             "enabled": "true",
             "url": "/"
           },
           {
-            "name": "A propos",
+            "name": "Échéances",
+            "component": "dates",
             "enabled": "true",
-            "url": "/about"
+            "url": "/dates"
           },
           {
             "name": "Programme",
+            "component": "schedule",
             "enabled": "false",
-            "url": "/program"
+            "url": "/schedule"
           },
           {
             "name": "Intervenants",
+            "component": "speakers",
             "enabled": "false",
             "url": "/speakers"
           },
           {
             "name": "Partenaires",
+            "component": "partners",
             "enabled": "false",
             "url": "/partners"
           },
           {
             "name": "Contact",
-            "enabled": "false",
+            "component": "contact",
+            "enabled": "true",
             "url": "/contact"
           }
         ],
@@ -69,12 +75,13 @@
           "end": "La participation est gratuite, mais l’inscription est obligatoire."
         }
       },
-      "about": {
-        "title": "A propos",
+      "dates": {
+        "title": "Échéances",
         "dates_title": "Dates indicatives",
+        "description": "Les dates précises seront annoncées courant septembre.",
         "dates": [
           {
-            "date": "1er septembre 2024",
+            "date": "Début septembre 2024",
             "points": [
               "Annonce des workshops (titres, responsables et comités, horaires)",
               "Annonce de l’appel à contributions",
@@ -82,7 +89,7 @@
             ]
           },
           {
-            "date": "1er novembre 2024",
+            "date": "Début novembre 2024",
             "points": [
               "Délai pour soumettre des contributions",
               "Ouverture des inscriptions"
@@ -98,6 +105,57 @@
             "date": "Début janvier 2025",
             "points": [
               "Annonce du programme définitif"
+            ]
+          }
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "contact_title": "Comité d'organisation",
+        "members": [
+          {
+            "role": "Président du comité",
+            "icon": "GavelRounded",
+            "members": [
+              "Sébastien Rumley, HEIA-FR, HES-SO"
+            ]
+          },
+          {
+            "role": "Finances et sponsoring",
+            "icon": "PaymentsRounded",
+            "members": [
+              "Bertil Chapuis, HEIG-VD, HES-SO"
+            ]
+          },
+          {
+            "role": "Organisation sur site",
+            "icon": "ApartmentRounded",
+            "members": [
+              "Andres Upegui, HEPIA, HES-SO",
+              "Reza Etemad, EHL, HES-SO"
+            ]
+          },
+          {
+            "role": "Programme",
+            "icon": "ViewTimelineRounded",
+            "members": [
+              "Pamela Delgado, ISE Sion, HES-SO",
+              "Valérie Schürch Todeschini, He-Arc, HES-SO"
+            ]
+          },
+          {
+            "role": "Communication / Média",
+            "icon": "InterestsRounded",
+            "members": [
+              "Francesco Carrino, ISE Sion HES-SO",
+              "Sébastien Bourqui, Office de Promotion des Industries et des Technologies, Genève"
+            ]
+          },
+          {
+            "role": "Membre du comité",
+            "icon": "Groups3Rounded",
+            "members": [
+              "Jean Hennebert, lead CSIA-PME, HES-SO (ex-officio)"
             ]
           }
         ]

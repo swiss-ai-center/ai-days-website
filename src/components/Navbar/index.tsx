@@ -27,6 +27,7 @@ function Navbar() {
 
     const pages: {
         name: string,
+        component: string,
         enabled: string,
         url: string
     }[] = t(`years.${selectedYearIndex(year)}.menu.pages`, {returnObjects: true});
@@ -40,6 +41,7 @@ function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
     const [anchorElYear, setAnchorElYear] = React.useState<null | HTMLElement>(null);
     const [anchorElLang, setAnchorElLang] = React.useState<null | HTMLElement>(null);
+    const [currentPage, setCurrentPage] = React.useState<string>(window.location.pathname.slice(1) || "home");
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorElNav(event.currentTarget);
@@ -70,7 +72,7 @@ function Navbar() {
         <AppBar position={"static"} elevation={1}>
             <Container maxWidth="lg">
                 <Toolbar disableGutters>
-                    <Box sx={{display: {xs: 'none', md: 'flex'}, mr: 2}}>
+                    <Box sx={{display: {xs: 'none', md: 'flex'}, mr: 2, pt: 1}}>
                         <Link color={"inherit"} to={"/"}
                               style={{textDecoration: "none"}}>
                             <img src={"/logo192.png"} className={"filter-white"}
@@ -108,9 +110,13 @@ function Navbar() {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page.url} onClick={handleCloseNavMenu}
+                                <MenuItem key={page.url} onClick={() => {
+                                    setCurrentPage(page.component);
+                                    handleCloseNavMenu();
+                                }}
                                           disabled={page.enabled !== "true"}>
-                                    <Link color={"inherit"} to={page.url} style={{textDecoration: "none", color: "inherit"}}>
+                                    <Link color={"inherit"} to={page.url}
+                                          style={{textDecoration: "none", color: "inherit"}}>
                                         {page.name}
                                     </Link>
                                 </MenuItem>
@@ -119,8 +125,24 @@ function Navbar() {
                     </Box>
                     <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
                         {pages.map((page) => (
-                            <Button key={page.url} color={"inherit"} disabled={page.enabled !== "true"}>
-                                <Link to={page.url} style={{textDecoration: "none", color: "inherit"}}>
+                            <Button key={page.url} color={"secondary"}
+                                    variant={currentPage === page.component ? "contained" : "text"}
+                                    disabled={page.enabled !== "true"}
+                                    sx={{
+                                        mr: 1,
+                                        minWidth: 140,
+                                        ':hover': currentPage !== page.component ? {backgroundColor: "rgba(255, 255, 255, 0.1)"} : "inherit"
+                                    }}
+                            >
+                                <Link
+                                    to={page.url}
+                                    style={{
+                                        textDecoration: "none",
+                                        color: page.enabled === "true" ? "white" : "inherit",
+                                        width: '100%',
+                                        height: '100%',
+                                    }}
+                                    onClick={() => setCurrentPage(page.component)}>
                                     {page.name}
                                 </Link>
                             </Button>
@@ -194,7 +216,8 @@ function Navbar() {
                             onClose={() => handleLanguageMenuClose(i18n.language)}
                         >
                             {languages.map((language) => (
-                                <MenuItem key={language.flag} onClick={() => handleLanguageMenuClose(language.lang)} value={i18n.language}>
+                                <MenuItem key={language.flag} onClick={() => handleLanguageMenuClose(language.lang)}
+                                          value={i18n.language}>
                                     <Typography textAlign="center">{language.name + " " + language.flag}</Typography>
                                 </MenuItem>
                             ))}

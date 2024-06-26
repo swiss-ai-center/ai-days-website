@@ -1,16 +1,38 @@
 import { createTheme, CssBaseline, PaletteMode, ThemeProvider } from '@mui/material';
 import { grey } from '@mui/material/colors';
 import Navbar from 'components/Navbar';
-import About from 'pages/About';
+import Contact from 'pages/Contact';
+import Dates from 'pages/Dates';
 import Home from 'pages/Home';
 import React, { useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useSelector } from 'react-redux';
 
 function App() {
+    const {t} = useTranslation();
     const colorMode = useSelector((state: any) => state.colorMode.value);
     const lightgrey = grey[300];
     const darkgrey = grey[900];
+
+    const year = useSelector((state: any) => state.year.value);
+
+    const years: { year: string }[] = t("years", {returnObjects: true});
+    const selectedYearIndex = (yearToFind: string) => years.findIndex((yearObj) => yearObj.year === yearToFind);
+
+    const pages: {
+        name: string,
+        component: string,
+        enabled: string,
+        url: string
+    }[] = t(`years.${selectedYearIndex(year)}.menu.pages`, {returnObjects: true});
+
+    const Components: any = {
+        dates: Dates,
+        home: Home,
+        contact: Contact,
+    };
+
 
     const getDesignTokens = useCallback((mode: PaletteMode) => ({
         palette: {
@@ -83,8 +105,15 @@ function App() {
             <Router>
                 <Navbar/>
                 <Routes>
-                    <Route path={"/about"} element={<About />}/>
-                    <Route path={"/"} element={<Home />}/>
+                    {pages.map((page, index) => {
+                        if(page.enabled === "true") {
+                            return (
+                                <Route key={index} path={`${page.url}`}
+                                       element={React.createElement(Components[page.component])}/>
+                            );
+                        }
+                        return null;
+                    })}
                     <Route path={"*"} element={<Home />}/>
                 </Routes>
             </Router>
