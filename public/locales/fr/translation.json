@@ -1,26 +1,107 @@
 {
-  "title": "AI Days @ HES-SO",
-  "menu": {
-    "home": "Accueil",
-    "about": "A propos",
-    "program": "Programme",
-    "speakers": "Intervenants",
-    "partners": "Partenaires",
-    "contact": "Contact"
-  },
-  "home": {
-    "title": "AI Days @ HES-SO",
-    "subtitle": "Du 27 au 29 janvier 2025",
-    "description": {
-      "par1": "L’édition 2025 des AI-days aura lieu du 27 au 29 janvier 2025, à Genève (27 et 28) et Lausanne (29 janvier). Les AI-days de la HES-SO sont organisés par le Centre suisse d’intelligence artificielle pour les PMEs (CSIA-PMEs). Le but de l’événement est d’offrir un forum pour discuter de l’emploi en pratique des nouvelles technologies IA dans le tissu économique.",
-      "par2": "Un format sur trois jours est prévu cette année. Le premier jour (lundi 27) sera dédié à des workshops consacrés à des sujets bien précis. Les deux autres jours, organisés comme à l’habitude sur deux sites et deux cantons, seront consacrés à des présentations informant des progrès du CSIA-PE, des comptes-rendus de collaborations, des tables-rondes, mais aussi à des résultats récents obtenus dans le domaine de l’application de l’IA. Un appel officiel à contributions sera lancé début septembre, voir dates indicatives ci-dessous.",
-      "par3": "L’événement est public, ouvert à toutes et tous. Il s’adresse principalement aux personnes impliquées dans la gestion et la stratégie d’une ou plusieurs PMEs afin de découvrir comment profiter des avancées de l’intelligence artificielle dans leurs activités. Les entreprises et PME sont vivement invitées à prendre part à cet événement pour:",
-      "list": {
-        "item1": "Établir des liens avec les ingénieurs de la HES-SO ainsi qu’avec d’autres entreprises évoluant dans le domaine de l’intelligence artificielle.",
-        "item2": "Explorer divers cas d’utilisation de l'IA grâce aux présentations d’entreprises et de projets de recherche appliquée.",
-        "item3": "Acquérir une compréhension approfondie des activités du Swiss AI Center et des avantages qu’elles peuvent en tirer, notamment à travers l’utilisation des \"chèques IA\" qui facilitent la réalisation des premiers prototypes."
+  "years": [
+    {
+      "year": "2025",
+      "title": "AI Days @ HES-SO",
+      "dates": "27-29 janvier 2025",
+      "location": "Genève et Lausanne",
+      "organizer": "Centre suisse d’intelligence artificielle pour les PMEs (CSIA-PME)",
+      "menu": {
+        "pages": [
+          {
+            "name": "Accueil",
+            "enabled": "true",
+            "url": "/"
+          },
+          {
+            "name": "A propos",
+            "enabled": "true",
+            "url": "/about"
+          },
+          {
+            "name": "Programme",
+            "enabled": "false",
+            "url": "/program"
+          },
+          {
+            "name": "Intervenants",
+            "enabled": "false",
+            "url": "/speakers"
+          },
+          {
+            "name": "Partenaires",
+            "enabled": "false",
+            "url": "/partners"
+          },
+          {
+            "name": "Contact",
+            "enabled": "false",
+            "url": "/contact"
+          }
+        ],
+        "year": "Changer d'année",
+        "language": "Changer de langue",
+        "languages": [
+          {
+            "name": "Français",
+            "lang": "fr",
+            "flag": "🇫🇷"
+          },
+          {
+            "name": "English",
+            "lang": "en",
+            "flag": "🇬🇧"
+          }
+        ]
       },
-      "end": "La participation est gratuite, mais l’inscription est obligatoire."
+      "home": {
+        "title": "AI Days @ HES-SO",
+        "subtitle": "Du 27 au 29 janvier 2025",
+        "description": {
+          "par1": "L’édition 2025 des AI-Days aura lieu du 27 au 29 janvier 2025, à Genève (27 et 28) et Lausanne (29 janvier). Les AI-days de la HES-SO sont organisés par le Centre suisse d’intelligence artificielle pour les PMEs (CSIA-PMEs). Le but de l’événement est d’offrir un forum pour discuter de l’emploi en pratique des nouvelles technologies IA dans le tissu économique.",
+          "par2": "Un format sur trois jours est prévu cette année. Le premier jour (lundi 27) sera dédié à des workshops consacrés à des sujets bien précis. Les deux autres jours, organisés comme à l’habitude sur deux sites et deux cantons, seront consacrés à des présentations informant des progrès du CSIA-PE, des comptes-rendus de collaborations, des tables-rondes, mais aussi à des résultats récents obtenus dans le domaine de l’application de l’IA. Un appel officiel à contributions sera lancé début septembre, voir dates indicatives ci-dessous.",
+          "par3": "L’événement est public, ouvert à toutes et tous. Il s’adresse principalement aux personnes impliquées dans la gestion et la stratégie d’une ou plusieurs PMEs afin de découvrir comment profiter des avancées de l’intelligence artificielle dans leurs activités. Les entreprises et PME sont vivement invitées à prendre part à cet événement pour:",
+          "list": [
+            "Établir des liens avec les ingénieurs de la HES-SO ainsi qu’avec d’autres entreprises évoluant dans le domaine de l’intelligence artificielle.",
+            "Explorer divers cas d’utilisation de l'IA grâce aux présentations d’entreprises et de projets de recherche appliquée.",
+            "Acquérir une compréhension approfondie des activités du Swiss AI Center et des avantages qu’elles peuvent en tirer, notamment à travers l’utilisation des \"chèques IA\" qui facilitent la réalisation des premiers prototypes."
+          ],
+          "end": "La participation est gratuite, mais l’inscription est obligatoire."
+        }
+      },
+      "about": {
+        "title": "A propos",
+        "dates_title": "Dates indicatives",
+        "dates": [
+          {
+            "date": "1er septembre 2024",
+            "points": [
+              "Annonce des workshops (titres, responsables et comités, horaires)",
+              "Annonce de l’appel à contributions",
+              "Annonce du comité technique"
+            ]
+          },
+          {
+            "date": "1er novembre 2024",
+            "points": [
+              "Délai pour soumettre des contributions",
+              "Ouverture des inscriptions"
+            ]
+          },
+          {
+            "date": "Mi-décembre 2024",
+            "points": [
+              "Notification aux auteurs"
+            ]
+          },
+          {
+            "date": "Début janvier 2025",
+            "points": [
+              "Annonce du programme définitif"
+            ]
+          }
+        ]
+      }
     }
-  }
+  ]
 }

@@ -1,26 +1,107 @@
 {
-  "title": "AI Days @ HES-SO",
-  "menu": {
-    "home": "Home",
-    "about": "About",
-    "program": "Program",
-    "speakers": "Speakers",
-    "partners": "Partners",
-    "contact": "Contact"
-  },
-  "home": {
-    "title": "AI Days @ HES-SO",
-    "subtitle": "From 27 to 29 January 2025",
-    "description": {
-      "par1": "The 2025 edition of AI-days will take place from 27 to 29 January 2025, in Geneva (27 and 28) and Lausanne (29 January). The HES-SO AI-days are organised by the Swiss Artificial Intelligence Centre for SMEs (CSIA-PMEs). The aim of the event is to provide a forum for discussing the practical use of new AI technologies in the economic fabric.",
-      "par2": "A three-day format is planned this year. The first day (Monday 27) will be devoted to workshops on specific topics. The other two days, organised as usual over two sites and two cantons, will be devoted to presentations on the progress of the CSIA-PE, reports on collaborations, round-table discussions and recent results obtained in the field of AI applications. An official call for papers will be launched at the beginning of September, see indicative dates below.",
-      "par3": "The event is public and open to all. It is primarily aimed at people involved in the management and strategy of one or more SMEs, to find out how they can benefit from advances in artificial intelligence in their activities. Companies and SMEs are warmly invited to take part in this event in order to :",
-      "list": {
-        "item1": "Establish links with HES-SO engineers and other companies working in the field of artificial intelligence.",
-        "item2": "Explore various AI use cases through company presentations and applied research projects.",
-        "item3": "Gain an in-depth understanding of the Swiss AI Center's activities and the benefits they can bring, in particular through the use of \"AI vouchers\" that make it easier to produce the first prototypes."
+  "years": [
+    {
+      "year": "2025",
+      "title": "AI Days @ HES-SO",
+      "dates": "27 to 29 January",
+      "location": "Geneva and Lausanne",
+      "organizer": "Swiss Artificial Intelligence Centre for SMEs (CSIA-PME)",
+      "menu": {
+        "pages": [
+          {
+            "name": "Home",
+            "enabled": "true",
+            "url": "/"
+          },
+          {
+            "name": "About",
+            "enabled": "true",
+            "url": "/about"
+          },
+          {
+            "name": "Program",
+            "enabled": "false",
+            "url": "/program"
+          },
+          {
+            "name": "Speakers",
+            "enabled": "false",
+            "url": "/speakers"
+          },
+          {
+            "name": "Partners",
+            "enabled": "false",
+            "url": "/partners"
+          },
+          {
+            "name": "Contact",
+            "enabled": "false",
+            "url": "/contact"
+          }
+        ],
+        "year": "Change year",
+        "language": "Change language",
+        "languages": [
+          {
+            "name": "English",
+            "lang": "en",
+            "flag": "🇬🇧"
+          },
+          {
+            "name": "Français",
+            "lang": "fr",
+            "flag": "🇫🇷"
+          }
+        ]
       },
-      "end": "Participation is free, but registration is mandatory."
+      "home": {
+        "title": "AI Days @ HES-SO",
+        "subtitle": "From 27 to 29 January 2025",
+        "description": {
+          "par1": "The 2025 edition of AI-days will take place from 27 to 29 January 2025, in Geneva (27 and 28) and Lausanne (29 January). The HES-SO AI-days are organised by the Swiss Artificial Intelligence Centre for SMEs (CSIA-PMEs). The aim of the event is to provide a forum for discussing the practical use of new AI technologies in the economic fabric.",
+          "par2": "A three-day format is planned this year. The first day (Monday 27) will be devoted to workshops on specific topics. The other two days, organised as usual over two sites and two cantons, will be devoted to presentations on the progress of the CSIA-PE, reports on collaborations, round-table discussions and recent results obtained in the field of AI applications. An official call for papers will be launched at the beginning of September, see indicative dates below.",
+          "par3": "The event is public and open to all. It is primarily aimed at people involved in the management and strategy of one or more SMEs, to find out how they can benefit from advances in artificial intelligence in their activities. Companies and SMEs are warmly invited to take part in this event in order to :",
+          "list": [
+            "Establish links with HES-SO engineers and other companies working in the field of artificial intelligence.",
+            "Explore various AI use cases through company presentations and applied research projects.",
+            "Gain an in-depth understanding of the Swiss AI Center's activities and the benefits they can bring, in particular through the use of \"AI vouchers\" that make it easier to produce the first prototypes."
+          ],
+          "end": "Participation is free, but registration is mandatory."
+        }
+      },
+      "about": {
+        "title": "About",
+        "dates_title": "Important dates",
+        "dates": [
+          {
+            "date": "1st September 2024",
+            "points": [
+              "Announcement of workshops (titles, leaders and committees, times)",
+              "Announcement of the call for papers",
+              "Announcement of the technical committee"
+            ]
+          },
+          {
+            "date": "1st November 2024",
+            "points": [
+              "Deadline for submitting entries",
+              "Opening of entries"
+            ]
+          },
+          {
+            "date": "Mid-December 2024",
+            "points": [
+              "Notification to authors"
+            ]
+          },
+          {
+            "date": "Early January 2025",
+            "points": [
+              "Final program announcement"
+            ]
+          }
+        ]
+      }
     }
-  }
+  ]
 }

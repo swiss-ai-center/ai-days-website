@@ -1,0 +1,162 @@
+# Documentation: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsuses
+name: ai_days_website_github_workflow
+run-name: AI Days Website GitHub Workflow
+
+env:
+  ## Development environment variables
+  # The Kubernetes namespace that the service should be deployed to
+  DEV_NAMESPACE: ${{ vars.DEV_NAMESPACE }}
+  # Kube configuration
+  DEV_KUBE_CONFIG: ${{ secrets.DEV_KUBE_CONFIG }}
+  # The URL that the service (dev) should be accessible at
+  DEV_FRONTEND_HOST: ${{ vars.DEV_FRONTEND_HOST }}
+
+  ## Production environment variables
+  # The Kubernetes namespace that the service should be deployed to
+  PROD_NAMESPACE: ${{ vars.PROD_NAMESPACE }}
+  # Kube configuration
+  PROD_KUBE_CONFIG: ${{ secrets.PROD_KUBE_CONFIG }}
+  # The URL that the service (prod) should be accessible at
+  PROD_FRONTEND_HOST: ${{ vars.PROD_FRONTEND_HOST }}
+
+# Allow one concurrent deployment
+concurrency:
+  group: "ai-days-website"
+  cancel-in-progress: true
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  run-workflow-dev:
+    runs-on: ubuntu-latest
+    if: ${{ vars.RUN_CICD == 'true' }}
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20.11.1
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.11.1
+
+      - name: Install dependencies
+        working-directory: .
+        run: npm ci
+
+      - name: Build app
+        working-directory: .
+        env:
+          # So it does not treat warnings as errors
+          CI: false
+        run: npm run build
+
+      - name: Build and push Docker image to GitHub
+        id: build-and-push-docker-image-to-github
+        if: ${{ vars.RUN_CICD == 'true' && success() && github.ref == 'refs/heads/main' && vars.DEPLOY_DEV == 'true' }}
+        uses: swiss-ai-center/common-code/.github/actions/build-and-push-docker-image-to-github@main
+        with:
+          docker-registry-username: ${{ github.actor }}
+          docker-registry-password: ${{ secrets.GITHUB_TOKEN }}
+          docker-image-name: ${{ github.repository }}-dev
+          docker-image-context: .
+
+      - name: Prepare configuration files
+        if: ${{ vars.RUN_CICD == 'true' && success() && github.ref == 'refs/heads/main' && vars.DEPLOY_DEV == 'true' }}
+        shell: bash
+        working-directory: ./kubernetes
+        env:
+          DEV_FRONTEND_HOST: ${{ env.DEV_FRONTEND_HOST }}
+        run: |
+          # Set version
+          docker_image_tags=(${{ steps.build-and-push-docker-image-to-github.outputs.docker-image-tags }})
+          docker_image_sha_tag="${docker_image_tags[1]}"
+          yq -i ".spec.template.spec.containers[0].image = \"$docker_image_sha_tag\"" stateful.yml
+
+          # Set configuration (Ingress)
+          yq -i "del(.metadata.annotations.cert-manager\.io/cluster-issuer)" ingress.yml
+          yq -i "del(.spec.ingressClassName)" ingress.yml
+          yq -i ".spec.rules[0].host = \"${DEV_FRONTEND_HOST#*://}\"" ingress.yml
+          yq -i ".spec.tls[0].hosts[0] = \"${DEV_FRONTEND_HOST#*://}\"" ingress.yml
+          yq -i "del(.spec.tls[0].secretName)" ingress.yml
+
+      - name: Deploy Website on the Kubernetes cluster
+        if: ${{ vars.RUN_CICD == 'true' && success() && github.ref == 'refs/heads/main' && vars.DEPLOY_DEV == 'true' }}
+        uses: swiss-ai-center/common-code/.github/actions/execute-command-on-kubernetes-cluster@main
+        with:
+          kube-config: ${{ env.DEV_KUBE_CONFIG }}
+          kube-namespace: ${{ env.DEV_NAMESPACE }}
+          kubectl-context: ./kubernetes
+          kubectl-args: |
+            apply \
+              -f stateful.yml \
+              -f service.yml \
+              -f ingress.yml
+
+  run-workflow-prod:
+    runs-on: ubuntu-latest
+    if: ${{ vars.RUN_CICD == 'true' }}
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20.11.1
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.11.1
+
+      - name: Install dependencies
+        working-directory: .
+        run: npm ci
+
+      - name: Build app
+        working-directory: .
+        env:
+          # So it does not treat warnings as errors
+          CI: false
+        run: npm run build
+
+      - name: Build and push Docker image to GitHub
+        id: build-and-push-docker-image-to-github
+        if: ${{ vars.RUN_CICD == 'true' && success() && github.ref == 'refs/heads/main' && vars.DEPLOY_PROD == 'true' }}
+        uses: swiss-ai-center/common-code/.github/actions/build-and-push-docker-image-to-github@main
+        with:
+          docker-registry-username: ${{ github.actor }}
+          docker-registry-password: ${{ secrets.GITHUB_TOKEN }}
+          docker-image-name: ${{ github.repository }}
+          docker-image-context: .
+
+      - name: Prepare configuration files
+        if: ${{ vars.RUN_CICD == 'true' && success() && github.ref == 'refs/heads/main' && vars.DEPLOY_PROD == 'true' }}
+        shell: bash
+        working-directory: ./kubernetes
+        env:
+          PROD_FRONTEND_HOST: ${{ env.PROD_FRONTEND_HOST }}
+        run: |
+          # Set version
+          docker_image_tags=(${{ steps.build-and-push-docker-image-to-github.outputs.docker-image-tags }})
+          docker_image_sha_tag="${docker_image_tags[1]}"
+          yq -i ".spec.template.spec.containers[0].image = \"$docker_image_sha_tag\"" stateful.yml
+
+          # Set configuration (Ingress)
+          yq -i ".spec.rules[0].host = \"${PROD_FRONTEND_HOST#*://}\"" ingress.yml
+          yq -i ".spec.tls[0].hosts[0] = \"${PROD_FRONTEND_HOST#*://}\"" ingress.yml
+
+      - name: Deploy Website on the Kubernetes cluster
+        if: ${{ vars.RUN_CICD == 'true' && success() && github.ref == 'refs/heads/main' && vars.DEPLOY_PROD == 'true' }}
+        uses: swiss-ai-center/common-code/.github/actions/execute-command-on-kubernetes-cluster@main
+        with:
+          kube-config: ${{ env.PROD_KUBE_CONFIG }}
+          kube-namespace: ${{ env.PROD_NAMESPACE }}
+          kubectl-context: ./kubernetes
+          kubectl-args: |
+            apply \
+              -f stateful.yml \
+              -f service.yml \
+              -f ingress.yml

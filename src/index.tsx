@@ -1,8 +1,10 @@
+import { CircularProgress } from '@mui/material';
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { Provider } from 'react-redux';
+import store from 'utils/store';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import "./i18n";
 
 const root = ReactDOM.createRoot(
@@ -10,13 +12,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <React.StrictMode>
-        <Suspense fallback={<div>Loading...</div>}>
-            <App/>
-        </Suspense>
+        <Provider store={store}>
+            <Suspense fallback={<CircularProgress/>}>
+                <App/>
+            </Suspense>
+        </Provider>
     </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
