@@ -4,6 +4,7 @@ import Navbar from 'components/Navbar';
 import Contact from 'pages/Contact';
 import Dates from 'pages/Dates';
 import Home from 'pages/Home';
+import Partners from 'pages/Partners';
 import React, { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -31,6 +32,7 @@ function App() {
         dates: Dates,
         home: Home,
         contact: Contact,
+        partners: Partners,
     };
 
 

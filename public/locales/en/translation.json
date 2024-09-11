@@ -35,7 +35,7 @@
           {
             "name": "Partners",
             "component": "partners",
-            "enabled": "false",
+            "enabled": "true",
             "url": "/partners"
           },
           {
@@ -75,6 +75,7 @@
           "end": "Participation is free, but registration is mandatory."
         }
       },
+      "partners": {},
       "dates": {
         "title": "Important dates",
         "dates_title": "Key dates",
@@ -159,6 +160,57 @@
             ]
           }
         ]
+      },
+      "partners": {
+        "title": "Partners",
+        "introduction": "We are pleased to invite you to become a partner of the 2025 edition of AI Days, a growing event dedicated to the application of artificial intelligence in SMEs. Organized by the Swiss AI Center of HES-SO, this free event will take place from January 27 to 29, 2025, in Geneva and Lausanne. It brings together a growing audience of professionals engaged in technological innovation and benefits from excellent media coverage.",
+        "contact": "We would be delighted to discuss in more detail the support options and to personalize a collaboration that meets your economic promotion goals. We are confident that your contribution will have a significant impact on the success of this event and on the development of SMEs in French-speaking Switzerland.",
+        "visibility-and-presence": "Visibility and presence",
+        "marketing-and-communication": "Marketing and communication",
+        "partnerships": {
+          "platine": {
+            "title": "Platinum Partner",
+            "description": "You are an exclusive partner or co-partner for the organization of a part of the conference (room rental, meals).",
+            "amount": "CHF 5'000.- and more",
+            "visibility-and-presence": [
+              "Your logo can be displayed at the entrance of the room.",
+              "Your logo can be displayed at the entrance of the room.",
+              "Your logo can be displayed on the room's screens (if available).",
+              "Your logo will appear on the conference website in the Gold category.",
+              "Your logo will be included in all communication materials (brochures, programs, etc.)."
+            ],
+            "marketing-and-communication": [
+              "A dedicated presentation to showcase your company's activities related to the conference topic.",
+              "Special mention in communications before, during, and after the conference.",
+              "Opportunity to distribute promotional materials and goodies."
+            ]
+          },
+          "gold": {
+            "title": "Gold Partner",
+            "description": "Financing of a reception during the conference.",
+            "amount": "CHF 2'500.- to 5'000.-",
+            "visibility-and-presence": [
+              "Your logo can be displayed at the entrance of the room where the reception is held.",
+              "Your logo will appear on the conference website in the Silver category."
+            ],
+            "marketing-and-communication": [
+              "Special mention in communications at the beginning of the reception.",
+              "Opportunity to distribute promotional materials and goodies during the reception."
+            ]
+          },
+          "silver": {
+            "title": "Silver Partner",
+            "description": "Financing of a coffee break.",
+            "amount": "CHF 2'500.- to 5'000.-",
+            "visibility-and-presence": [
+              "Your logo can be displayed at the entrance of the room where the coffee break takes place.",
+              "Your logo will appear on the conference website in the Bronze category."
+            ],
+            "marketing-and-communication": [
+              "Opportunity to distribute promotional materials and goodies during the coffee break."
+            ]
+          }
+        }
       }
     }
   ]
