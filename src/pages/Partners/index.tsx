@@ -1,4 +1,4 @@
-import { List, Paper, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { List, Paper, ListItem, ListItemIcon, ListItemText, Divider } from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
@@ -35,12 +35,13 @@ const Partners: React.FC = () => {
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}} p={2}>
                     <Typography variant={"body1"} py={1}>{t(`years.${selectedYearIndex(year)}.partners.contact`)}</Typography>
                 </Box>
-                
-                <hr/>
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
+
+                <Divider variant={"middle"} sx={{pt: 2}}/>
+
+                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.title`)}</Typography>
                 </Box>
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left'}} p={2}>
+                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>{t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.description`)}</Typography>
                 </Box>
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
@@ -74,11 +75,12 @@ const Partners: React.FC = () => {
                     ))}
                 </List>
 
-                <hr/>
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
+                <Divider variant={"middle"} sx={{pt: 2}}/>
+
+                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.title`)}</Typography>
                 </Box>
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left'}} p={2}>
+                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>{t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.description`)}</Typography>
                 </Box>
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
@@ -112,11 +114,12 @@ const Partners: React.FC = () => {
                     ))}
                 </List>
 
-                <hr/>
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
+                <Divider variant={"middle"} sx={{pt: 2}}/>
+
+                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.title`)}</Typography>
                 </Box>
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left'}} p={2}>
+                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>{t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.description`)}</Typography>
                 </Box>
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
