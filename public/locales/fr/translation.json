@@ -41,7 +41,7 @@
           {
             "name": "Partenaires",
             "component": "partners",
-            "enabled": "false",
+            "enabled": "true",
             "url": "/partners"
           },
           {
@@ -165,6 +165,57 @@
             ]
           }
         ]
+      },
+      "partners": {
+        "title": "Partenaires",
+        "introduction": "Nous avons le plaisir de vous inviter à devenir partenaire de l'édition 2025 des AI Days, un événement en pleine croissance dédié à l'application de l'intelligence artificielle dans les PME. Organisé par le Swiss AI Center de la HES-SO, cet événement gratuit se tiendra du 27 au 29 janvier 2025 à Genève et Lausanne. Il réunit un public toujours plus large de professionnels engagés dans l'innovation technologique et bénéficie d’une belle couverture médiatique.",
+        "contact": "Nous serions ravis de discuter plus en détail des modalités de soutien et de personnaliser une collaboration qui répond à vos objectifs de promotion économique. Nous sommes convaincus que votre contribution aura un impact significatif sur le succès de cet événement et sur le développement des PME en Suisse Romande.",
+        "visibility-and-presence": "Visibilité et présence",
+        "marketing-and-communication": "Marketing et communication",
+        "partnerships": {
+          "platine": {
+            "title": "Partenaire Platine",
+            "description": "Vous êtes partenaire exclusif ou co-partenaire pour l’organisation d’une partie de la conférence (location de salle, repas).",
+            "amount": "CHF 5'000.- and more",
+            "visibility-and-presence": [
+              "Votre logo pourra être affiché à l’entrée de la salle.",
+              "Votre logo pourra être affiché à l’entrée de la salle.",
+              "Votre logo pourra être affiché sur les écrans de la salle (si disponible). ",
+              "Votre logo apparaîtra sur le site Internet de la conférence dans la catégorie Or. ",
+              "Votre logo sera inclus dans tous les supports de communication (brochures, programmes, etc.). "
+            ],
+            "marketing-and-communication": [
+              "Une présentation dédiée pour faire connaître les activités de votre entreprise en lien avec le sujet de la conférence.",
+              "Mention spéciale dans les communications avant, pendant et après la conférence.",
+              "Opportunité de distribuer des documents promotionnels et goodies."
+            ]
+          },
+          "gold": {
+            "title": "Partenaire Or",
+            "description": "Financement d’un apéritif en marge de la conférence. ",
+            "amount": "CHF 2'500.- à 5'000.-",
+            "visibility-and-presence": [
+              "Votre pourra être affiché à l’entrée de la salle où a lieu l’apéritif.",
+              "Votre logo apparaîtra sur le site Internet de la conférence dans la catégorie Argent."
+            ],
+            "marketing-and-communication": [
+              "Mention spéciale dans les communications au début de l’apéritif. ",
+              "Opportunité de distribuer des documents promotionnels et goodies durant l’apéritif. "
+            ]
+          },
+          "silver": {
+            "title": "Partenaire Argent",
+            "description": "Financement d’une pause-café.",
+            "amount": "CHF 2'500.- à 5'000.-",
+            "visibility-and-presence": [
+              "Votre logo pourra être affiché à l’entrée de la salle où a lieu la pause-café. ",
+              "Votre logo apparaîtra sur le site Internet de la conférence dans la catégorie Bronze."
+            ],
+            "marketing-and-communication": [
+              "Opportunité de distribuer des documents promotionnels et goodies durant la pause-café."
+            ]
+          }
+        }
       }
     }
   ]
