@@ -21,8 +21,8 @@ const Dates: React.FC = () => {
     }[] = t(`years.${selectedYearIndex(year)}.dates.dates`, {returnObjects: true});
 
     return (
-        <Container maxWidth={"lg"}>
-            <Paper sx={{p: 2, my: 3}}>
+        <Container maxWidth={"xl"}>
+            <Paper sx={{p: 2, my: 3, border: 2, borderRadius: 2, borderColor: 'lightgrey'}} elevation={0}>
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'center', p: 2}}>
                     <Typography variant={"h2"}
                                 sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.dates.title`)}</Typography>

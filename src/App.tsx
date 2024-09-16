@@ -4,6 +4,7 @@ import Navbar from 'components/Navbar';
 import Contact from 'pages/Contact';
 import Dates from 'pages/Dates';
 import Home from 'pages/Home';
+import Workshops from 'pages/Workshops';
 import React, { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -31,6 +32,7 @@ function App() {
         dates: Dates,
         home: Home,
         contact: Contact,
+        workshops: Workshops
     };
 
 
@@ -106,7 +108,8 @@ function App() {
                 <Navbar/>
                 <Routes>
                     {pages.map((page, index) => {
-                        if(page.enabled === "true") {
+                        //if not workshops
+                        if(page.enabled === "true" && page.component !== "workshops") {
                             return (
                                 <Route key={index} path={`${page.url}`}
                                        element={React.createElement(Components[page.component])}/>
@@ -114,6 +117,7 @@ function App() {
                         }
                         return null;
                     })}
+                    <Route path={"/workshops/:workshopId"} element={React.createElement(Components["workshops"])}/>
                     <Route path={"*"} element={<Home />}/>
                 </Routes>
             </Router>

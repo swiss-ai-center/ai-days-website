@@ -27,6 +27,12 @@
             "url": "/schedule"
           },
           {
+            "name": "Ateliers",
+            "component": "workshops",
+            "enabled": "true",
+            "url": "/workshops"
+          },
+          {
             "name": "Intervenants",
             "component": "speakers",
             "enabled": "false",

@@ -27,6 +27,12 @@
             "url": "/schedule"
           },
           {
+            "name": "Workshops",
+            "component": "workshops",
+            "enabled": "true",
+            "url": "/workshops"
+          },
+          {
             "name": "Speakers",
             "component": "speakers",
             "enabled": "false",
@@ -157,6 +163,23 @@
             "members": [
               "Jean Hennebert, lead CSIA-PME, HES-SO (ex-officio)"
             ]
+          }
+        ]
+      },
+      "workshops": {
+        "title": "Workshops",
+        "workshops": [
+          {
+            "title": "Workshop 1",
+            "description": "Workshop 1 description"
+          },
+          {
+            "title": "Workshop 2",
+            "description": "Workshop 2 description"
+          },
+          {
+            "title": "Workshop 3",
+            "description": "Workshop 3 description"
           }
         ]
       }

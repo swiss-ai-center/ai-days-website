@@ -69,8 +69,8 @@ function Navbar() {
     };
 
     return (
-        <AppBar position={"static"} elevation={1}>
-            <Container maxWidth="lg">
+        <AppBar position={"static"} elevation={0}>
+            <Container maxWidth={"xl"}>
                 <Toolbar disableGutters>
                     <Box sx={{display: {xs: 'none', md: 'flex'}, mr: 2, pt: 1}}>
                         <Link color={"inherit"} to={"/"}
@@ -127,6 +127,7 @@ function Navbar() {
                         {pages.map((page) => (
                             <Button key={page.url} color={"secondary"}
                                     variant={currentPage === page.component ? "contained" : "text"}
+                                    disableElevation={true}
                                     disabled={page.enabled !== "true"}
                                     sx={{
                                         mr: 1,
