@@ -216,6 +216,23 @@
             ]
           }
         }
+      },
+      "workshops": {
+        "title": "Workshops",
+        "workshops": [
+          {
+            "title": "Workshop 1",
+            "description": "Workshop 1 description"
+          },
+          {
+            "title": "Workshop 2",
+            "description": "Workshop 2 description"
+          },
+          {
+            "title": "Workshop 3",
+            "description": "Workshop 3 description"
+          }
+        ]
       }
     }
   ]
