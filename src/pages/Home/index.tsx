@@ -6,6 +6,7 @@ import ExpandCircleDownRoundedIcon from '@mui/icons-material/ExpandCircleDownRou
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
+import Button from "@mui/material/Button";
 
 const Home: React.FC = () => {
     const {t} = useTranslation();
@@ -39,6 +40,9 @@ const Home: React.FC = () => {
                         ))}
                     </List>
                     <Typography variant={"body1"} py={1}>{t(`years.${selectedYearIndex(year)}.home.description.end`)}</Typography>
+                </Box>
+                <Box>
+                    <Button>Register</Button>
                 </Box>
             </Paper>
         </Container>
