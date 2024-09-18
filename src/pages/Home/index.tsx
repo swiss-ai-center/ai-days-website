@@ -42,7 +42,7 @@ const Home: React.FC = () => {
                     <Typography variant={"body1"} py={1}>{t(`years.${selectedYearIndex(year)}.home.description.end`)}</Typography>
                 </Box>
                 <Box>
-                    <Button>Register</Button>
+                    <Button>Register </Button>
                 </Box>
             </Paper>
         </Container>
