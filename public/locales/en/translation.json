@@ -15,10 +15,10 @@
             "url": "/"
           },
           {
-            "name": "Submissions",
-            "component": "dates",
+            "name": "Calls",
+            "component": "calls",
             "enabled": "true",
-            "url": "/dates"
+            "url": "/calls"
           },
           {
             "name": "Schedule",
