@@ -8,7 +8,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 
-const Dates: React.FC = () => {
+const Calls: React.FC = () => {
     const {t} = useTranslation();
 
     const year = useSelector((state: any) => state.year.value);
@@ -133,4 +133,4 @@ const Dates: React.FC = () => {
     );
 }
 
-export default Dates;
+export default Calls;
