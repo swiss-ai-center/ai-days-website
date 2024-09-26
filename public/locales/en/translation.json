@@ -15,7 +15,7 @@
             "url": "/"
           },
           {
-            "name": "Dates",
+            "name": "Submissions",
             "component": "dates",
             "enabled": "true",
             "url": "/dates"
@@ -81,39 +81,74 @@
           "end": "Participation is free, but registration is mandatory."
         }
       },
-      "dates": {
-        "title": "Important dates",
-        "dates_title": "Key dates",
-        "description": "The precise dates will be announced during September.",
-        "dates": [
-          {
-            "date": "Early September 2024",
-            "points": [
-              "Announcement of workshops (titles, leaders and committees, times)",
-              "Announcement of the call for papers",
-              "Announcement of the technical committee"
-            ]
-          },
-          {
-            "date": "Early November 2024",
-            "points": [
-              "Deadline for submitting entries",
-              "Opening of entries"
-            ]
-          },
-          {
-            "date": "Mid-December 2024",
-            "points": [
-              "Notification to authors"
-            ]
-          },
-          {
-            "date": "Early January 2025",
-            "points": [
-              "Final schedule announcement"
-            ]
-          }
-        ]
+      "call-for-paper": {
+        "title": "Call for Paper",
+        "csia-pme": {
+          "title": "Swiss AI Center for SMEs (CSIA-PME)",
+          "description": "The annual AI days is organized by the Swiss AI Center for SMEs (CSIA-PME), a flagship project of the HES-SO. It brings together AI researchers, entrepreneurs, SMEs, developers, practitioners, and users interested in Artificial Intelligence in the French-speaking Switzerland."
+        },
+        "event-description": {
+          "title": "AI Days 2025",
+          "paragraph1": "Although the event is public and open to all, it is primarily aimed at people involved in the management and strategy of one or more SMEs, to find out how they can benefit from advances in artificial intelligence in their activities.",
+          "paragraph2": "Following the great success and interest in the previous years, the AI days’25 will take place for three days: the 27th and 28th of January in Geneva and the 29th of January in Lausanne. The program will include one day with hands-on workshops and two days with parallel sessions made up of round-table discussions, ateliers, poster and demo sessions, and speed-dating networking sessions, as well as presentations on industrial advances and experiences, successful collaborations between academia and industry, and novel academic and applied research results.",
+          "paragraph3": "Starting this year, the academic contributions will be subject to peer-review. Selected contributions will be published as part of the proceedings. Specific topics of interest include but are not limited to the following, when related to Artificial Intelligence:"
+        },
+        "topics": [
+          "Responsible AI",
+          "Privacy and security in AI",
+          "Sustainability and AI",
+          "Industry 4.0 and AI",
+          "Healthcare, MedTech and AI",
+          "AI tools and MLOps",
+          "Edge AI, AI infrastructure"
+        ],
+        "submission-types": {
+          "title": "Submission Categories and Guidelines",
+          "types": [
+            {
+              "title": "Short academic papers",
+              "description": "5 “standard” pages + abstract up to 500 characters + unlimited references. For these submissions, novelty and conference topic fitting are the primary considerations."
+            },
+            {
+              "title": "Industry papers",
+              "description": "1-page presentation abstract + 1-page industrial motivation and context + unlimited references. These presentations won’t make part of the proceedings."
+            },
+            {
+              "title": "Posters",
+              "description": "Abstract of 300 words maximum + poster size A0, in portrait orientation, unlimited references. The poster must contain a title, the name(s) of the author(s), the methodology used, the results obtained, and the conclusions. Please note that you must print, bring, and hang your poster yourself. Only the abstracts will be published in the proceedings."
+            },
+            {
+              "title": "Interactive demonstration",
+              "description": "1-page presentation and/or background + unlimited references. The accompanying document should contain a title, the name(s) of the author(s), the methodology used, the results obtained, and the conclusions. Please note that you are responsible for your own demonstration and no materials will be provided."
+            }
+          ]
+        },
+        "key-dates": {
+          "title": "Key Dates",
+          "dates": [
+            "Submission deadline: 10 November 2024",
+            "Author Notification: 20 December 2024",
+            "Conference dates: 27 - 29 January 2025"
+          ]
+        },
+        "submission-guidelines": {
+          "title": "Submission Guidelines",
+          "paragraph1": "Authors must submit original contributions that are not being considered for publication in other conferences, workshops, or journals (non-peer-reviewed contexts, e.g., arXiv, is allowed). All submissions should cite and clearly differentiate from relevant prior publications, including those from the same authors.",
+          "paragraph2": "The reviews for academic submissions are double-blinded. Authors should make a good faith effort to anonymize their submissions, not identifying themselves explicitly or implicitly. In the case of industrial papers, disclosing the company/product is allowed; however, the submission should not reveal the author names directly.",
+          "paragraph3": "Use of English: following the requirements of the publication organism, academic contributions should be written in English.",
+          "paragraph4": "Both academic and industrial contributions must use the Latex format proposed here. Articles must include “academic” or “industrial” as a subtitle. Authors should submit a single PDF file, formatted for A4 paper and no larger than 10 MB. Any article submitted that does not comply with the length, file type or formatting requirements will be rejected without review. "
+        },
+        "submission-address": {
+          "title": "Submission Addresses",
+          "description": "Posters and demo submissions should be sent to the PC co-chairs: Pamela Delgado and Valérie Schürch Todeschini. Academic papers as well as industry contributions should use the dedicated submission site :",
+          "submission-site": "https://ai-days25-hes-so.hotcrp.com",
+          "mail-1": "valerie.schurchtodeschini@he-arc.ch",
+          "mail-2": "pamela.delgado@hevs.ch"
+        },
+        "questions": {
+          "title": "Questions?",
+          "description": "Please contact the PC co-chairs: Pamela Delgado and Valérie Schürch Todeschini."
+        }
       },
       "contact": {
         "title": "Contact",

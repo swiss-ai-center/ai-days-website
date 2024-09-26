@@ -15,7 +15,7 @@
             "url": "/"
           },
           {
-            "name": "Échéances",
+            "name": "Call for Paper",
             "component": "dates",
             "enabled": "true",
             "url": "/dates"
@@ -81,39 +81,74 @@
           "end": "La participation est gratuite, mais l’inscription est obligatoire."
         }
       },
-      "dates": {
-        "title": "Échéances",
-        "dates_title": "Dates indicatives",
-        "description": "Les dates précises seront annoncées courant septembre.",
-        "dates": [
-          {
-            "date": "Début septembre 2024",
-            "points": [
-              "Annonce des workshops (titres, responsables et comités, horaires)",
-              "Annonce de l’appel à contributions",
-              "Annonce du comité technique"
-            ]
-          },
-          {
-            "date": "Début novembre 2024",
-            "points": [
-              "Délai pour soumettre des contributions",
-              "Ouverture des inscriptions"
-            ]
-          },
-          {
-            "date": "Mi-décembre 2024",
-            "points": [
-              "Notification aux auteurs"
-            ]
-          },
-          {
-            "date": "Début janvier 2025",
-            "points": [
-              "Annonce du programme définitif"
-            ]
-          }
-        ]
+      "call-for-paper": {
+        "title": "Call for Paper",
+        "csia-pme": {
+          "title": "Le CSIA-PME",
+          "description": "Le Centre Suisse d’Intelligence Artificielle pour les PME (CSIA-PME) a été fondé en 2023 par les domaines d’Ingénierie et d’Architecture des Hautes-Ecoles Suisse (HES-SO). Il a pour mission d’accélérer l’adoption de l’intelligence artificielle (IA) dans la transition numérique des PME suisses en mettant en lien les chercheurs et développeurs des diverses HES avec les entreprises, futures utilisatrices."
+        },
+        "event-description": {
+          "title": "Les AI Days 2025",
+          "paragraph1": "Dans ce cadre, le centre organise chaque année une série de conférences et présentations : les AI days. Cette manifestation est publique et ouverte à tous. Toutefois, la cible privilégiée reste les entrepreneurs et managers des PME de Suisse Romande et a pour but de présenter les avantages que pourraient procurer l’adoption de l’IA dans leur domaine d’activité.",
+          "paragraph2": "Vu le succès des éditions précédentes, les AI days’25 auront lieu sur trois jours consécutifs, à savoir les 27 et 28 janvier 2025 à Genève et le 29 janvier à Lausanne. Cet événement proposera des activités variées sous forme de sessions parallèles incluant des tables rondes, des ateliers, des posters et des sessions de démonstrations, du speed-dating networking, ainsi que des présentations académiques de développements récents, des innovations industrielles en lien avec l’IA, et des collaborations fructueuses entre les partenaires académiques et industriels.",
+          "paragraph3": "Cette année, les contributions académiques seront soumises à une révision par les pairs et feront l’objet d’une publication. Les sujets retenus (mais non limitant) sont en lien avec l’implication de l’Intelligence Artificielle (IA) dans les domaines suivants:"
+        },
+        "topics": [
+          "Durabilité",
+          "Industrie 4.0",
+          "Healthcare & MedTech",
+          "AI tools et MLOps",
+          "Edge et Infrastructure",
+          "Responsible AI",
+          "Privacy et la sécurité"
+        ],
+        "submission-types": {
+          "title": "Catégories de soumission et lignes directrices",
+          "types": [
+            {
+              "title": "Court article académique",
+              "description": "Un article académique de maximum 5 pages \"standard\" (résumé de 500 caractères au maximum + références illimitées). La sélection se fera sur la base de la nouveauté et de l'adéquation avec le thème de la conférence."
+            },
+            {
+              "title": "Article en lien avec un développement industriel",
+              "description": "Une page de présentation d'une innovation ou d'un projet en lien avec l'IA dans une entreprise, accompagnée d'une page de présentation du contexte industriel et/ou de l'entreprise. Ces présentations ne feront pas l'objet de publication."
+            },
+            {
+              "title": "Poster",
+              "description": "Un résumé de 300 mots au maximum accompagné d'un poster taille A0 (orientation portrait). Le poster devra contenir un titre, le nom du/des auteur(s), la méthodologie utilisée, les résultats obtenus et les conclusions. Veuillez noter que vous devrez imprimer, apporter et accrocher votre poster vous-même. Seul le résumé fera l’objet de publications."
+            },
+            {
+              "title": "Démonstration interactive",
+              "description": "Une démonstration interactive accompagnée d'une page de présentation et/ou de contexte. Le document d'accompagnement devra contenir un titre, le nom du/des auteur(s), la méthodologie utilisée, les résultats obtenus et les conclusions. (1 page de présentation et/ou du contexte + références illimitées). Veuillez noter que vous êtes responsable de votre démonstration que aucun matériel ne sera fourni."
+            }
+          ]
+        },
+        "key-dates": {
+          "title": "Dates clés",
+          "dates": [
+            "Date limite de soumission : le 10 novembre 2024",
+            "Notification à l’auteur : le 20 décembre 2024",
+            "Dates de la conférence : du 27 au 29 janvier 2025"
+          ]
+        },
+        "submission-guidelines": {
+          "title": "Cadre général de présentation des soumissions",
+          "paragraph1": "Les auteurs doivent soumettre des contributions originales qui ne sont pas considérées comme publications dans d'autres conférences, ateliers ou revues (les contextes non évalués par des pairs comme arXiv, sont autorisés). Toutes les sources doivent être citées et clairement identifiées, y compris les publications précédentes du / des même(s) auteur(s).",
+          "paragraph2": "Les évaluations des soumissions académiques se font en double aveugle. Les auteurs doivent s'efforcer de rendre leurs articles anonymes et non identifiable explicitement ou implicitement. Dans le cas d'articles industriels, la divulgation de l'entreprise/du produit est acceptable, mais la soumission ne doit pas révéler directement le nom des auteurs.",
+          "paragraph3": "Veuillez prendre note que les articles académiques devront être rédigés en anglais.",
+          "paragraph4": "Tant les contributions académiques que industrielles doivent utiliser le format Latex proposé ici Les articles doivent inclure comme sous-titre les mentions “académiques” ou “industriel”. Les auteurs ne doivent soumettre qu’un seul fichier PDF, formaté pour du papier A4 et dont la taille ne dépasse pas 10 Mo. Tout article soumis ne respectant pas les exigences en matière de longueur, de type de fichier ou de formatage sera rejeté sans examen. "
+        },
+        "submission-address": {
+          "title": "Adresse des soumissions",
+          "description": "Poster et démonstrations interactives doivent être envoyées à l’un des deux responsables à savoir Pamela Delgado ou Valérie Schürch Todeschini. Les contributions académiques ainsi que les articles en lien avec un développement industriel font l’objet d’une soumission dédiée : ",
+          "submission-site": "https://ai-days25-hes-so.hotcrp.com",
+          "mail-1": "valerie.schurchtodeschini@he-arc.ch",
+          "mail-2": "pamela.delgado@hevs.ch"
+        },
+        "questions": {
+          "title": "Questions?",
+          "description": "Pour toutes questions éventuelles, n’hésitez pas à prendre contact par courriel avec l’une des deux responsables : Pamela Delgado et Valérie Schürch Todeschini."
+        }
       },
       "contact": {
         "title": "Contact",

@@ -15,60 +15,122 @@ const Dates: React.FC = () => {
     const years: { year: string }[] = t("years", {returnObjects: true});
     const selectedYearIndex = (yearToFind: string) => years.findIndex((yearObj) => yearObj.year === yearToFind);
 
-    const datesList: {
-        date: string,
-        points: string[]
-    }[] = t(`years.${selectedYearIndex(year)}.dates.dates`, {returnObjects: true});
+    const topics: string[] = t(`years.${selectedYearIndex(year)}.call-for-paper.topics`, { returnObjects: true }) as string[];
+    const submissionTypes: { title: string, description: string }[] = t(`years.${selectedYearIndex(year)}.call-for-paper.submission-types.types`, { returnObjects: true }) as { title: string, description: string }[];
+
+    // Dates clés récupérées sous forme de tableau
+    const keyDates: string[] = t(`years.${selectedYearIndex(year)}.call-for-paper.key-dates.dates`, { returnObjects: true }) as string[];
 
     return (
         <Container maxWidth={"xl"}>
-            <Paper sx={{p: 2, my: 3, border: 2, borderRadius: 2, borderColor: 'lightgrey'}} elevation={0}>
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'center', p: 2}}>
-                    <Typography variant={"h2"}
-                                sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.dates.title`)}</Typography>
+            <Paper sx={{ p: 2, my: 3, border: 2, borderRadius: 2, borderColor: 'lightgrey' }} elevation={0}>
+                {/* Titre de l'événement */}
+                <Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center', p: 2 }}>
+                    <Typography variant={"h2"} sx={{ fontWeight: 'bold' }}>{t(`years.${selectedYearIndex(year)}.call-for-paper.title`)}</Typography>
                 </Box>
 
-                <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
-                    <Typography variant={"h4"}
-                                sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.dates.dates_title`)}</Typography>
-                    <Typography variant={"body1"} pt={1}>{t(`years.${selectedYearIndex(year)}.dates.description`)}</Typography>
+                {/* Présentation du CSIA-PME */}
+                <Box sx={{ display: 'flex', flexDirection: 'column', p: 2 }}>
+                    <Typography variant={"h4"} sx={{ fontWeight: 'bold' }}>{t(`years.${selectedYearIndex(year)}.call-for-paper.csia-pme.title`)}</Typography>
+                    <Typography variant={"body1"} pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.csia-pme.description`)}</Typography>
                 </Box>
 
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}}>
+                {/* event-description  */}
+                <Box sx={{ display: 'flex', flexDirection: 'column', p: 2 }}>
+                    <Typography variant={"h4"} sx={{ fontWeight: 'bold' }}>{t(`years.${selectedYearIndex(year)}.call-for-paper.event-description.title`)}</Typography>
+                    <Typography variant={"body1"} pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.event-description.paragraph1`)}</Typography>
+                    <Typography variant={"body1"} pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.event-description.paragraph2`)}</Typography>
+                    <Typography variant={"body1"} pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.event-description.paragraph3`)}</Typography>
+                </Box>
+
+
+                {/* Sujets principaux */}
+                <Box sx={{ display: 'flex', flexDirection: 'column', p: 2 }}>
                     <List component={"nav"}>
-                        {datesList.map((item: { date: string, points: string[] }) => (
-                            <Box pb={2} key={item.date}>
+                        {topics.map((topic: string, index: number) => (
+                            <ListItemButton key={index}>
+                                <ListItemIcon>
+                                    <ExpandCircleDownRoundedIcon color={"primary"} />
+                                </ListItemIcon>
+                                <ListItemText primary={topic} />
+                            </ListItemButton>
+                        ))}
+                    </List>
+                </Box>
+
+                {/* Types de soumission */}
+                <Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'justify', p: 2 }}>
+                    <Typography variant={"h4"} sx={{ fontWeight: 'bold' }}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-types.title`)}</Typography>
+                    <List component={"nav"}>
+                        {submissionTypes.map((submission: any, index: number) => (
+                            <Box pb={2} key={index}>
                                 <ListItemButton>
                                     <ListItemIcon>
-                                        <CalendarToday color={"primary"}/>
+                                        <ExpandCircleDownRoundedIcon color={"primary"} />
                                     </ListItemIcon>
-                                    <ListItemText
-                                        children={<Typography variant={"h5"}>{item.date}</Typography>} />
+                                    <ListItemText children={<Typography variant={"h5"}>{submission.title}</Typography>} />
                                 </ListItemButton>
-                                <Collapse in={true} timeout="auto" unmountOnExit sx={{pl: 4}}>
-                                    <List component={"div"} disablePadding>
-                                        {item.points.map((point: string, index: number) => {
-                                            return (
-                                                <ListItemButton key={index} sx={{pl: 2}}>
-                                                    <ListItemIcon>
-                                                        <ExpandCircleDownRoundedIcon color={"secondary"}
-                                                                                     sx={{transform: 'rotate(-90deg)'}}/>
-                                                    </ListItemIcon>
-                                                    <ListItemText
-                                                        primary={point}/>
-                                                </ListItemButton>
-                                            );
-                                        })}
-                                    </List>
+                                <Collapse in={true} timeout="auto" unmountOnExit sx={{ pl: 4 }}>
+                                    <Typography variant={"body1"}>{submission.description}</Typography>
                                 </Collapse>
                             </Box>
                         ))}
                     </List>
                 </Box>
+
+                {/* Dates de soumission */}
+                <Box sx={{ display: 'flex', flexDirection: 'column', p: 2 }}>
+                    <Typography variant={"h4"} sx={{ fontWeight: 'bold' }}>{t(`years.${selectedYearIndex(year)}.call-for-paper.key-dates.title`)}</Typography>
+                    <List>
+                        {keyDates.map((date: string, index: number) => (
+                            <ListItemButton key={index}>
+                                <ListItemIcon>
+                                    <CalendarToday color={"primary"} />
+                                </ListItemIcon>
+                                <ListItemText primary={date} />
+                            </ListItemButton>
+                        ))}
+                    </List>
+                </Box>
+
+                {/* Cadre de soumission */}
+                <Box sx={{ display: 'flex', flexDirection: 'column', p: 2 }}>
+                    <Typography variant={"h4"} sx={{ fontWeight: 'bold' }}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-guidelines.title`)}</Typography>
+                    <Typography variant={"body1"} pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-guidelines.paragraph1`)}</Typography>
+                    <Typography variant={"body1"} pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-guidelines.paragraph2`)}</Typography>
+                    <Typography variant={"body1"} pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-guidelines.paragraph3`)}</Typography>
+                    <Typography variant={"body1"} pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-guidelines.paragraph4`)}</Typography>
+                </Box>
+
+                {/* Adresse des soumissions */}
+                <Box sx={{ display: 'flex', flexDirection: 'column', p: 2 }}>
+                    <Typography variant={"h4"} sx={{ fontWeight: 'bold' }}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.title`)}</Typography>
+                    <Typography variant={"body1"} pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.description`)}</Typography>
+                    <Typography variant={"body1"} pt={1}>
+                        <a href={t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.submission-site`)}>
+                            {t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.submission-site`)}
+                        </a>
+                    </Typography>
+                    <Typography variant={"body1"} pt={1}>
+                        <a href={`mailto:${t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.mail-1`)}`}>
+                            {t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.mail-1`)}
+                        </a>
+                    </Typography>
+                    <Typography variant={"body1"} pt={1}>
+                        <a href={`mailto:${t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.mail-2`)}`}>
+                            {t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.mail-2`)}
+                        </a>
+                    </Typography>
+                </Box>
+
+                {/* Questions */}
+                <Box sx={{ display: 'flex', flexDirection: 'column', p: 2 }}>
+                    <Typography variant={"h4"} sx={{ fontWeight: 'bold' }}>{t(`years.${selectedYearIndex(year)}.call-for-paper.questions.title`)}</Typography>
+                    <Typography variant={"body1"} pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.questions.description`)}</Typography>
+                </Box>
             </Paper>
         </Container>
     );
 }
-
 
 export default Dates;
