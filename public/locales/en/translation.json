@@ -218,19 +218,75 @@
         }
       },
       "workshops": {
-        "title": "Workshops",
+        "title-27": "Workshops Days – January 27",
+        "venue-27": "Venue A",
+        "adress-27": "123 Workshop St.",
         "workshops": [
           {
-            "title": "Workshop 1",
-            "description": "Workshop 1 description"
+            "title": "Workshop 1: INFRA",
+            "description": "With the advent of Chatbots, LLMs, and other generative AI technologies, as well as other progress in the AI field, there has been an explosion in demand for computational power. AI is no longer merely computer science but computational science. It can no longer be sustained with self-managed, casual equipment. More advanced compute infrastructures are required to satisfy user needs in terms of power, GPU RAM capacity, software environments, and security, as well as to ensure efficient use of increasingly costly resources. The purpose of this workshop is to gather people responsible for compute infrastructure (on-prem, cloud, or hybrid) aimed at supporting AI workloads (both training and inference) with the goal of creating a community in Switzerland.",
+            "schedule": {
+              "time": "9h00 to 17h",
+              "equipment": "Expected equipment: To be announced."
+            },
+            "activities": [
+              "The workshop will feature keynote and invited presentations, but the main focus will be on short (~10-15min) presentations where participants will share topics such as technologies being tested or in use, workload mapping, specific challenges, or projects aimed at improving AI infrastructure.",
+              "These presentations will be structured simply to allow more people to participate, with a typical format being use-case description, pain points, and potential solutions.",
+              "We will also organize breakout groups to foster collaboration and work toward creating an 'AI-sys-admin' community."
+            ],
+            "topics": [
+              "A technology under test or in use (e.g., code, Determined.ai).",
+              "How workloads are mapped to hardware.",
+              "Particularly challenging aspects of AI infrastructure.",
+              "Projects aimed at improving the infrastructure."
+            ]
           },
           {
-            "title": "Workshop 2",
-            "description": "Workshop 2 description"
+            "title": "Workshop 2: Edge AI",
+            "description": "In an increasingly connected world, the ability to process data at the source, closer to where it is generated, has become crucial. This workshop provides a comprehensive but concise overview of Edge AI, focusing on the devices, methods, and tools that make this technology a game-changer. Participants will explore how Edge AI enables real-time data processing, reduces latency, and enhances privacy by minimizing the need to send data to the cloud. By the end of this workshop, participants will have a broad understanding of the fundamental aspects of Edge AI, empowering them to explore and implement these technologies in their own projects.",
+            "schedule": {
+              "time": "9h00 to 17h",
+              "equipment": "Expected equipment: To be announced."
+            },
+            "activities": [
+              "Morning: Presentation of different approaches for Edge AI with several devices, including microcontrollers, embedded GPUs, FPGAs, and NPUs.",
+              "Presentation of methodologies for Edge-oriented applications, including tools for quantization, benchmarking, and deployment on single or multiple devices.",
+              "Afternoon: Two hands-on tutorials focusing on deploying models on different types of devices."
+            ],
+            "topics": [
+              "Introduction to lightweight neural networks and model compression techniques.",
+              "Real-world case studies showing how Edge AI is applied."
+            ]
           },
           {
-            "title": "Workshop 3",
-            "description": "Workshop 3 description"
+            "title": "Workshop 3: Retrieval-Augmented Generation (RAG)",
+            "description": "The Retrieval-Augmented Generation (RAG) framework combines retrieval and generation within large language models (LLMs) to produce context-aware and informative responses. This workshop offers a technical introduction to RAG, including concrete examples of its application in enhancing knowledge management systems. Participants will also explore self-hosting LLMs to ensure privacy and security in the deployment of generative AI technologies. By the end of the workshop, participants will be able to query LLMs on the contents of their associated documents, empowering them with the expertise needed to implement RAG in real-world scenarios.",
+            "schedule": {
+              "time": "2 independent sessions: 9h-12h30 and 13h30-17h",
+              "equipment": "Personal laptop required."
+            },
+            "activities": [
+              "Sessions on RAG Overview, self-hosting LLMs with Ollama.",
+              "Hands-on examples using Google Colab.",
+              "Real-world implementation of RAG applications.",
+              "Discussions on practical RAG deployments."
+            ]
+          },
+          {
+            "title": "Workshop 4: MLOps",
+            "description": "This workshop helps participants implement an MLOps process for a Machine Learning experiment, transitioning from a Jupyter notebook to full cloud production. The goal is to provide technical skills for managing the lifecycle of Machine Learning models, promoting team collaboration, and automating operational processes to ensure reproducibility, reliability, and efficient deployment of models in production environments. Participants will also learn best practices for improving the deployment process and moving models out of the experimental phase.",
+            "schedule": {
+              "time": "9h-12h30 and 13h30-17h",
+              "equipment": "Personal laptop with WSL2 / Linux Ubuntu installed and ready to use."
+            },
+            "activities": [
+              "Icebreaker exercise.",
+              "Getting started with a simple machine learning experiment.",
+              "Transforming this experiment for model reproducibility and quality evaluation.",
+              "Collaborating effectively to develop a reliable and functional model.",
+              "Deploying the model to the cloud.",
+              "Automating model redeployment when changes are made."
+            ]
           }
         ]
       }

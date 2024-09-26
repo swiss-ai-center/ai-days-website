@@ -10,6 +10,7 @@ import React, { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useSelector } from 'react-redux';
+import "primereact/resources/themes/bootstrap4-light-purple/theme.css";
 
 function App() {
     const {t} = useTranslation();
@@ -119,7 +120,7 @@ function App() {
                         }
                         return null;
                     })}
-                    <Route path={"/workshops/:workshopId"} element={React.createElement(Components["workshops"])}/>
+                    <Route path={"/workshops"} element={<Workshops/>}/>
                     <Route path={"*"} element={<Home />}/>
                 </Routes>
             </Router>
