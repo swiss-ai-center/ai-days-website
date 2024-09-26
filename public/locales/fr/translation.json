@@ -15,10 +15,10 @@
             "url": "/"
           },
           {
-            "name": "Call for Paper",
-            "component": "dates",
+            "name": "Calls",
+            "component": "calls",
             "enabled": "true",
-            "url": "/dates"
+            "url": "/calls"
           },
           {
             "name": "Programme",
