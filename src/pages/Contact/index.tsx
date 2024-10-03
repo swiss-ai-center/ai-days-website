@@ -1,6 +1,6 @@
 import {
     ApartmentRounded,
-    CalendarToday, GavelRounded,
+    GavelRounded,
     Groups3Rounded,
     InterestsRounded,
     PaymentsRounded,
@@ -13,6 +13,7 @@ import Typography from '@mui/material/Typography';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
+import Footer from "../../components/Footer/footer";
 
 const Contact: React.FC = () => {
     const {t} = useTranslation();
@@ -37,12 +38,43 @@ const Contact: React.FC = () => {
     };
 
     return (
-        <Container maxWidth={"lg"}>
-            <Paper sx={{p: 2, my: 3}}>
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'center', p: 2}}>
-                    <Typography variant={"h2"}
-                                sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.contact.title`)}</Typography>
-                </Box>
+        <Container maxWidth={"xl"}>
+            <Box
+                sx={{
+                    backgroundImage: 'url("/contact-2.jpg")',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    height: '500px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    mb: 5,
+                    borderRadius: 2,
+                    boxShadow: 3,
+                    position: 'relative',
+                    color: '#fff',
+                    textShadow: '2px 2px 4px rgba(0,0,0,0.6)'
+                }}
+            >
+                <Typography variant="h2" sx={{ color: '#fff', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0,0,0,0.6)' }}>
+                    {t(`years.${selectedYearIndex(year)}.contact.title`)}
+                </Typography>
+                {/* HES-SO Logo in Bottom Right Corner */}
+                <Box
+                    component="img"
+                    src="hes-so.png"
+                    alt="HES-SO Logo"
+                    sx={{
+                        position: 'absolute',
+                        bottom: '10px',
+                        right: '10px',
+                        width: '120px', // Adjust size as needed
+                        opacity: 0.7, // Transparent effect
+                    }}
+                />
+            </Box>
+
+            <Paper elevation={2} sx={{ p: 4, borderRadius: 3, boxShadow: 2 }}>
 
                 <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
                     <Typography variant={"h4"}
@@ -80,6 +112,7 @@ const Contact: React.FC = () => {
                     </List>
                 </Box>
             </Paper>
+            <Footer></Footer>
         </Container>
     );
 }

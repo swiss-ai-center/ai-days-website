@@ -1,3 +1,11 @@
 .filter-white {
     filter: brightness(0) invert(1);
 }
+
+.appbar{
+    margin-bottom: 40px;
+}
+
+.a-hes-so{
+    display: flex;
+}

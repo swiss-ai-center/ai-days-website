@@ -1,0 +1,14 @@
+.div-cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.card{
+    margin: 25px 50px;
+    margin-right: 0 ! important;
+    margin-left: 0 ! important;
+    width: 700px;
+    text-align: justify;
+}
+

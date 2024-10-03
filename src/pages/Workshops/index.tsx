@@ -1,0 +1,138 @@
+import { Paper } from '@mui/material';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { Card } from 'primereact/card';
+import "./styles.css";
+import Footer from "../../components/Footer/footer";
+
+interface Workshop {
+    title: string;
+    description: string;
+    schedule?: {
+        time: string;
+        equipment: string;
+    };
+    activities?: string[];
+    topics?: string[];
+}
+
+const Workshops: React.FC = () => {
+    const { t } = useTranslation();
+
+    // Récupération de l'année sélectionnée dans le store Redux
+    const year = useSelector((state: any) => state.year.value);
+    const years: { year: string }[] = t("years", { returnObjects: true });
+
+    // Fonction pour trouver l'index de l'année sélectionnée
+    const selectedYearIndex = (yearToFind: string) => {
+        const index = years.findIndex((yearObj) => yearObj.year === yearToFind);
+        return index !== -1 ? index : 0; // Retourne 0 si l'année n'est pas trouvée
+    };
+
+    // Récupération des workshops avec typage explicite
+    const workshops: Workshop[] = t(`years.${selectedYearIndex(year)}.workshops.workshops`, { returnObjects: true }) as Workshop[] || [];
+
+    return (
+        <Container maxWidth={"xl"}>
+            {/* Section de titre et lieu du workshop */}
+            <Paper
+                sx={{
+                backgroundImage: 'url("/pathe-image.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '500px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                mb: 5,
+                borderRadius: 2,
+                boxShadow: 3,
+                position: 'relative',
+                color: '#fff',
+                textShadow: '2px 2px 4px rgba(0,0,0,0.6)'
+            }}
+                    elevation={0}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center', p: 2,color: '#fff', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0,0,0,0.6)' }}>
+                    <Typography variant={"h2"} sx={{ fontWeight: 'bold' }}>
+                        {t(`years.${selectedYearIndex(year)}.workshops.title-27`) || "Workshop Title"}
+                    </Typography>
+                    <h3>{t(`years.${selectedYearIndex(year)}.workshops.venue-27`) || "Venue"}</h3>
+                    <h6>{t(`years.${selectedYearIndex(year)}.workshops.adress-27`) || "Address"}</h6>
+                </Box>
+                {/* HES-SO Logo in Bottom Right Corner */}
+                <Box
+                    component="img"
+                    src="hes-so.png"
+                    alt="HES-SO Logo"
+                    sx={{
+                        position: 'absolute',
+                        bottom: '10px',
+                        right: '10px',
+                        width: '120px', // Adjust size as needed
+                        opacity: 0.7, // Transparent effect
+                    }}
+                />
+
+            </Paper>
+
+            {/* Affichage dynamique des workshops */}
+            <div className={"div-cards"}>
+                {workshops.length > 0 ? (
+                    workshops.map((workshop: Workshop, index: number) => (
+                        <Card key={index} title={workshop.title || t("no_title")} className={"card"}>
+                            <Typography variant={"h5"} sx={{ fontWeight: 'bold' }}>
+                                {t(`years.${selectedYearIndex(year)}.workshops.description-title`)}
+                            </Typography>
+                            <p>{workshop.description || t("no_description")}</p>
+
+                            <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
+                                {t(`years.${selectedYearIndex(year)}.workshops.time-title`)}
+                            </Typography>
+                            <p>{workshop.schedule?.time || t("no_time")}</p>
+
+                            <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
+                                {t(`years.${selectedYearIndex(year)}.workshops.equipement-title`)}
+                            </Typography>
+                            <p>{workshop.schedule?.equipment || t("no_equipment_needed")}</p>
+
+                            <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
+                                {t(`years.${selectedYearIndex(year)}.workshops.activities-title`)}
+                            </Typography>
+                            {workshop.activities && workshop.activities.length > 0 && (
+                                <ul>
+                                    {workshop.activities.map((activity, i) => (
+                                        <li key={i}>{activity}</li>
+                                    ))}
+                                </ul>
+                            )}
+
+                            {/* Affichage conditionnel des topics */}
+                            {workshop.topics && workshop.topics.length > 0 && (
+                                <>
+                                    <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
+                                        {t(`years.${selectedYearIndex(year)}.workshops.topics-title`)}
+                                    </Typography>
+                                    <ul>
+                                        {workshop.topics.map((topic, i) => (
+                                            <li key={i}>{topic}</li>
+                                        ))}
+                                    </ul>
+                                </>
+                            )}
+
+                        </Card>
+                    ))
+                ) : (
+                    <p>{t("no_workshops")}</p>
+                )}
+            </div>
+            <Footer></Footer>
+        </Container>
+    );
+};
+
+export default Workshops;

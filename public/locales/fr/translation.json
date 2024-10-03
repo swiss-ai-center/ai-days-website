@@ -2,7 +2,7 @@
   "years": [
     {
       "year": "2025",
-      "title": "AI Days @ HES-SO",
+      "title": "AI Days 2025 by HES-SO",
       "event_dates": "27-29 janvier 2025",
       "location": "Genève et Lausanne",
       "organizer": "Centre suisse d’intelligence artificielle pour les PMEs (CSIA-PME)",
@@ -15,16 +15,22 @@
             "url": "/"
           },
           {
-            "name": "Calls",
-            "component": "calls",
+            "name": "Call for paper",
+            "component": "call",
             "enabled": "true",
-            "url": "/calls"
+            "url": "/call"
           },
           {
             "name": "Programme",
             "component": "schedule",
             "enabled": "false",
             "url": "/schedule"
+          },
+          {
+            "name": "Workshops",
+            "component": "workshops",
+            "enabled": "true",
+            "url": "/workshops"
           },
           {
             "name": "Intervenants",
@@ -61,7 +67,7 @@
         ]
       },
       "home": {
-        "title": "AI Days @ HES-SO",
+        "title": "AI Days 2025",
         "subtitle": "Du 27 au 29 janvier 2025",
         "description": {
           "par1": "L’édition 2025 des AI-Days aura lieu du 27 au 29 janvier 2025, à Genève (27 et 28) et Lausanne (29 janvier). Les AI-days de la HES-SO sont organisés par le Centre suisse d’intelligence artificielle pour les PMEs (CSIA-PMEs). Le but de l’événement est d’offrir un forum pour discuter de l’emploi en pratique des nouvelles technologies IA dans le tissu économique.",
@@ -73,7 +79,8 @@
             "Acquérir une compréhension approfondie des activités du Swiss AI Center et des avantages qu’elles peuvent en tirer, notamment à travers l’utilisation des \"chèques IA\" qui facilitent la réalisation des premiers prototypes."
           ],
           "end": "La participation est gratuite, mais l’inscription est obligatoire."
-        }
+        },
+        "register": "S'inscrire"
       },
       "call-for-paper": {
         "title": "Call for Paper",
@@ -84,7 +91,7 @@
         "event-description": {
           "title": "Les AI Days 2025",
           "paragraph1": "Dans ce cadre, le centre organise chaque année une série de conférences et présentations : les AI days. Cette manifestation est publique et ouverte à tous. Toutefois, la cible privilégiée reste les entrepreneurs et managers des PME de Suisse Romande et a pour but de présenter les avantages que pourraient procurer l’adoption de l’IA dans leur domaine d’activité.",
-          "paragraph2": "Vu le succès des éditions précédentes, les AI days’25 auront lieu sur trois jours consécutifs, à savoir les 27 et 28 janvier 2025 à Genève et le 29 janvier à Lausanne. Cet événement proposera des activités variées sous forme de sessions parallèles incluant des tables rondes, des ateliers, des posters et des sessions de démonstrations, du speed-dating networking, ainsi que des présentations académiques de développements récents, des innovations industrielles en lien avec l’IA, et des collaborations fructueuses entre les partenaires académiques et industriels.",
+          "paragraph2": "Vu le succès des éditions précédentes, les AI days’25 auront lieu sur trois jours consécutifs, à savoir les 27 et 28 janvier 2025 à Genève et le 29 janvier à Lausanne. Cet événement proposera des activités variées sous forme de sessions parallèles incluant des tables rondes, des Workshops, des posters et des sessions de démonstrations, du speed-dating networking, ainsi que des présentations académiques de développements récents, des innovations industrielles en lien avec l’IA, et des collaborations fructueuses entre les partenaires académiques et industriels.",
           "paragraph3": "Cette année, les contributions académiques seront soumises à une révision par les pairs et feront l’objet d’une publication. Les sujets retenus (mais non limitant) sont en lien avec l’implication de l’Intelligence Artificielle (IA) dans les domaines suivants:"
         },
         "topics": [
@@ -127,7 +134,7 @@
         },
         "submission-guidelines": {
           "title": "Cadre général de présentation des soumissions",
-          "paragraph1": "Les auteurs doivent soumettre des contributions originales qui ne sont pas considérées comme publications dans d'autres conférences, ateliers ou revues (les contextes non évalués par des pairs comme arXiv, sont autorisés). Toutes les sources doivent être citées et clairement identifiées, y compris les publications précédentes du / des même(s) auteur(s).",
+          "paragraph1": "Les auteurs doivent soumettre des contributions originales qui ne sont pas considérées comme publications dans d'autres conférences, Workshops ou revues (les contextes non évalués par des pairs comme arXiv, sont autorisés). Toutes les sources doivent être citées et clairement identifiées, y compris les publications précédentes du / des même(s) auteur(s).",
           "paragraph2": "Les évaluations des soumissions académiques se font en double aveugle. Les auteurs doivent s'efforcer de rendre leurs articles anonymes et non identifiable explicitement ou implicitement. Dans le cas d'articles industriels, la divulgation de l'entreprise/du produit est acceptable, mais la soumission ne doit pas révéler directement le nom des auteurs.",
           "paragraph3": "Veuillez prendre note que les articles académiques devront être rédigés en anglais.",
           "paragraph4": "Tant les contributions académiques que industrielles doivent utiliser le format Latex proposé ici Les articles doivent inclure comme sous-titre les mentions “académiques” ou “industriel”. Les auteurs ne doivent soumettre qu’un seul fichier PDF, formaté pour du papier A4 et dont la taille ne dépasse pas 10 Mo. Tout article soumis ne respectant pas les exigences en matière de longueur, de type de fichier ou de formatage sera rejeté sans examen. "
@@ -142,6 +149,21 @@
         "questions": {
           "title": "Questions?",
           "description": "Pour toutes questions éventuelles, n’hésitez pas à prendre contact par courriel avec l’une des deux responsables : Pamela Delgado et Valérie Schürch Todeschini."
+        },
+        "committee": {
+          "title": "Comité du programme technique",
+          "s1":"Holger Fröning, Heidelberg University, Germany",
+          "s2":"Ivana Podnar Zarko, University of Zagreb, Croatia",
+          "s3":"Anh Le Tuan, TU Berlin, Germany",
+          "s4":"Nik Bessis, Edge Hill University, UK",
+          "s5":"Emmanuel Senft, IDIAP, Switzerland",
+          "s6":"Torsten Braun, University of Bern, Switzerland",
+          "s7":"Andrea Guerrieri, EPFL, Switzerland",
+          "s8":"Matthew Vowels, University of Lausanne, Switzerland",
+          "s9":" Silvan Zahno, HES-SO Valais/Wallis",
+          "s10":"Mara Graziani, IBM Research, Switzerland",
+          "s11":"Adrian Holzer, University of Neuchâtel, Switzerland",
+          "s12":"Andreas Fischer, HES-SO Fribourg, Switzerland"
         }
       },
       "contact": {
@@ -245,6 +267,91 @@
             ]
           }
         }
+      },
+      "workshops": {
+        "title-27": "Journée des Workshops – 27 Janvier",
+        "venue-27": "Pathé Balexert",
+        "adress-27": "Av. Louis-Casaï 27, 1209 Vernier",
+        "description-title": "Description",
+        "time-title": "Temps",
+        "equipement-title": "Equipements",
+        "activities-title": "Activitiés",
+        "topics-title": "Sujets",
+        "workshops": [
+          {
+            "title": "Workshop 1 : INFRA",
+            "description": "Avec l'avènement des chatbots, des grands modèles de langage (LLMs) et d'autres technologies d'IA générative, ainsi que d'autres progrès dans le domaine de l'IA, il y a une explosion de la demande en puissance de calcul. L'IA n'est plus simplement de l'informatique, c'est une science computationnelle. En tant que telle, elle ne peut plus se réaliser avec des équipements auto-gérés et occasionnels. Des infrastructures de calcul plus avancées sont nécessaires pour répondre aux besoins des utilisateurs en termes de puissance de calcul, de capacité de RAM GPU, d'environnements logiciels et de sécurité, tout en assurant une utilisation efficace des ressources de plus en plus coûteuses. L'objectif de ce Workshop est de réunir des personnes responsables des infrastructures de calcul (sur site, cloud ou hybride) destinées à prendre en charge les charges de travail IA (à la fois l'entraînement et l'inférence) dans le but de créer une communauté en Suisse.",
+            "schedule": {
+              "time": "9h00 à 17h",
+              "equipment": "Équipement attendu : à confirmer."
+            },
+            "activities": [
+              "Ce Workshop comprendra des présentations principales et invitées, mais se concentrera surtout sur des présentations courtes (~10-15 min) au cours desquelles les participants partageront des sujets tels que les technologies en test ou en utilisation, la répartition des charges de travail, les défis spécifiques ou des projets visant à améliorer l'infrastructure IA.",
+              "Ces présentations seront structurées simplement afin de permettre à un plus grand nombre de personnes de participer, avec un format typique décrivant le cas d'utilisation, les points de douleur et les solutions potentielles.",
+              "Nous organiserons également des groupes de travail pour encourager la collaboration et travailler à la création d'une communauté 'IA-sys-admin'."
+            ],
+            "topics": [
+              "Une technologie en test ou en utilisation (par exemple, code, Determined.ai).",
+              "Comment les charges de travail sont mappées au matériel.",
+              "Aspects particulièrement difficiles de l'infrastructure IA.",
+              "Projets visant à améliorer l'infrastructure."
+            ]
+          },
+          {
+            "title": "Workshop 2 : Edge AI",
+            "description": "Dans un monde de plus en plus connecté, la capacité de traiter les données à la source, c'est-à-dire plus près de l'endroit où elles sont générées, est devenue cruciale. Ce Workshop offre un aperçu complet mais concis de l'Edge AI, en se concentrant sur les dispositifs, les méthodes et les outils qui font de cette technologie un véritable changement de paradigme. Les participants exploreront comment l'Edge AI permet le traitement des données en temps réel, réduit la latence et améliore la confidentialité en minimisant la nécessité d'envoyer des données vers le cloud. À la fin du Workshop, les participants auront une compréhension large des aspects fondamentaux de l'Edge AI, les habilitant à explorer et à mettre en œuvre ces technologies dans leurs propres projets.",
+            "schedule": {
+              "time": "9h00 à 17h",
+              "equipment": "Équipement attendu : à confirmer."
+            },
+            "activities": [
+              "Matin : Présentation des différentes approches pour l'Edge AI avec plusieurs dispositifs, y compris les microcontrôleurs, les GPU embarqués, les FPGAs et les NPUs.",
+              "Présentation des méthodologies pour les applications orientées Edge, y compris les outils de quantification, de benchmarking et de déploiement sur un ou plusieurs dispositifs.",
+              "Après-midi : Deux tutoriels pratiques axés sur le déploiement de modèles sur différents types de dispositifs."
+            ],
+            "topics": [
+              "Introduction aux réseaux neuronaux légers et aux techniques de compression de modèles.",
+              "Études de cas réels montrant comment l'Edge AI est appliquée."
+            ]
+          },
+          {
+            "title": "Workshop 3 : Generation Augmentée par la Recherche (RAG)",
+            "description": "Le cadre RAG (Generation Augmentée par la Recherche) combine la recherche et la génération au sein de grands modèles de langage (LLM) pour produire des réponses plus contextuelles et informatives. Ce Workshop propose une introduction technique à RAG, incluant des exemples concrets de son application pour améliorer les systèmes de gestion des connaissances. Les participants exploreront également l'auto-hébergement de LLMs afin d'assurer la confidentialité et la sécurité lors du déploiement des technologies d'IA générative. À la fin du Workshop, les participants seront capables d'interroger les LLMs sur le contenu de leurs documents associés, les dotant de l'expertise nécessaire pour implémenter RAG dans des scénarios réels.",
+            "schedule": {
+              "time": "2 sessions indépendantes : 9h-12h30 et 13h30-17h",
+              "equipment": "Ordinateur portable personnel requis."
+            },
+            "activities": [
+              "Sessions sur la vue d'ensemble de RAG, auto-hébergement de LLMs avec Ollama.",
+              "Exemples pratiques utilisant Google Colab.",
+              "Implémentation de RAG dans des applications réelles.",
+              "Discussions sur le déploiement pratique de RAG."
+            ]
+          },
+          {
+            "title": "Workshop 4 : MLOps",
+            "description": "Ce workshop aide les participants à implémenter un processus MLOps pour une expérience de Machine Learning, en passant d'un notebook Jupyter à un service de production complet dans le cloud. L'objectif est de fournir les compétences techniques nécessaires pour gérer le cycle de vie des modèles de Machine Learning, promouvoir la collaboration entre les équipes et automatiser les processus opérationnels afin d'assurer la reproductibilité, la fiabilité et le déploiement efficace des modèles dans des environnements de production. Les participants apprendront également les meilleures pratiques pour améliorer le processus de déploiement et sortir les modèles du cadre expérimental.",
+            "schedule": {
+              "time": "9h-12h30 et 13h30-17h",
+              "equipment": "Ordinateur portable personnel avec WSL2 / Linux Ubuntu installé et prêt à l'emploi."
+            },
+            "activities": [
+              "Exercice de brise-glace.",
+              "Prise en main avec une simple expérience de machine learning.",
+              "Transformation de cette expérience pour reproduire et évaluer la qualité du modèle.",
+              "Collaboration efficace pour développer un modèle fiable et fonctionnel.",
+              "Déploiement du modèle sur le cloud.",
+              "Redéploiement automatique du modèle en cas de modifications."
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "title": "Nos partenaires Platine",
+        "terms": " HES-SO. All rights reserved.",
+        "partenaire-1": "https://www.mobiliere.ch",
+        "partenaire-2": "https://www.ehl.edu",
+        "partenaire-3": "https://www.hes-so.ch"
       }
     }
   ]
