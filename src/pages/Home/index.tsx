@@ -94,7 +94,7 @@ const Home: React.FC = () => {
                         color="primary"
                         sx={{ py: 1.5, px: 4, fontSize: '1rem', fontWeight: 'bold', borderRadius: 2 }}
                     >
-                        <a href="https://form.jotform.com/242613280391351" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none' }}>
+                        <a href="https://form.jotform.com/242613280391351" target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none' }}>
                             {t(`years.${selectedYearIndex(year)}.home.register`) || 'Inscrivez-vous maintenant'}
                         </a>
                     </Button>

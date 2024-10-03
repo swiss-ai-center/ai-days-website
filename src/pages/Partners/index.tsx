@@ -87,13 +87,16 @@ const Partners: React.FC = () => {
                 {/* Logos des Partenaires Platine */}
                 <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4 }}>
                     <Card>
-                        <img src="/mobiliere.png" alt="La Mobilière Logo"
-                             style={{height: '200px', width: 'auto', border: '1px'}}/>
+                        <a href= {t(`years.${selectedYearIndex(year)}.footer.partenaire-1`)} target="_blank" rel="noopener noreferrer">
+                            <img src="/mobiliere.png" alt="La Mobilière Logo"
+                                 style={{ height: '200px', width: 'auto', border: '1px' }} />
+                        </a>
                     </Card>
                     <Card>
-                        <img src="/ehl-logo.png"
-                             alt="EHL Hospitality Business School Logo"
-                             style={{height: '200px', width: 'auto'}}/>
+                        <a href={t(`years.${selectedYearIndex(year)}.footer.partenaire-2`)} target="_blank" rel="noopener noreferrer">
+                            <img src="/ehl-logo.png" alt="EHL Hospitality Business School Logo"
+                                 style={{ height: '200px', width: 'auto' }} />
+                        </a>
                     </Card>
                 </Box>
 

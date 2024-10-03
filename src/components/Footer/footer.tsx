@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Container } from '@mui/material';
-import {useTranslation} from "react-i18next";
-import {useSelector} from "react-redux";
+import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const Footer: React.FC = () => {
     const { t } = useTranslation();
@@ -34,9 +34,35 @@ const Footer: React.FC = () => {
                             width: '70%',
                         }}
                     >
-                        <Box component="img" src={"mobiliere.png"} alt="La Mobilière" sx={{ height: '50px', objectFit: 'contain', mx: 2 }} />
-                        <Box component="img" src={"ehl-logo.png"} alt="EHL" sx={{ height: '50px', objectFit: 'contain', mx: 2 }} />
-                        <Box component="img" src={"hes-so.png"} alt="HES-SO" sx={{ height: '50px', objectFit: 'contain', mx: 2 }} />
+                        <Box
+                            component="a"
+                            href={t(`years.${selectedYearIndex(year)}.footer.partenaire-1`)}  // Lien vers HES-SO
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            sx={{ mx: 2 }}
+                        >
+                            <Box component="img" src={"mobiliere.png"} alt="La Mobilière" sx={{ height: '50px', objectFit: 'contain' }} />
+                        </Box>
+
+                        <Box
+                            component="a"
+                            href={t(`years.${selectedYearIndex(year)}.footer.partenaire-2`)} // Lien vers HES-SO
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            sx={{ mx: 2 }}
+                        >
+                            <Box component="img" src={"ehl-logo.png"} alt="EHL" sx={{ height: '50px', objectFit: 'contain' }} />
+                        </Box>
+
+                        <Box
+                            component="a"
+                            href={t(`years.${selectedYearIndex(year)}.footer.partenaire-3`)} // Lien vers HES-SO
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            sx={{ mx: 2 }}
+                        >
+                            <Box component="img" src={"hes-so.png"} alt="HES-SO" sx={{ height: '50px', objectFit: 'contain' }} />
+                        </Box>
                     </Box>
 
                     {/* Title aligned to the right */}
@@ -48,7 +74,6 @@ const Footer: React.FC = () => {
                 {/* Footer Bottom Text */}
                 <Typography variant="body2" sx={{ mt: 2, fontSize: '0.9rem', textAlign: 'center' }}>
                     © {new Date().getFullYear()} {t(`years.${selectedYearIndex(year)}.footer.terms`)}
-
                 </Typography>
             </Container>
         </Box>

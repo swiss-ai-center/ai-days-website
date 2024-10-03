@@ -342,8 +342,11 @@
         ]
       },
       "footer": {
-        "title": "Nos partenaires Platine",
-        "terms": " AI Days. Tous droits réservés."
+        "title": "Our Platinum partners",
+        "terms": " AI Days. All rights reserved.",
+        "partenaire-1": "https://www.mobiliere.ch",
+        "partenaire-2": "https://www.ehl.edu",
+        "partenaire-3": "https://www.hes-so.ch"
       }
     }
   ]
