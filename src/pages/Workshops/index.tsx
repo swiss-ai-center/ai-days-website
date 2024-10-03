@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { Card } from 'primereact/card';
 import "./styles.css";
-import { Button } from "primereact/button";
+import Footer from "../../components/Footer/footer";
 
 interface Workshop {
     title: string;
@@ -39,14 +39,44 @@ const Workshops: React.FC = () => {
     return (
         <Container maxWidth={"xl"}>
             {/* Section de titre et lieu du workshop */}
-            <Paper sx={{ p: 2, my: 3, border: 2, borderRadius: 2, borderColor: 'lightgrey' }} elevation={0}>
-                <Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center', p: 2 }}>
+            <Paper
+                sx={{
+                backgroundImage: 'url("/pathe-image.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '500px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                mb: 5,
+                borderRadius: 2,
+                boxShadow: 3,
+                position: 'relative',
+                color: '#fff',
+                textShadow: '2px 2px 4px rgba(0,0,0,0.6)'
+            }}
+                    elevation={0}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center', p: 2,color: '#fff', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0,0,0,0.6)' }}>
                     <Typography variant={"h2"} sx={{ fontWeight: 'bold' }}>
                         {t(`years.${selectedYearIndex(year)}.workshops.title-27`) || "Workshop Title"}
                     </Typography>
                     <h3>{t(`years.${selectedYearIndex(year)}.workshops.venue-27`) || "Venue"}</h3>
                     <h6>{t(`years.${selectedYearIndex(year)}.workshops.adress-27`) || "Address"}</h6>
                 </Box>
+                {/* HES-SO Logo in Bottom Right Corner */}
+                <Box
+                    component="img"
+                    src="hes-so.png"
+                    alt="HES-SO Logo"
+                    sx={{
+                        position: 'absolute',
+                        bottom: '10px',
+                        right: '10px',
+                        width: '120px', // Adjust size as needed
+                        opacity: 0.7, // Transparent effect
+                    }}
+                />
+
             </Paper>
 
             {/* Affichage dynamique des workshops */}
@@ -82,26 +112,27 @@ const Workshops: React.FC = () => {
                                 <p>{t("no_activities")}</p>
                             )}
 
-                            <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
-                                {t("topics")}
-                            </Typography>
-                            {workshop.topics && workshop.topics.length > 0 ? (
-                                <ul>
-                                    {workshop.topics.map((topic, i) => (
-                                        <li key={i}>{topic}</li>
-                                    ))}
-                                </ul>
-                            ) : (
-                                <p>{t("no_topics")}</p>
+                            {/* Affichage conditionnel des topics */}
+                            {workshop.topics && workshop.topics.length > 0 && (
+                                <>
+                                    <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
+                                        {t("topics")}
+                                    </Typography>
+                                    <ul>
+                                        {workshop.topics.map((topic, i) => (
+                                            <li key={i}>{topic}</li>
+                                        ))}
+                                    </ul>
+                                </>
                             )}
 
-                            <Button>{t("voir_plus")}</Button>
                         </Card>
                     ))
                 ) : (
                     <p>{t("no_workshops")}</p>
                 )}
             </div>
+            <Footer></Footer>
         </Container>
     );
 };
