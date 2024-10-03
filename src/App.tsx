@@ -2,7 +2,7 @@ import { createTheme, CssBaseline, PaletteMode, ThemeProvider } from '@mui/mater
 import { grey } from '@mui/material/colors';
 import Navbar from 'components/Navbar';
 import Contact from 'pages/Contact';
-import Calls from 'pages/Calls';
+import Call from 'pages/Call';
 import Home from 'pages/Home';
 import Workshops from 'pages/Workshops';
 import Partners from 'pages/Partners';
@@ -31,7 +31,7 @@ function App() {
     }[] = t(`years.${selectedYearIndex(year)}.menu.pages`, {returnObjects: true});
 
     const Components: any = {
-        calls: Calls,
+        call: Call,
         home: Home,
         contact: Contact,
         workshops: Workshops,

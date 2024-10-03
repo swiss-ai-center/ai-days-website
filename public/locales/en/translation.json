@@ -2,7 +2,7 @@
   "years": [
     {
       "year": "2025",
-      "title": "AI Days @ HES-SO",
+      "title": "AI Days 2025 by HES-SO",
       "event_dates": "27 to 29 January",
       "location": "Geneva and Lausanne",
       "organizer": "Swiss Artificial Intelligence Centre for SMEs (CSIA-PME)",
@@ -15,10 +15,10 @@
             "url": "/"
           },
           {
-            "name": "Calls",
-            "component": "calls",
+            "name": "Call for paper",
+            "component": "call",
             "enabled": "true",
-            "url": "/calls"
+            "url": "/call"
           },
           {
             "name": "Schedule",
@@ -67,7 +67,7 @@
         ]
       },
       "home": {
-        "title": "AI Days @ HES-SO",
+        "title": "AI Days 2025",
         "subtitle": "From 27 to 29 January 2025",
         "description": {
           "par1": "The 2025 edition of AI-days will take place from 27 to 29 January 2025, in Geneva (27 and 28) and Lausanne (29 January). The HES-SO AI-days are organised by the Swiss Artificial Intelligence Centre for SMEs (CSIA-PMEs). The aim of the event is to provide a forum for discussing the practical use of new AI technologies in the economic fabric.",
@@ -79,7 +79,8 @@
             "Gain an in-depth understanding of the Swiss AI Center's activities and the benefits they can bring, in particular through the use of \"AI vouchers\" that make it easier to produce the first prototypes."
           ],
           "end": "Participation is free, but registration is mandatory."
-        }
+        },
+        "register": "Register"
       },
       "call-for-paper": {
         "title": "Call for Paper",
@@ -148,6 +149,21 @@
         "questions": {
           "title": "Questions?",
           "description": "Please contact the PC co-chairs: Pamela Delgado and Valérie Schürch Todeschini."
+        },
+        "committee": {
+          "title": "Technical Program Committee",
+          "s1":"Holger Fröning, Heidelberg University, Germany",
+          "s2":"Ivana Podnar Zarko, University of Zagreb, Croatia",
+          "s3":"Anh Le Tuan, TU Berlin, Germany",
+          "s4":"Nik Bessis, Edge Hill University, UK",
+          "s5":"Emmanuel Senft, IDIAP, Switzerland",
+          "s6":"Torsten Braun, University of Bern, Switzerland",
+          "s7":"Andrea Guerrieri, EPFL, Switzerland",
+          "s8":"Matthew Vowels, University of Lausanne, Switzerland",
+          "s9":" Silvan Zahno, HES-SO Valais/Wallis",
+          "s10":"Mara Graziani, IBM Research, Switzerland",
+          "s11":"Adrian Holzer, University of Neuchâtel, Switzerland",
+          "s12":"Andreas Fischer, HES-SO Fribourg, Switzerland"
         }
       },
       "contact": {
@@ -254,8 +270,8 @@
       },
       "workshops": {
         "title-27": "Workshops Days – January 27",
-        "venue-27": "Venue A",
-        "adress-27": "123 Workshop St.",
+        "venue-27": "Pathé Balexert",
+        "adress-27": "Av. Louis-Casaï 27, 1209 Vernier",
         "workshops": [
           {
             "title": "Workshop 1: INFRA",
@@ -324,6 +340,10 @@
             ]
           }
         ]
+      },
+      "footer": {
+        "title": "Our Platinum partners",
+        "terms": " AI Days. All rights reserved."
       }
     }
   ]
