@@ -85,38 +85,36 @@ const Workshops: React.FC = () => {
                     workshops.map((workshop: Workshop, index: number) => (
                         <Card key={index} title={workshop.title || t("no_title")} className={"card"}>
                             <Typography variant={"h5"} sx={{ fontWeight: 'bold' }}>
-                                {t("description")}
+                                {t(`years.${selectedYearIndex(year)}.workshops.description-title`)}
                             </Typography>
                             <p>{workshop.description || t("no_description")}</p>
 
                             <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
-                                {t("time")}
+                                {t(`years.${selectedYearIndex(year)}.workshops.time-title`)}
                             </Typography>
                             <p>{workshop.schedule?.time || t("no_time")}</p>
 
                             <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
-                                {t("equipment")}
+                                {t(`years.${selectedYearIndex(year)}.workshops.equipement-title`)}
                             </Typography>
                             <p>{workshop.schedule?.equipment || t("no_equipment_needed")}</p>
 
                             <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
-                                {t("activities")}
+                                {t(`years.${selectedYearIndex(year)}.workshops.activities-title`)}
                             </Typography>
-                            {workshop.activities && workshop.activities.length > 0 ? (
+                            {workshop.activities && workshop.activities.length > 0 && (
                                 <ul>
                                     {workshop.activities.map((activity, i) => (
                                         <li key={i}>{activity}</li>
                                     ))}
                                 </ul>
-                            ) : (
-                                <p>{t("no_activities")}</p>
                             )}
 
                             {/* Affichage conditionnel des topics */}
                             {workshop.topics && workshop.topics.length > 0 && (
                                 <>
                                     <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
-                                        {t("topics")}
+                                        {t(`years.${selectedYearIndex(year)}.workshops.topics-title`)}
                                     </Typography>
                                     <ul>
                                         {workshop.topics.map((topic, i) => (

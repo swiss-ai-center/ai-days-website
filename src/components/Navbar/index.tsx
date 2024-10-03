@@ -69,14 +69,14 @@ function Navbar() {
     };
 
     return (
-        <AppBar position={"static"} elevation={0}>
+        <AppBar position={"static"} elevation={0} className={'appbar'}>
             <Container maxWidth={"xl"}>
                 <Toolbar disableGutters>
                     <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexGrow: 1 }}>
                         <Link to="/" style={{ textDecoration: "none", marginRight: "10px" }}>
                             <img src="/logo192.png" className="filter-white" alt="AI Days" height="40px" />
                         </Link>
-                        <Link to="/" style={{ textDecoration: "none" }}>
+                        <Link className={'a-hes-so'} to="/" style={{ textDecoration: "none" }}>
                             <img src="/hes-so.png" className="filter-white" alt="Second Logo" height="60px" />
                         </Link>
                     </Box>
