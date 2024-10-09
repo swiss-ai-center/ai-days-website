@@ -12,3 +12,12 @@
     text-align: justify;
 }
 
+.venue{
+    color: white;
+    text-decoration: none;
+}
+
+.venue:hover{
+    color: #d41367;
+    text-decoration: none;
+}

@@ -60,8 +60,9 @@ const Workshops: React.FC = () => {
                     <Typography variant={"h2"} sx={{ fontWeight: 'bold' }}>
                         {t(`years.${selectedYearIndex(year)}.workshops.title-27`) || "Workshop Title"}
                     </Typography>
-                    <h3>{t(`years.${selectedYearIndex(year)}.workshops.venue-27`) || "Venue"}</h3>
-                    <h6>{t(`years.${selectedYearIndex(year)}.workshops.adress-27`) || "Address"}</h6>
+                    <a className={"venue"} href="/contact" >
+                        <h3>{t(`years.${selectedYearIndex(year)}.workshops.venue-27`) || "Venue"}</h3>
+                    </a>
                 </Box>
                 {/* HES-SO Logo in Bottom Right Corner */}
                 <Box
