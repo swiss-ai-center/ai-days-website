@@ -48,7 +48,6 @@ const Partners: React.FC = () => {
                             sx={{color: '#fff', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0,0,0,0.6)'}}>
                     {t(`years.${selectedYearIndex(year)}.partners.title`)}
                 </Typography>
-                {/* HES-SO Logo in Bottom Right Corner */}
                 <Box
                     component="img"
                     src="hes-so.png"
@@ -57,14 +56,15 @@ const Partners: React.FC = () => {
                         position: 'absolute',
                         bottom: '10px',
                         right: '10px',
-                        width: '120px', // Adjust size as needed
-                        opacity: 0.7, // Transparent effect
+                        width: '120px',
+                        opacity: 0.7
                     }}
                 />
             </Box>
 
             <Paper elevation={2} sx={{p: 4, borderRadius: 3, boxShadow: 2}}>
 
+                {/* Introduction */}
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}} p={2}>
                     <Typography variant={"body1"} py={1}>
                         {t(`years.${selectedYearIndex(year)}.partners.introduction`)}
@@ -78,14 +78,14 @@ const Partners: React.FC = () => {
 
                 <Divider variant={"middle"} sx={{pt: 2}}/>
 
-                {/* Section des Partenaires Platine */}
+                {/* Partenaire Platine */}
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.title`)}
                     </Typography>
                 </Box>
 
-                {/* Logos des Partenaires Platine */}
+                {/* Logos Partenaire Platine */}
                 <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
                     <Card>
                         <a href={t(`years.${selectedYearIndex(year)}.footer.partenaire-1`)} target="_blank"
@@ -112,41 +112,48 @@ const Partners: React.FC = () => {
                     <Typography variant={"h5"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.visibility-and-presence`)}
                     </Typography>
+                    <List>
+                        {platineVisibilityAndPresence.map((item: string, index: number) => (
+                            <ListItem key={index}>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon/></ListItemIcon>
+                                <ListItemText primary={item}/>
+                            </ListItem>
+                        ))}
+                    </List>
                 </Box>
-                <List sx={{pl: 1}}>
-                    {platineVisibilityAndPresence.map((item: string, index: number) => (
-                        <ListItem key={index}>
-                            <ListItemIcon>
-                                <ExpandCircleDownRoundedIcon color={"primary"} sx={{transform: 'rotate(-90deg)'}}/>
-                            </ListItemIcon>
-                            <ListItemText primary={item}/>
-                        </ListItem>
-                    ))}
-                </List>
+
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"h5"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.marketing-and-communication`)}
                     </Typography>
+                    <List>
+                        {platineMarketingAndCommunication.map((item: string, index: number) => (
+                            <ListItem key={index}>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon/></ListItemIcon>
+                                <ListItemText primary={item}/>
+                            </ListItem>
+                        ))}
+                    </List>
                 </Box>
-                <List sx={{pl: 1}}>
-                    {platineMarketingAndCommunication.map((item: string, index: number) => (
-                        <ListItem key={index}>
-                            <ListItemIcon>
-                                <ExpandCircleDownRoundedIcon color={"primary"} sx={{transform: 'rotate(-90deg)'}}/>
-                            </ListItemIcon>
-                            <ListItemText primary={item}/>
-                        </ListItem>
-                    ))}
-                </List>
 
-                <Divider variant={"middle"} sx={{pt: 2}}/>
-
-                {/* Section des Partenaires Gold */}
+                {/* Partenaire Or */}
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.title`)}
                     </Typography>
                 </Box>
+
+                {/* Logos Partenaire Or */}
+                <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
+                    <Card>
+                        <a href={t(`years.${selectedYearIndex(year)}.footer.partenaire-3`)} target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="/hes-so.png" alt="HES-SO Logo"
+                                 style={{height: '200px', width: 'auto', border: '1px'}}/>
+                        </a>
+                    </Card>
+                </Box>
+
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.description`)}
@@ -156,41 +163,37 @@ const Partners: React.FC = () => {
                     <Typography variant={"h5"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.visibility-and-presence`)}
                     </Typography>
+                    <List>
+                        {goldVisibilityAndPresence.map((item: string, index: number) => (
+                            <ListItem key={index}>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon/></ListItemIcon>
+                                <ListItemText primary={item}/>
+                            </ListItem>
+                        ))}
+                    </List>
                 </Box>
-                <List sx={{pl: 1}}>
-                    {goldVisibilityAndPresence.map((item: string, index: number) => (
-                        <ListItem key={index}>
-                            <ListItemIcon>
-                                <ExpandCircleDownRoundedIcon color={"primary"} sx={{transform: 'rotate(-90deg)'}}/>
-                            </ListItemIcon>
-                            <ListItemText primary={item}/>
-                        </ListItem>
-                    ))}
-                </List>
+
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"h5"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.marketing-and-communication`)}
                     </Typography>
+                    <List>
+                        {goldMarketingAndCommunication.map((item: string, index: number) => (
+                            <ListItem key={index}>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon/></ListItemIcon>
+                                <ListItemText primary={item}/>
+                            </ListItem>
+                        ))}
+                    </List>
                 </Box>
-                <List sx={{pl: 1}}>
-                    {goldMarketingAndCommunication.map((item: string, index: number) => (
-                        <ListItem key={index}>
-                            <ListItemIcon>
-                                <ExpandCircleDownRoundedIcon color={"primary"} sx={{transform: 'rotate(-90deg)'}}/>
-                            </ListItemIcon>
-                            <ListItemText primary={item}/>
-                        </ListItem>
-                    ))}
-                </List>
 
-                <Divider variant={"middle"} sx={{pt: 2}}/>
-
-                {/* Section des Partenaires Silver */}
+                {/* Partenaire Argent */}
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.title`)}
                     </Typography>
                 </Box>
+
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.description`)}
@@ -200,36 +203,35 @@ const Partners: React.FC = () => {
                     <Typography variant={"h5"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.visibility-and-presence`)}
                     </Typography>
+                    <List>
+                        {silverVisibilityAndPresence.map((item: string, index: number) => (
+                            <ListItem key={index}>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon/></ListItemIcon>
+                                <ListItemText primary={item}/>
+                            </ListItem>
+                        ))}
+                    </List>
                 </Box>
-                <List sx={{pl: 1}}>
-                    {silverVisibilityAndPresence.map((item: string, index: number) => (
-                        <ListItem key={index}>
-                            <ListItemIcon>
-                                <ExpandCircleDownRoundedIcon color={"primary"} sx={{transform: 'rotate(-90deg)'}}/>
-                            </ListItemIcon>
-                            <ListItemText primary={item}/>
-                        </ListItem>
-                    ))}
-                </List>
+
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"h5"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.marketing-and-communication`)}
                     </Typography>
+                    <List>
+                        {silverMarketingAndCommunication.map((item: string, index: number) => (
+                            <ListItem key={index}>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon/></ListItemIcon>
+                                <ListItemText primary={item}/>
+                            </ListItem>
+                        ))}
+                    </List>
                 </Box>
-                <List sx={{pl: 1}}>
-                    {silverMarketingAndCommunication.map((item: string, index: number) => (
-                        <ListItem key={index}>
-                            <ListItemIcon>
-                                <ExpandCircleDownRoundedIcon color={"primary"} sx={{transform: 'rotate(-90deg)'}}/>
-                            </ListItemIcon>
-                            <ListItemText primary={item}/>
-                        </ListItem>
-                    ))}
-                </List>
             </Paper>
-            <Footer></Footer>
+
+            {/* Footer */}
+            <Footer/>
         </Container>
     );
-}
+};
 
 export default Partners;
