@@ -115,7 +115,7 @@ const Partners: React.FC = () => {
                     <List>
                         {platineVisibilityAndPresence.map((item: string, index: number) => (
                             <ListItem key={index}>
-                                <ListItemIcon><ExpandCircleDownRoundedIcon/></ListItemIcon>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
                                 <ListItemText primary={item}/>
                             </ListItem>
                         ))}
@@ -129,7 +129,7 @@ const Partners: React.FC = () => {
                     <List>
                         {platineMarketingAndCommunication.map((item: string, index: number) => (
                             <ListItem key={index}>
-                                <ListItemIcon><ExpandCircleDownRoundedIcon/></ListItemIcon>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
                                 <ListItemText primary={item}/>
                             </ListItem>
                         ))}
@@ -166,7 +166,7 @@ const Partners: React.FC = () => {
                     <List>
                         {goldVisibilityAndPresence.map((item: string, index: number) => (
                             <ListItem key={index}>
-                                <ListItemIcon><ExpandCircleDownRoundedIcon/></ListItemIcon>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
                                 <ListItemText primary={item}/>
                             </ListItem>
                         ))}
@@ -180,7 +180,7 @@ const Partners: React.FC = () => {
                     <List>
                         {goldMarketingAndCommunication.map((item: string, index: number) => (
                             <ListItem key={index}>
-                                <ListItemIcon><ExpandCircleDownRoundedIcon/></ListItemIcon>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
                                 <ListItemText primary={item}/>
                             </ListItem>
                         ))}
@@ -206,7 +206,7 @@ const Partners: React.FC = () => {
                     <List>
                         {silverVisibilityAndPresence.map((item: string, index: number) => (
                             <ListItem key={index}>
-                                <ListItemIcon><ExpandCircleDownRoundedIcon/></ListItemIcon>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
                                 <ListItemText primary={item}/>
                             </ListItem>
                         ))}
@@ -220,7 +220,7 @@ const Partners: React.FC = () => {
                     <List>
                         {silverMarketingAndCommunication.map((item: string, index: number) => (
                             <ListItem key={index}>
-                                <ListItemIcon><ExpandCircleDownRoundedIcon/></ListItemIcon>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
                                 <ListItemText primary={item}/>
                             </ListItem>
                         ))}

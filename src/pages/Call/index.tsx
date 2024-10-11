@@ -99,7 +99,7 @@ const Call: React.FC = () => {
                         {topics.map((topic: string, index: number) => (
                             <ListItemButton key={index}>
                                 <ListItemIcon>
-                                    <ExpandCircleDownRoundedIcon color={"primary"}/>
+                                    <ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/>
                                 </ListItemIcon>
                                 <ListItemText primary={topic}/>
                             </ListItemButton>
@@ -116,7 +116,7 @@ const Call: React.FC = () => {
                             <Box pb={2} key={index}>
                                 <ListItemButton>
                                     <ListItemIcon>
-                                        <ExpandCircleDownRoundedIcon color={"primary"}/>
+                                        <ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/>
                                     </ListItemIcon>
                                     <ListItemText
                                         children={<Typography variant={"h5"}>{submission.title}</Typography>}/>
