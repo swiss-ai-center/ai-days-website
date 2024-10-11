@@ -7,7 +7,18 @@ import {
     PersonRounded,
     ViewTimelineRounded
 } from '@mui/icons-material';
-import { List, Paper, Collapse, ListItemIcon, ListItemText, ListItemButton, Card, CardMedia, CardContent, Button } from '@mui/material';
+import {
+    List,
+    Paper,
+    Collapse,
+    ListItemIcon,
+    ListItemText,
+    ListItemButton,
+    Card,
+    CardMedia,
+    CardContent,
+    Button
+} from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
@@ -17,24 +28,24 @@ import { useSelector } from 'react-redux';
 import Footer from "../../components/Footer/footer";
 
 const Contact: React.FC = () => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     const year = useSelector((state: any) => state.year.value);
-    const years: { year: string }[] = t("years", { returnObjects: true });
+    const years: { year: string }[] = t("years", {returnObjects: true});
     const selectedYearIndex = (yearToFind: string) => years.findIndex((yearObj) => yearObj.year === yearToFind);
 
     const members: {
         role: string,
         icon: string,
         members: string[]
-    }[] = t(`years.${selectedYearIndex(year)}.contact.members`, { returnObjects: true });
+    }[] = t(`years.${selectedYearIndex(year)}.contact.members`, {returnObjects: true});
 
     const events: {
         title: string,
         date: string,
         adress: string,
         googleMapsLink: string // Ajout du lien vers Google Maps pour chaque événement
-    }[] = t(`years.${selectedYearIndex(year)}.contact.venue`, { returnObjects: true });
+    }[] = t(`years.${selectedYearIndex(year)}.contact.venue`, {returnObjects: true});
 
     const icons: { [key: string]: any } = {
         GavelRounded: GavelRounded,
@@ -64,7 +75,8 @@ const Contact: React.FC = () => {
                     textShadow: '2px 2px 4px rgba(0,0,0,0.6)'
                 }}
             >
-                <Typography variant="h2" sx={{ color: '#fff', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0,0,0,0.6)' }}>
+                <Typography variant="h2"
+                            sx={{color: '#fff', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0,0,0,0.6)'}}>
                     {t(`years.${selectedYearIndex(year)}.contact.title`)}
                 </Typography>
                 {/* HES-SO Logo in Bottom Right Corner */}
@@ -83,34 +95,47 @@ const Contact: React.FC = () => {
             </Box>
 
             {/* Events Locations */}
-            <Paper elevation={2} sx={{ p: 4, borderRadius: 3, boxShadow: 2 }}>
-                <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
+            <Paper elevation={2} sx={{p: 4, borderRadius: 3, boxShadow: 2}}>
+                <Typography variant="h4" sx={{fontWeight: 'bold', mb: 4}}>
                     {t(`years.${selectedYearIndex(year)}.contact.venue-title`)}
                 </Typography>
 
-                <Box sx={{ display: 'flex', flexDirection: 'row', gap: 4, justifyContent: 'center' }}>
+                <Box sx={{display: 'flex', flexDirection: 'row', gap: 4, justifyContent: 'center'}}>
                     {/* Loop through events */}
                     {events.map((event, index) => (
-                        <Card key={index} sx={{ width: 600, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                        <Card key={index} sx={{
+                            width: '100%',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between',
+                            border: '1px solid darkgrey'
+                        }} elevation={0}>
                             <CardMedia
                                 component="img"
                                 height="200"
                                 image={index === 0 ? "/pathe-image.jpg" : "/ehl-contact.jpg"} // Update image path based on index
                                 alt={event.title}
                             />
-                            <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                                <Box sx={{ mb: 2 }}>
+                            <CardContent sx={{
+                                flexGrow: 1,
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'space-between'
+                            }}>
+                                <Box sx={{mb: 2}}>
                                     <Typography gutterBottom variant="h5" component="div">
                                         {event.title}
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
                                         {event.date}
-                                        <br />
+                                        <br/>
                                         {event.adress}
                                     </Typography>
                                 </Box>
-                                <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 'auto' }}>
-                                    <Button variant="contained" color="primary" href={`/PDF/${index === 0 ? 'pathe.pdf' : 'ehl.pdf'}`} target="_blank">
+                                <Box sx={{display: 'flex', justifyContent: 'space-between', mt: 'auto'}}>
+                                    <Button variant="contained" color="primary"
+                                            href={`/PDF/${index === 0 ? 'pathe.pdf' : 'ehl.pdf'}`} target="_blank"
+                                            disableElevation>
                                         {t(`years.${selectedYearIndex(year)}.contact.venue-cfa`)}
                                     </Button>
                                     <Button
@@ -129,31 +154,31 @@ const Contact: React.FC = () => {
             </Paper>
 
             {/* Contact Committee */}
-            <Paper elevation={2} sx={{ p: 4, borderRadius: 3, boxShadow: 2, mt: 5 }}>
-                <Box sx={{ display: 'flex', flexDirection: 'column', p: 2 }}>
-                    <Typography variant={"h4"} sx={{ fontWeight: 'bold' }}>
+            <Paper elevation={2} sx={{p: 4, borderRadius: 3, boxShadow: 2, mt: 5}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
+                    <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.contact.contact_title`)}
                     </Typography>
                 </Box>
 
-                <Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'justify' }}>
+                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}}>
                     <List component={"nav"}>
                         {members.map((item, index) => (
                             <Box pb={2} key={index}>
                                 <ListItemButton>
                                     <ListItemIcon>
-                                        {React.createElement(icons[item.icon], { color: "primary" })}
+                                        {React.createElement(icons[item.icon], {color: "primary"})}
                                     </ListItemIcon>
-                                    <ListItemText children={<Typography variant={"h5"}>{item.role}</Typography>} />
+                                    <ListItemText children={<Typography variant={"h5"}>{item.role}</Typography>}/>
                                 </ListItemButton>
-                                <Collapse in={true} timeout="auto" unmountOnExit sx={{ pl: 4 }}>
+                                <Collapse in={true} timeout="auto" unmountOnExit sx={{pl: 4}}>
                                     <List component={"div"} disablePadding>
                                         {item.members.map((member, idx) => (
-                                            <ListItemButton key={idx} sx={{ pl: 2 }}>
+                                            <ListItemButton key={idx} sx={{pl: 2}}>
                                                 <ListItemIcon>
-                                                    <PersonRounded color={"secondary"} />
+                                                    <PersonRounded color={"secondary"}/>
                                                 </ListItemIcon>
-                                                <ListItemText primary={member} />
+                                                <ListItemText primary={member}/>
                                             </ListItemButton>
                                         ))}
                                     </List>
