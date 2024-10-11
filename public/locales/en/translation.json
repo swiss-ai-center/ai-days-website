@@ -45,7 +45,7 @@
             "url": "/partners"
           },
           {
-            "name": "Contact",
+            "name": "Practical informations",
             "component": "contact",
             "enabled": "true",
             "url": "/contact"
@@ -142,7 +142,7 @@
         "submission-address": {
           "title": "Submission Addresses",
           "description": "Posters and demo submissions should be sent to the PC co-chairs: Pamela Delgado and Valérie Schürch Todeschini. Academic papers as well as industry contributions should use the dedicated submission site :",
-          "submission-site": "https://ai-days25-hes-so.hotcrp.com",
+          "submission-site": "https://ai-days25.hotcrp.com",
           "mail-1": "valerie.schurchtodeschini@he-arc.ch",
           "mail-2": "pamela.delgado@hevs.ch"
         },
@@ -229,7 +229,7 @@
             "role": "Committee member",
             "icon": "Groups3Rounded",
             "members": [
-              "Jean Hennebert, lead CSIA-PME, HES-SO (ex-officio)"
+              "Jean Hennebert, lead CSIA-PME, HEIA-FR, HES-SO (ex-officio)"
             ]
           }
         ]
@@ -284,31 +284,31 @@
         }
       },
       "workshops": {
-        "title-27": "Workshops Days – January 27",
+        "title-27": "Workshops Day – January 27",
         "venue-27": "Pathé Balexert",
         "description-title": "Description",
-        "time-title": "Time",
+        "time-title": "Schedule",
         "equipment-title": "Equipment",
         "activities-title": "Activities",
         "topics-title": "Topics",
         "workshops": [
           {
-            "title": "Workshop 1: INFRA",
+            "title": "Workshop 1: Workshop on Compute Infrastructures for IA applications in the wild",
             "description": "With the advent of Chatbots, LLMs, and other generative AI technologies, as well as other progress in the AI field, there has been an explosion in demand for computational power. AI is no longer merely computer science but computational science. It can no longer be sustained with self-managed, casual equipment. More advanced compute infrastructures are required to satisfy user needs in terms of power, GPU RAM capacity, software environments, and security, as well as to ensure efficient use of increasingly costly resources. The purpose of this workshop is to gather people responsible for compute infrastructure (on-prem, cloud, or hybrid) aimed at supporting AI workloads (both training and inference) with the goal of creating a community in Switzerland.",
             "schedule": {
-              "time": "9h00 to 17h",
-              "equipment": "Expected equipment: To be announced."
+              "time": "9h to 17h (TBC)",
+              "equipment": "None required"
             },
             "activities": [
               "The workshop will feature keynote and invited presentations, but the main focus will be on short (~10-15min) presentations where participants will share topics such as technologies being tested or in use, workload mapping, specific challenges, or projects aimed at improving AI infrastructure.",
-              "These presentations will be structured simply to allow more people to participate, with a typical format being use-case description, pain points, and potential solutions.",
-              "We will also organize breakout groups to foster collaboration and work toward creating an 'AI-sys-admin' community."
+              "These presentations will be structured to allow more people to participate, with a typical format being use-case description, pain points, and potential solutions.",
+              "We might also organize breakout groups to foster collaborations and to work toward creating a 'Swiss-AI-sys-admin' community."
             ],
             "topics": [
-              "A technology under test or in use (e.g., code, Determined.ai).",
-              "How workloads are mapped to hardware.",
-              "Particularly challenging aspects of AI infrastructure.",
-              "Projects aimed at improving the infrastructure."
+              "Technologies under test or in use (e.g., code, Determined.ai).",
+              "How to map workloads onto hardware.",
+              "Challenging aspects of AI infrastructure.",
+              "Projects aimed at improving AI/ML infrastructure."
             ]
           },
           {
