@@ -23,8 +23,8 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { useSelector } from 'react-redux';
+import {useTranslation} from 'react-i18next';
+import {useSelector} from 'react-redux';
 import Footer from "../../components/Footer/footer";
 
 const Contact: React.FC = () => {

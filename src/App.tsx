@@ -1,15 +1,15 @@
-import { createTheme, CssBaseline, PaletteMode, ThemeProvider } from '@mui/material';
-import { grey } from '@mui/material/colors';
+import {createTheme, CssBaseline, PaletteMode, ThemeProvider} from '@mui/material';
+import {grey} from '@mui/material/colors';
 import Navbar from 'components/Navbar';
 import Contact from 'pages/Contact';
 import Call from 'pages/Call';
 import Home from 'pages/Home';
 import Workshops from 'pages/Workshops';
 import Partners from 'pages/Partners';
-import React, { useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useSelector } from 'react-redux';
+import React, {useCallback} from 'react';
+import {useTranslation} from 'react-i18next';
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {useSelector} from 'react-redux';
 import "primereact/resources/themes/bootstrap4-light-purple/theme.css";
 
 function App() {
@@ -112,7 +112,7 @@ function App() {
                 <Routes>
                     {pages.map((page, index) => {
                         //if not workshops
-                        if(page.enabled === "true" && page.component !== "workshops") {
+                        if (page.enabled === "true" && page.component !== "workshops") {
                             return (
                                 <Route key={index} path={`${page.url}`}
                                        element={React.createElement(Components[page.component])}/>
@@ -121,7 +121,7 @@ function App() {
                         return null;
                     })}
                     <Route path={"/workshops"} element={<Workshops/>}/>
-                    <Route path={"*"} element={<Home />}/>
+                    <Route path={"*"} element={<Home/>}/>
                 </Routes>
             </Router>
             {/* End Main content */}

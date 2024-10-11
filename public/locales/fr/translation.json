@@ -152,18 +152,18 @@
         },
         "committee": {
           "title": "Comité du programme technique",
-          "s1":"Holger Fröning, Heidelberg University, Germany",
-          "s2":"Ivana Podnar Zarko, University of Zagreb, Croatia",
-          "s3":"Anh Le Tuan, TU Berlin, Germany",
-          "s4":"Nik Bessis, Edge Hill University, UK",
-          "s5":"Emmanuel Senft, IDIAP, Switzerland",
-          "s6":"Torsten Braun, University of Bern, Switzerland",
-          "s7":"Andrea Guerrieri, EPFL, Switzerland",
-          "s8":"Matthew Vowels, University of Lausanne, Switzerland",
-          "s9":" Silvan Zahno, HES-SO Valais/Wallis",
-          "s10":"Mara Graziani, IBM Research, Switzerland",
-          "s11":"Adrian Holzer, University of Neuchâtel, Switzerland",
-          "s12":"Andreas Fischer, HES-SO Fribourg, Switzerland"
+          "s1": "Holger Fröning, Heidelberg University, Germany",
+          "s2": "Ivana Podnar Zarko, University of Zagreb, Croatia",
+          "s3": "Anh Le Tuan, TU Berlin, Germany",
+          "s4": "Nik Bessis, Edge Hill University, UK",
+          "s5": "Emmanuel Senft, IDIAP, Switzerland",
+          "s6": "Torsten Braun, University of Bern, Switzerland",
+          "s7": "Andrea Guerrieri, EPFL, Switzerland",
+          "s8": "Matthew Vowels, University of Lausanne, Switzerland",
+          "s9": " Silvan Zahno, HES-SO Valais/Wallis",
+          "s10": "Mara Graziani, IBM Research, Switzerland",
+          "s11": "Adrian Holzer, University of Neuchâtel, Switzerland",
+          "s12": "Andreas Fischer, HES-SO Fribourg, Switzerland"
         }
       },
       "contact": {
@@ -183,7 +183,6 @@
             "date": "Date : 29 Janvier 2025",
             "adress": "Adresse : Route de Berne 301, 1000 Lausanne 25",
             "googleMapsLink": "https://maps.app.goo.gl/5ZtL6i7KNGeeAYdA8"
-
           }
         ],
         "contact_title": "Comité d'organisation",
