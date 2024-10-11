@@ -175,13 +175,13 @@
           {
             "title": "Balexert Pathé, Vernier",
             "date": "Date : 27 & 28 January 2025",
-            "adress": "Adress : Av. Louis-Casaï 27, 1209 Vernier",
+            "address": "Address : Av. Louis-Casaï 27, 1209 Vernier",
             "googleMapsLink": "https://maps.app.goo.gl/BDuPiKqwpNU99sah9"
           },
           {
             "title": "EHL Hospitality Business School, Lausanne",
             "date": "Date : 29 January 2025",
-            "adress": "Adress : Route de Berne 301, 1000 Lausanne 25",
+            "address": "Address : Route de Berne 301, 1000 Lausanne 25",
             "googleMapsLink": "https://maps.app.goo.gl/5ZtL6i7KNGeeAYdA8"
           }
         ],
@@ -288,7 +288,7 @@
         "venue-27": "Pathé Balexert",
         "description-title": "Description",
         "time-title": "Time",
-        "equipement-title": "Equipement",
+        "equipment-title": "Equipment",
         "activities-title": "Activities",
         "topics-title": "Topics",
         "workshops": [
@@ -363,9 +363,9 @@
       "footer": {
         "title": "Our Platinum partners",
         "terms": " HES-SO. All rights reserved.",
-        "partenaire-1": "https://www.mobiliere.ch",
-        "partenaire-2": "https://www.ehl.edu",
-        "partenaire-3": "https://www.hes-so.ch"
+        "partner-1": "https://www.mobiliere.ch",
+        "partner-2": "https://www.ehl.edu",
+        "partner-3": "https://www.hes-so.ch"
       }
     }
   ]

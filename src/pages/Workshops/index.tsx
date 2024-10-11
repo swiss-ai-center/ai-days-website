@@ -104,7 +104,7 @@ const Workshops: React.FC = () => {
                             <p>{workshop.schedule?.time || t("no_time")}</p>
 
                             <Typography variant={"h6"} sx={{fontWeight: 'bold', mt: 2}}>
-                                {t(`years.${selectedYearIndex(year)}.workshops.equipement-title`)}
+                                {t(`years.${selectedYearIndex(year)}.workshops.equipment-title`)}
                             </Typography>
                             <p>{workshop.schedule?.equipment || t("no_equipment_needed")}</p>
 
