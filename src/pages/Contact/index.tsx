@@ -23,8 +23,8 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { useSelector } from 'react-redux';
+import {useTranslation} from 'react-i18next';
+import {useSelector} from 'react-redux';
 import Footer from "../../components/Footer/footer";
 
 const Contact: React.FC = () => {
@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
     const events: {
         title: string,
         date: string,
-        adress: string,
+        address: string,
         googleMapsLink: string // Ajout du lien vers Google Maps pour chaque événement
     }[] = t(`years.${selectedYearIndex(year)}.contact.venue`, {returnObjects: true});
 
@@ -129,7 +129,7 @@ const Contact: React.FC = () => {
                                     <Typography variant="body2" color="text.secondary">
                                         {event.date}
                                         <br/>
-                                        {event.adress}
+                                        {event.address}
                                     </Typography>
                                 </Box>
                                 <Box sx={{display: 'flex', justifyContent: 'space-between', mt: 'auto'}}>

@@ -1,19 +1,19 @@
 import React from 'react';
-import { Box, Container, Typography, Paper, Button, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import {Box, Container, Typography, Paper, Button, List, ListItem, ListItemIcon, ListItemText} from '@mui/material';
 import ExpandCircleDownRoundedIcon from '@mui/icons-material/ExpandCircleDownRounded';
-import { useTranslation } from 'react-i18next';
-import { useSelector } from 'react-redux';
+import {useTranslation} from 'react-i18next';
+import {useSelector} from 'react-redux';
 import './styles.css';
 import Footer from "../../components/Footer/footer";
 
 const Home: React.FC = () => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     // Récupérer l'année depuis le store Redux
     const year = useSelector((state: any) => state.year.value);
-    const years: { year: string }[] = t("years", { returnObjects: true });
+    const years: { year: string }[] = t("years", {returnObjects: true});
     const selectedYearIndex = (yearToFind: string) => years.findIndex((yearObj) => yearObj.year === yearToFind);
-    const descriptionList: string[] = t(`years.${selectedYearIndex(year)}.home.description.list`, { returnObjects: true });
+    const descriptionList: string[] = t(`years.${selectedYearIndex(year)}.home.description.list`, {returnObjects: true});
 
     return (
         <Container maxWidth="xl">
@@ -35,10 +35,10 @@ const Home: React.FC = () => {
                     textShadow: '2px 2px 4px rgba(0,0,0,0.6)'
                 }}
             >
-                <Typography variant="h2" sx={{ fontWeight: 'bold' }}>
+                <Typography variant="h2" sx={{fontWeight: 'bold'}}>
                     {t(`years.${selectedYearIndex(year)}.home.title`)}
                 </Typography>
-                <Typography variant="h4" sx={{ position: 'absolute', bottom: '20px', left: '20px' }}>
+                <Typography variant="h4" sx={{position: 'absolute', bottom: '20px', left: '20px'}}>
                     {t(`years.${selectedYearIndex(year)}.home.subtitle`)}
                 </Typography>
 
@@ -58,8 +58,8 @@ const Home: React.FC = () => {
             </Box>
 
             {/* Main Content Section */}
-            <Paper elevation={2} sx={{ p: 4, borderRadius: 3, boxShadow: 2 }}>
-                <Box sx={{ textAlign: 'justify', mb: 4 }}>
+            <Paper elevation={2} sx={{p: 4, borderRadius: 3, boxShadow: 2}}>
+                <Box sx={{textAlign: 'justify', mb: 4}}>
                     <Typography variant="body1" paragraph>
                         {t(`years.${selectedYearIndex(year)}.home.description.par1`)}
                     </Typography>
@@ -72,13 +72,13 @@ const Home: React.FC = () => {
                 </Box>
 
                 {/* List of Key Points */}
-                <List sx={{ pl: 2 }}>
+                <List sx={{pl: 2}}>
                     {descriptionList.map((item: string, index: number) => (
                         <ListItem key={index}>
                             <ListItemIcon>
-                                <ExpandCircleDownRoundedIcon color="primary" sx={{ transform: 'rotate(-90deg)' }} />
+                                <ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/>
                             </ListItemIcon>
-                            <ListItemText primary={item} />
+                            <ListItemText primary={item}/>
                         </ListItem>
                     ))}
                 </List>
@@ -88,19 +88,20 @@ const Home: React.FC = () => {
                 </Typography>
 
                 {/* Call to Action */}
-                <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
+                <Box sx={{display: 'flex', justifyContent: 'center', mt: 4}}>
                     <Button
                         variant="contained"
                         color="primary"
-                        sx={{ py: 1.5, px: 4, fontSize: '1rem', fontWeight: 'bold', borderRadius: 2 }}
+                        sx={{py: 1.5, px: 4, fontSize: '1rem', fontWeight: 'bold', borderRadius: 2}}
                     >
-                        <a href="https://form.jotform.com/242613280391351" target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none' }}>
+                        <a href="https://form.jotform.com/242613280391351" target="_blank" rel="noreferrer"
+                           style={{color: '#fff', textDecoration: 'none'}}>
                             {t(`years.${selectedYearIndex(year)}.home.register`) || 'Inscrivez-vous maintenant'}
                         </a>
                     </Button>
                 </Box>
             </Paper>
-            <Footer />
+            <Footer/>
         </Container>
     );
 };

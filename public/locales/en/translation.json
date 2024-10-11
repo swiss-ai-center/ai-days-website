@@ -152,18 +152,18 @@
         },
         "committee": {
           "title": "Technical Program Committee",
-          "s1":"Holger Fröning, Heidelberg University, Germany",
-          "s2":"Ivana Podnar Zarko, University of Zagreb, Croatia",
-          "s3":"Anh Le Tuan, TU Berlin, Germany",
-          "s4":"Nik Bessis, Edge Hill University, UK",
-          "s5":"Emmanuel Senft, IDIAP, Switzerland",
-          "s6":"Torsten Braun, University of Bern, Switzerland",
-          "s7":"Andrea Guerrieri, EPFL, Switzerland",
-          "s8":"Matthew Vowels, University of Lausanne, Switzerland",
-          "s9":" Silvan Zahno, HES-SO Valais/Wallis",
-          "s10":"Mara Graziani, IBM Research, Switzerland",
-          "s11":"Adrian Holzer, University of Neuchâtel, Switzerland",
-          "s12":"Andreas Fischer, HES-SO Fribourg, Switzerland"
+          "s1": "Holger Fröning, Heidelberg University, Germany",
+          "s2": "Ivana Podnar Zarko, University of Zagreb, Croatia",
+          "s3": "Anh Le Tuan, TU Berlin, Germany",
+          "s4": "Nik Bessis, Edge Hill University, UK",
+          "s5": "Emmanuel Senft, IDIAP, Switzerland",
+          "s6": "Torsten Braun, University of Bern, Switzerland",
+          "s7": "Andrea Guerrieri, EPFL, Switzerland",
+          "s8": "Matthew Vowels, University of Lausanne, Switzerland",
+          "s9": " Silvan Zahno, HES-SO Valais/Wallis",
+          "s10": "Mara Graziani, IBM Research, Switzerland",
+          "s11": "Adrian Holzer, University of Neuchâtel, Switzerland",
+          "s12": "Andreas Fischer, HES-SO Fribourg, Switzerland"
         }
       },
       "contact": {
@@ -175,16 +175,14 @@
           {
             "title": "Balexert Pathé, Vernier",
             "date": "Date : 27 & 28 January 2025",
-            "adress": "Adress : Av. Louis-Casaï 27, 1209 Vernier",
+            "address": "Address : Av. Louis-Casaï 27, 1209 Vernier",
             "googleMapsLink": "https://maps.app.goo.gl/BDuPiKqwpNU99sah9"
-
           },
           {
             "title": "EHL Hospitality Business School, Lausanne",
             "date": "Date : 29 January 2025",
-            "adress": "Adress : Route de Berne 301, 1000 Lausanne 25",
+            "address": "Address : Route de Berne 301, 1000 Lausanne 25",
             "googleMapsLink": "https://maps.app.goo.gl/5ZtL6i7KNGeeAYdA8"
-
           }
         ],
         "contact_title": "Organisation Committee",
@@ -238,51 +236,49 @@
       },
       "partners": {
         "title": "Partners",
-        "introduction": "We are pleased to invite you to become a partner of the 2025 edition of AI Days, a growing event dedicated to the application of artificial intelligence in SMEs. Organized by the Swiss AI Center of HES-SO, this free event will take place from January 27 to 29, 2025, in Geneva and Lausanne. It brings together a growing audience of professionals engaged in technological innovation and benefits from excellent media coverage.",
-        "contact": "We would be delighted to discuss in more detail the support options and to personalize a collaboration that meets your economic promotion goals. We are confident that your contribution will have a significant impact on the success of this event and on the development of SMEs in French-speaking Switzerland.",
-        "visibility-and-presence": "Visibility and presence",
-        "marketing-and-communication": "Marketing and communication",
+        "introduction": "We are pleased to invite you to become a partner of the 2025 AI Days, a growing event dedicated to the application of artificial intelligence in SMEs. Organized by the Swiss AI Center of HES-SO, this free event will be held from January 27th to 29th, 2025, in Geneva and Lausanne. It brings together a steadily growing audience of professionals engaged in technological innovation and benefits from significant media coverage.",
+        "contact": "We would be happy to discuss the sponsorship opportunities in more detail and to tailor a collaboration that meets your business promotion objectives. We are confident that your contribution will significantly impact the success of this event and the development of SMEs in French-speaking Switzerland.",
+        "visibility-and-presence": "Visibility and Presence",
+        "marketing-and-communication": "Marketing and Communication",
         "partnerships": {
           "platine": {
             "title": "Platinum Partner",
-            "description": "You are an exclusive partner or co-partner for the organization of a part of the conference (room rental, meals).",
-            "amount": "CHF 5'000.- and more",
+            "description": "You are one of the strategic partners of the event.",
             "visibility-and-presence": [
-              "Your logo can be displayed at the entrance of the room.",
-              "Your logo can be displayed at the entrance of the room.",
-              "Your logo can be displayed on the room's screens (if available).",
-              "Your logo will appear on the conference website in the Gold category.",
-              "Your logo will be included in all communication materials (brochures, programs, etc.)."
+              "A customized plan tailored to your visibility and presence needs will be developed in collaboration with the organizing team for the entire conference.",
+              "Your logo will appear on the conference website under the Platinum category.",
+              "Your logo will be included in all communication materials (brochures, programs, etc.).",
+              "Your logo may be highlighted during the event."
             ],
             "marketing-and-communication": [
-              "A dedicated presentation to showcase your company's activities related to the conference topic.",
-              "Special mention in communications before, during, and after the conference.",
-              "Opportunity to distribute promotional materials and goodies."
+              "A special mention will be made at the beginning of each conference day.",
+              "You will have the opportunity to give demonstrations on the sidelines of the conference.",
+              "You can distribute promotional materials and giveaways.",
+              "Badges will identify you as a partner of the event."
             ]
           },
           "gold": {
             "title": "Gold Partner",
-            "description": "Financing of a reception during the conference.",
-            "amount": "CHF 2'500.- to 5'000.-",
+            "description": "You contribute to the conference’s funding with specific visibility and presence objectives.",
             "visibility-and-presence": [
-              "Your logo can be displayed at the entrance of the room where the reception is held.",
-              "Your logo will appear on the conference website in the Silver category."
+              "A customized plan tailored to your visibility and presence needs will be developed in collaboration with the organizing team for one day of the conference.",
+              "Your logo will appear on the conference website under the Gold category."
             ],
             "marketing-and-communication": [
-              "Special mention in communications at the beginning of the reception.",
-              "Opportunity to distribute promotional materials and goodies during the reception."
+              "You will have the opportunity to give demonstrations on the sidelines of the conference.",
+              "You can distribute promotional materials and giveaways.",
+              "Badges will identify you as a partner of the event."
             ]
           },
           "silver": {
             "title": "Silver Partner",
-            "description": "Financing of a coffee break.",
-            "amount": "CHF 2'500.- to 5'000.-",
+            "description": "You contribute to the conference’s funding.",
             "visibility-and-presence": [
-              "Your logo can be displayed at the entrance of the room where the coffee break takes place.",
-              "Your logo will appear on the conference website in the Bronze category."
+              "Your logo will appear on the conference website under the Silver category."
             ],
             "marketing-and-communication": [
-              "Opportunity to distribute promotional materials and goodies during the coffee break."
+              "You can distribute promotional materials and giveaways.",
+              "Badges will identify you as a partner of the event."
             ]
           }
         }
@@ -292,7 +288,7 @@
         "venue-27": "Pathé Balexert",
         "description-title": "Description",
         "time-title": "Time",
-        "equipement-title": "Equipement",
+        "equipment-title": "Equipment",
         "activities-title": "Activities",
         "topics-title": "Topics",
         "workshops": [
@@ -367,9 +363,9 @@
       "footer": {
         "title": "Our Platinum partners",
         "terms": " HES-SO. All rights reserved.",
-        "partenaire-1": "https://www.mobiliere.ch",
-        "partenaire-2": "https://www.ehl.edu",
-        "partenaire-3": "https://www.hes-so.ch"
+        "partner-1": "https://www.mobiliere.ch",
+        "partner-2": "https://www.ehl.edu",
+        "partner-3": "https://www.hes-so.ch"
       }
     }
   ]

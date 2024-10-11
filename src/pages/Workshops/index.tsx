@@ -1,11 +1,11 @@
-import { Paper } from '@mui/material';
+import {Paper} from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { useSelector } from 'react-redux';
-import { Card } from 'primereact/card';
+import {useTranslation} from 'react-i18next';
+import {useSelector} from 'react-redux';
+import {Card} from 'primereact/card';
 import "./styles.css";
 import Footer from "../../components/Footer/footer";
 
@@ -21,11 +21,11 @@ interface Workshop {
 }
 
 const Workshops: React.FC = () => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     // Récupération de l'année sélectionnée dans le store Redux
     const year = useSelector((state: any) => state.year.value);
-    const years: { year: string }[] = t("years", { returnObjects: true });
+    const years: { year: string }[] = t("years", {returnObjects: true});
 
     // Fonction pour trouver l'index de l'année sélectionnée
     const selectedYearIndex = (yearToFind: string) => {
@@ -34,33 +34,41 @@ const Workshops: React.FC = () => {
     };
 
     // Récupération des workshops avec typage explicite
-    const workshops: Workshop[] = t(`years.${selectedYearIndex(year)}.workshops.workshops`, { returnObjects: true }) as Workshop[] || [];
+    const workshops: Workshop[] = t(`years.${selectedYearIndex(year)}.workshops.workshops`, {returnObjects: true}) as Workshop[] || [];
 
     return (
         <Container maxWidth={"xl"}>
             {/* Section de titre et lieu du workshop */}
             <Paper
                 sx={{
-                backgroundImage: 'url("/pathe-image.jpg")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                height: '500px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                mb: 5,
-                borderRadius: 2,
-                boxShadow: 3,
-                position: 'relative',
-                color: '#fff',
-                textShadow: '2px 2px 4px rgba(0,0,0,0.6)'
-            }}
-                    elevation={0}>
-                <Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center', p: 2,color: '#fff', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0,0,0,0.6)' }}>
-                    <Typography variant={"h2"} sx={{ fontWeight: 'bold' }}>
+                    backgroundImage: 'url("/pathe-image.jpg")',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    height: '500px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    mb: 5,
+                    borderRadius: 2,
+                    boxShadow: 3,
+                    position: 'relative',
+                    color: '#fff',
+                    textShadow: '2px 2px 4px rgba(0,0,0,0.6)'
+                }}
+                elevation={0}>
+                <Box sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    textAlign: 'center',
+                    p: 2,
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    textShadow: '2px 2px 4px rgba(0,0,0,0.6)'
+                }}>
+                    <Typography variant={"h2"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.workshops.title-27`) || "Workshop Title"}
                     </Typography>
-                    <a className={"venue"} href="/contact" >
+                    <a className={"venue"} href="/contact">
                         <h3>{t(`years.${selectedYearIndex(year)}.workshops.venue-27`) || "Venue"}</h3>
                     </a>
                 </Box>
@@ -85,22 +93,22 @@ const Workshops: React.FC = () => {
                 {workshops.length > 0 ? (
                     workshops.map((workshop: Workshop, index: number) => (
                         <Card key={index} title={workshop.title || t("no_title")} className={"card"}>
-                            <Typography variant={"h5"} sx={{ fontWeight: 'bold' }}>
+                            <Typography variant={"h5"} sx={{fontWeight: 'bold'}}>
                                 {t(`years.${selectedYearIndex(year)}.workshops.description-title`)}
                             </Typography>
                             <p>{workshop.description || t("no_description")}</p>
 
-                            <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
+                            <Typography variant={"h6"} sx={{fontWeight: 'bold', mt: 2}}>
                                 {t(`years.${selectedYearIndex(year)}.workshops.time-title`)}
                             </Typography>
                             <p>{workshop.schedule?.time || t("no_time")}</p>
 
-                            <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
-                                {t(`years.${selectedYearIndex(year)}.workshops.equipement-title`)}
+                            <Typography variant={"h6"} sx={{fontWeight: 'bold', mt: 2}}>
+                                {t(`years.${selectedYearIndex(year)}.workshops.equipment-title`)}
                             </Typography>
                             <p>{workshop.schedule?.equipment || t("no_equipment_needed")}</p>
 
-                            <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
+                            <Typography variant={"h6"} sx={{fontWeight: 'bold', mt: 2}}>
                                 {t(`years.${selectedYearIndex(year)}.workshops.activities-title`)}
                             </Typography>
                             {workshop.activities && workshop.activities.length > 0 && (
@@ -114,7 +122,7 @@ const Workshops: React.FC = () => {
                             {/* Affichage conditionnel des topics */}
                             {workshop.topics && workshop.topics.length > 0 && (
                                 <>
-                                    <Typography variant={"h6"} sx={{ fontWeight: 'bold', mt: 2 }}>
+                                    <Typography variant={"h6"} sx={{fontWeight: 'bold', mt: 2}}>
                                         {t(`years.${selectedYearIndex(year)}.workshops.topics-title`)}
                                     </Typography>
                                     <ul>

@@ -152,18 +152,18 @@
         },
         "committee": {
           "title": "Comité du programme technique",
-          "s1":"Holger Fröning, Heidelberg University, Germany",
-          "s2":"Ivana Podnar Zarko, University of Zagreb, Croatia",
-          "s3":"Anh Le Tuan, TU Berlin, Germany",
-          "s4":"Nik Bessis, Edge Hill University, UK",
-          "s5":"Emmanuel Senft, IDIAP, Switzerland",
-          "s6":"Torsten Braun, University of Bern, Switzerland",
-          "s7":"Andrea Guerrieri, EPFL, Switzerland",
-          "s8":"Matthew Vowels, University of Lausanne, Switzerland",
-          "s9":" Silvan Zahno, HES-SO Valais/Wallis",
-          "s10":"Mara Graziani, IBM Research, Switzerland",
-          "s11":"Adrian Holzer, University of Neuchâtel, Switzerland",
-          "s12":"Andreas Fischer, HES-SO Fribourg, Switzerland"
+          "s1": "Holger Fröning, Heidelberg University, Germany",
+          "s2": "Ivana Podnar Zarko, University of Zagreb, Croatia",
+          "s3": "Anh Le Tuan, TU Berlin, Germany",
+          "s4": "Nik Bessis, Edge Hill University, UK",
+          "s5": "Emmanuel Senft, IDIAP, Switzerland",
+          "s6": "Torsten Braun, University of Bern, Switzerland",
+          "s7": "Andrea Guerrieri, EPFL, Switzerland",
+          "s8": "Matthew Vowels, University of Lausanne, Switzerland",
+          "s9": " Silvan Zahno, HES-SO Valais/Wallis",
+          "s10": "Mara Graziani, IBM Research, Switzerland",
+          "s11": "Adrian Holzer, University of Neuchâtel, Switzerland",
+          "s12": "Andreas Fischer, HES-SO Fribourg, Switzerland"
         }
       },
       "contact": {
@@ -175,15 +175,14 @@
           {
             "title": "Balexert Pathé, Vernier",
             "date": "Date : 27 & 28 Janvier 2025",
-            "adress": "Adresse : Av. Louis-Casaï 27, 1209 Vernier",
+            "address": "Adresse : Av. Louis-Casaï 27, 1209 Vernier",
             "googleMapsLink": "https://maps.app.goo.gl/BDuPiKqwpNU99sah9"
           },
           {
             "title": "EHL Hospitality Business School, Lausanne",
             "date": "Date : 29 Janvier 2025",
-            "adress": "Adresse : Route de Berne 301, 1000 Lausanne 25",
+            "address": "Adresse : Route de Berne 301, 1000 Lausanne 25",
             "googleMapsLink": "https://maps.app.goo.gl/5ZtL6i7KNGeeAYdA8"
-
           }
         ],
         "contact_title": "Comité d'organisation",
@@ -244,44 +243,42 @@
         "partnerships": {
           "platine": {
             "title": "Partenaire Platine",
-            "description": "Vous êtes partenaire exclusif ou co-partenaire pour l’organisation d’une partie de la conférence (location de salle, repas).",
-            "amount": "CHF 5'000.- and more",
+            "description": "Vous êtes l’un des partenaires stratégiques de l’événement.",
             "visibility-and-presence": [
-              "Votre logo pourra être affiché à l’entrée de la salle.",
-              "Votre logo pourra être affiché à l’entrée de la salle.",
-              "Votre logo pourra être affiché sur les écrans de la salle (si disponible). ",
-              "Votre logo apparaîtra sur le site Internet de la conférence dans la catégorie Or. ",
-              "Votre logo sera inclus dans tous les supports de communication (brochures, programmes, etc.). "
+              "Un plan sur mesure, adapté à vos besoins en termes de visibilité et de présence, sera élaboré en partenariat avec l’équipe d’organisation pour l’ensemble de la conférence.",
+              "Votre logo apparaîtra sur le site Internet de la conférence dans la catégorie Platine.",
+              "Votre logo sera inclus dans tous les supports de communication (brochures, programmes, etc.).",
+              "Votre logo pourra être mis en avant lors de l’événement."
             ],
             "marketing-and-communication": [
-              "Une présentation dédiée pour faire connaître les activités de votre entreprise en lien avec le sujet de la conférence.",
-              "Mention spéciale dans les communications avant, pendant et après la conférence.",
-              "Opportunité de distribuer des documents promotionnels et goodies."
+              "Une mention spéciale sera faite au début de chaque journée de la conférence.",
+              "Vous aurez l’opportunité de faire des démonstrations en marge de la conférence.",
+              "Vous pourrez distribuer des documents promotionnels et des goodies.",
+              "Des badges permettront de vous identifier comme partenaire de l’évènement."
             ]
           },
           "gold": {
             "title": "Partenaire Or",
-            "description": "Financement d’un apéritif en marge de la conférence. ",
-            "amount": "CHF 2'500.- à 5'000.-",
+            "description": "Vous participez au financement de la conférence avez des objectifs précis en termes de visibilité et de présence.",
             "visibility-and-presence": [
-              "Votre pourra être affiché à l’entrée de la salle où a lieu l’apéritif.",
-              "Votre logo apparaîtra sur le site Internet de la conférence dans la catégorie Argent."
+              "Un plan sur mesure, adapté à vos besoins en termes de visibilité et de présence, sera élaboré en partenariat avec l’équipe d’organisation pour une journée de la conférence.",
+              "Votre logo apparaîtra sur le site Internet de la conférence dans la catégorie Or."
             ],
             "marketing-and-communication": [
-              "Mention spéciale dans les communications au début de l’apéritif. ",
-              "Opportunité de distribuer des documents promotionnels et goodies durant l’apéritif. "
+              "Vous aurez l’opportunité de faire des démonstrations en marge de la conférence.",
+              "Vous pourrez distribuer des documents promotionnels et des goodies.",
+              "Des badges permettront de vous identifier comme partenaire de l’évènement."
             ]
           },
           "silver": {
             "title": "Partenaire Argent",
-            "description": "Financement d’une pause-café.",
-            "amount": "CHF 2'500.- à 5'000.-",
+            "description": "Vous participez au financement de la conférence.",
             "visibility-and-presence": [
-              "Votre logo pourra être affiché à l’entrée de la salle où a lieu la pause-café. ",
-              "Votre logo apparaîtra sur le site Internet de la conférence dans la catégorie Bronze."
+              "Votre logo apparaîtra sur le site Internet de la conférence dans la catégorie Argent."
             ],
             "marketing-and-communication": [
-              "Opportunité de distribuer des documents promotionnels et goodies durant la pause-café."
+              "Vous pourrez distribuer des documents promotionnels et des goodies.",
+              "Des badges permettront de vous identifier comme partenaire de l’évènement."
             ]
           }
         }
@@ -291,7 +288,7 @@
         "venue-27": "Pathé Balexert",
         "description-title": "Description",
         "time-title": "Temps",
-        "equipement-title": "Equipements",
+        "equipment-title": "Equipements",
         "activities-title": "Activitiés",
         "topics-title": "Sujets",
         "workshops": [
@@ -366,9 +363,9 @@
       "footer": {
         "title": "Nos partenaires Platine",
         "terms": " HES-SO. All rights reserved.",
-        "partenaire-1": "https://www.mobiliere.ch",
-        "partenaire-2": "https://www.ehl.edu",
-        "partenaire-3": "https://www.hes-so.ch"
+        "partner-1": "https://www.mobiliere.ch",
+        "partner-2": "https://www.ehl.edu",
+        "partner-3": "https://www.hes-so.ch"
       }
     }
   ]

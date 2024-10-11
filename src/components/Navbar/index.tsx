@@ -228,7 +228,7 @@ function Navbar() {
                     <Box sx={{ display: { xs: 'flex', md: 'none' } }} px={2}>
                         <Link color={"inherit"} to={"/"} style={{ textDecoration: "none" }}>
                             <img src={"/logo192.png"} className={"filter-white"} style={{ marginTop: "3px" }}
-                                 alt={"AI Days"} height={"25px"} />
+                                 alt={"AI Days"} height={"25px"}/>
                         </Link>
                     </Box>
                 </Toolbar>
