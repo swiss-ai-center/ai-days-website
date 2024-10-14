@@ -8,6 +8,7 @@ import React from 'react';
 import {useTranslation} from 'react-i18next';
 import {useSelector} from 'react-redux';
 import Footer from "../../components/Footer/footer";
+import parseHtml from 'html-react-parser';
 
 const Call: React.FC = () => {
     const {t} = useTranslation();
@@ -89,7 +90,7 @@ const Call: React.FC = () => {
                     <Typography variant={"body1"}
                                 pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.event-description.paragraph2`)}</Typography>
                     <Typography variant={"body1"}
-                                pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.event-description.paragraph3`)}</Typography>
+                                pt={1}>{parseHtml(t(`years.${selectedYearIndex(year)}.call-for-paper.event-description.paragraph3`))}</Typography>
                 </Box>
 
 
@@ -122,7 +123,7 @@ const Call: React.FC = () => {
                                         children={<Typography variant={"h5"}>{submission.title}</Typography>}/>
                                 </ListItemButton>
                                 <Collapse in={true} timeout="auto" unmountOnExit sx={{pl: 4}}>
-                                    <Typography variant={"body1"}>{submission.description}</Typography>
+                                    <Typography variant={"body1"}>{parseHtml(submission.description)}</Typography>
                                 </Collapse>
                             </Box>
                         ))}
@@ -156,30 +157,7 @@ const Call: React.FC = () => {
                     <Typography variant={"body1"}
                                 pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-guidelines.paragraph3`)}</Typography>
                     <Typography variant={"body1"}
-                                pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-guidelines.paragraph4`)}</Typography>
-                </Box>
-
-                {/* Adresse des soumissions */}
-                <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
-                    <Typography variant={"h4"}
-                                sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.title`)}</Typography>
-                    <Typography variant={"body1"}
-                                pt={1}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.description`)}</Typography>
-                    <Typography variant={"body1"} pt={1}>
-                        <a href={t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.submission-site`)}>
-                            {t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.submission-site`)}
-                        </a>
-                    </Typography>
-                    <Typography variant={"body1"} pt={1}>
-                        <a href={`mailto:${t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.mail-1`)}`}>
-                            {t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.mail-1`)}
-                        </a>
-                    </Typography>
-                    <Typography variant={"body1"} pt={1}>
-                        <a href={`mailto:${t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.mail-2`)}`}>
-                            {t(`years.${selectedYearIndex(year)}.call-for-paper.submission-address.mail-2`)}
-                        </a>
-                    </Typography>
+                                pt={1}>{parseHtml(t(`years.${selectedYearIndex(year)}.call-for-paper.submission-guidelines.paragraph4`))}</Typography>
                 </Box>
 
                 {/* Questions */}
