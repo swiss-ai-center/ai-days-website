@@ -2,7 +2,7 @@
   "years": [
     {
       "year": "2025",
-      "title": "AI Days 2025 by HES-SO",
+      "title": "AI Days@HES-SO 2025",
       "event_dates": "27 to 29 January",
       "location": "Geneva and Lausanne",
       "organizer": "Swiss Artificial Intelligence Centre for SMEs (CSIA-PME)",
@@ -67,7 +67,7 @@
         ]
       },
       "home": {
-        "title": "AI Days 2025",
+        "title": "AI Days@HES-SO 2025",
         "subtitle": "From 27 to 29 January 2025",
         "description": {
           "par1": "The 2025 edition of AI-days will take place from 27 to 29 January 2025, in Geneva (27 and 28) and Lausanne (29 January). The HES-SO AI-days are organised by the Swiss Artificial Intelligence Centre for SMEs (CSIA-PMEs). The aim of the event is to provide a forum for discussing the practical use of new AI technologies in the economic fabric.",
@@ -89,10 +89,11 @@
           "description": "The annual AI days is organized by the Swiss AI Center for SMEs (CSIA-PME), a flagship project of the HES-SO. It brings together AI researchers, entrepreneurs, SMEs, developers, practitioners, and users interested in Artificial Intelligence in the French-speaking Switzerland."
         },
         "event-description": {
-          "title": "AI Days 2025",
+          "title": "AI Days@HES-SO 2025",
           "paragraph1": "Although the event is public and open to all, it is primarily aimed at people involved in the management and strategy of one or more SMEs, to find out how they can benefit from advances in artificial intelligence in their activities.",
-          "paragraph2": "Following the great success and interest in the previous years, the AI days’25 will take place for three days: the 27th and 28th of January in Geneva and the 29th of January in Lausanne. The program will include one day with hands-on workshops and two days with parallel sessions made up of round-table discussions, ateliers, poster and demo sessions, and speed-dating networking sessions, as well as presentations on industrial advances and experiences, successful collaborations between academia and industry, and novel academic and applied research results.",
-          "paragraph3": "Starting this year, the academic contributions will be subject to peer-review. Selected contributions will be published as part of the proceedings. Specific topics of interest include but are not limited to the following, when related to Artificial Intelligence:"
+          "paragraph2": "Following the great success and interest in the previous years, the AI days’25 will take place for three days: the 27th and 28th of January in Geneva (Pathé Balexert movie theater complex) and the 29th of January in Lausanne (Ecole Hotelière - EHL). The program will include one day with hands-on workshops and two days with parallel sessions made up of : ",
+          "paragraph3":"<ul><li>round-table discussions, ateliers, poster and demo sessions, and speed-dating networking sessions</li><li>presentations on industrial advances and experiences, successful collaborations between academia and industry</li><li>novel academic and applied research results. Starting this year, the academic contributions will be subject to peer-review. Selected contributions will be published as part of the proceedings with CEUR (<a href=\"https://ceur-ws.org/\">https://ceur-ws.org/</a>)</li></ul>"
+          }
         },
         "topics": [
           "Responsible AI",
@@ -108,19 +109,19 @@
           "types": [
             {
               "title": "Short academic papers",
-              "description": "5 “standard” pages + abstract up to 500 characters + unlimited references. For these submissions, novelty and conference topic fitting are the primary considerations."
+              "description": "5 “standard” pages + abstract up to 500 characters + unlimited references. For these submissions, novelty and conference topic fitting are the primary considerations. Candidate papers must be submitted through <a href=\"https://ai-days25.hotcrp.com\">https://ai-days25.hotcrp.com</a>. Please also used the following <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">overleaf template</a>. The papers selected for the conference will be publish in the conference proceedings, in partnership with CEUR (<a href=\"https://ceur-ws.org/\">https://ceur-ws.org/</a>)."
             },
             {
               "title": "Industry papers",
-              "description": "1-page presentation abstract + 1-page industrial motivation and context + unlimited references. These presentations won’t make part of the proceedings."
+              "description": "1-page presentation abstract + 1-page industrial motivation and context + unlimited references. These presentations won’t make part of the proceedings. Candidate papers must be submitted through <a href=\"https://ai-days25.hotcrp.com\">https://ai-days25.hotcrp.com</a>. Please also used the following <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">overleaf template</a>."
             },
             {
               "title": "Posters",
-              "description": "Abstract of 300 words maximum + poster size A0, in portrait orientation, unlimited references. The poster must contain a title, the name(s) of the author(s), the methodology used, the results obtained, and the conclusions. Please note that you must print, bring, and hang your poster yourself. Only the abstracts will be published in the proceedings."
+              "description": "Abstract of 300 words maximum + poster size A0, in portrait orientation, unlimited references. The poster must contain a title, the name(s) of the author(s), the methodology used, the results obtained, and the conclusions. Please note that you must print, bring, and hang your poster yourself. Only the abstracts will be published in the proceedings. Poster submissions must be made <a href=\"mailto:valerie.schurchtodeschini@he-arc.ch,pamela.delgado@hevs.ch\">by sending an email to the program chairs</a>."
             },
             {
               "title": "Interactive demonstration",
-              "description": "1-page presentation and/or background + unlimited references. The accompanying document should contain a title, the name(s) of the author(s), the methodology used, the results obtained, and the conclusions. Please note that you are responsible for your own demonstration and no materials will be provided."
+              "description": "1-page presentation and/or background + unlimited references. The accompanying document should contain a title, the name(s) of the author(s), the methodology used, the results obtained, and the conclusions. Please note that you are responsible for your own demonstration and no materials will be provided. Demonstration submissions must be made <a href=\"mailto:valerie.schurchtodeschini@he-arc.ch,pamela.delgado@hevs.ch\">by sending an email to the program chairs</a>."
             }
           ]
         },
@@ -137,7 +138,7 @@
           "paragraph1": "Authors must submit original contributions that are not being considered for publication in other conferences, workshops, or journals (non-peer-reviewed contexts, e.g., arXiv, is allowed). All submissions should cite and clearly differentiate from relevant prior publications, including those from the same authors.",
           "paragraph2": "The reviews for academic submissions are double-blinded. Authors should make a good faith effort to anonymize their submissions, not identifying themselves explicitly or implicitly. In the case of industrial papers, disclosing the company/product is allowed; however, the submission should not reveal the author names directly.",
           "paragraph3": "Use of English: following the requirements of the publication organism, academic contributions should be written in English.",
-          "paragraph4": "Both academic and industrial contributions must use the Latex format proposed here. Articles must include “academic” or “industrial” as a subtitle. Authors should submit a single PDF file, formatted for A4 paper and no larger than 10 MB. Any article submitted that does not comply with the length, file type or formatting requirements will be rejected without review. "
+          "paragraph4": "Both academic and industrial contributions must use the Latex format proposed <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">here</a>. Articles must include “academic” or “industrial” as a subtitle. Authors should submit a single PDF file, formatted for A4 paper and no larger than 10 MB. Any article submitted that does not comply with the length, file type or formatting requirements will be rejected without review. "
         },
         "submission-address": {
           "title": "Submission Addresses",
@@ -160,14 +161,15 @@
           "s6": "Torsten Braun, University of Bern, Switzerland",
           "s7": "Andrea Guerrieri, EPFL, Switzerland",
           "s8": "Matthew Vowels, University of Lausanne, Switzerland",
-          "s9": " Silvan Zahno, HES-SO Valais/Wallis",
+          "s9": " Silvan Zahno, HES-SO Valais/Wallis, Switzerland",
           "s10": "Mara Graziani, IBM Research, Switzerland",
           "s11": "Adrian Holzer, University of Neuchâtel, Switzerland",
-          "s12": "Andreas Fischer, HES-SO Fribourg, Switzerland"
+          "s12": "Andreas Fischer, HES-SO Fribourg, Switzerland",
+          "s13": "Ricardo Chavarriaga, ZHAW, Switzerland"
         }
       },
       "contact": {
-        "title": "Contact",
+        "title": "Practical informations",
         "venue-title": "Event locations",
         "venue-cfa": "Download PDF",
         "venue-google-maps": "Open Google Maps",
