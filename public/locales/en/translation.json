@@ -70,7 +70,7 @@
         "title": "AI Days@HES-SO 2025",
         "subtitle": "From 27 to 29 January 2025",
         "description": {
-          "par1": "The 2025 edition of AI-days will take place from 27 to 29 January 2025, in Geneva (27 and 28) and Lausanne (29 January). The HES-SO AI-days are organised by the Swiss Artificial Intelligence Centre for SMEs (CSIA-PMEs). The aim of the event is to provide a forum for discussing the practical use of new AI technologies in the economic fabric.",
+          "par1": "The 2025 edition of AI-days will take place from 27 to 29 January 2025, in Geneva (27 and 28) and Lausanne (29 January). The HES-SO AI-days are organised by the Swiss Artificial Intelligence Centre for SMEs (CSIA-PMEs), which is funded by the Engineering and Architecture Domain of HES-SO. The aim of the event is to provide a forum for discussing the practical use of new AI technologies in the economic fabric.",
           "par2": "A three-day format is planned this year. The first day (Monday 27) will be devoted to workshops on specific topics. The other two days, organised as usual over two sites and two cantons, will be devoted to presentations on the progress of the CSIA-PE, reports on collaborations, round-table discussions and recent results obtained in the field of AI applications. An official call for papers will be launched at the beginning of September, see indicative dates below.",
           "par3": "The event is public and open to all. It is primarily aimed at people involved in the management and strategy of one or more SMEs, to find out how they can benefit from advances in artificial intelligence in their activities. Companies and SMEs are warmly invited to take part in this event in order to :",
           "list": [
@@ -93,8 +93,7 @@
           "paragraph1": "Although the event is public and open to all, it is primarily aimed at people involved in the management and strategy of one or more SMEs, to find out how they can benefit from advances in artificial intelligence in their activities.",
           "paragraph2": "Following the great success and interest in the previous years, the AI days’25 will take place for three days: the 27th and 28th of January in Geneva (Pathé Balexert movie theater complex) and the 29th of January in Lausanne (Ecole Hotelière - EHL). The program will include one day with hands-on workshops and two days with parallel sessions made up of : ",
           "paragraph3":"<ul><li>round-table discussions, ateliers, poster and demo sessions, and speed-dating networking sessions</li><li>presentations on industrial advances and experiences, successful collaborations between academia and industry</li><li>novel academic and applied research results. Starting this year, the academic contributions will be subject to peer-review. Selected contributions will be published as part of the proceedings with CEUR (<a href=\"https://ceur-ws.org/\">https://ceur-ws.org/</a>)</li></ul>"
-          }
-        },
+          },
         "topics": [
           "Responsible AI",
           "Privacy and security in AI",
@@ -215,7 +214,7 @@
             "role": "Schedule",
             "icon": "ViewTimelineRounded",
             "members": [
-              "Pamela Delgado, ISE Sion, HES-SO",
+              "Pamela Delgado, HEI-VS, HES-SO",
               "Valérie Schürch Todeschini, He-Arc, HES-SO"
             ]
           },
@@ -223,7 +222,7 @@
             "role": "Communication / Media",
             "icon": "InterestsRounded",
             "members": [
-              "Francesco Carrino, ISE Sion HES-SO",
+              "Francesco Carrino, HEI-VS, HES-SO",
               "Sébastien Bourqui, Office de Promotion des Industries et des Technologies, Genève"
             ]
           },
