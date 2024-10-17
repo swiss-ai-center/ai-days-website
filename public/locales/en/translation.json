@@ -282,7 +282,8 @@
               "You can distribute promotional materials and giveaways.",
               "Badges will identify you as a partner of the event."
             ]
-          }
+          },
+          "press": "Press Partner"
         }
       },
       "workshops": {
@@ -358,6 +359,17 @@
               "Collaborating effectively to develop a reliable and functional model.",
               "Deploying the model to the cloud.",
               "Automating model redeployment when changes are made."
+            ]
+          },
+          {
+            "title": "Workshop 5 : AI for Local Energy Communities",
+            "description": "To be announced.",
+            "schedule": {
+              "time": "15h30-17h30",
+              "equipment": "To be announced."
+            },
+            "activities": [
+              "To be announced."
             ]
           }
         ]

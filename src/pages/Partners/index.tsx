@@ -101,6 +101,13 @@ const Partners: React.FC = () => {
                                  style={{height: '200px', width: 'auto'}}/>
                         </a>
                     </Card>
+                    <Card>
+                        <a href={t(`years.${selectedYearIndex(year)}.footer.partner-3`)} target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="/hes-so.png" alt="HES-SO Logo"
+                                 style={{height: '200px', width: 'auto', border: '1px'}}/>
+                        </a>
+                    </Card>
                 </Box>
 
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
@@ -148,7 +155,7 @@ const Partners: React.FC = () => {
                     <Card>
                         <a href={t(`years.${selectedYearIndex(year)}.footer.partner-3`)} target="_blank"
                            rel="noopener noreferrer">
-                            <img src="/hes-so.png" alt="HES-SO Logo"
+                            <img src="/alp_ict.png" alt="ALP ICT Logo"
                                  style={{height: '200px', width: 'auto', border: '1px'}}/>
                         </a>
                     </Card>
@@ -225,6 +232,24 @@ const Partners: React.FC = () => {
                             </ListItem>
                         ))}
                     </List>
+                </Box>
+
+                {/* Partenaire presse */}
+                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
+                    <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
+                        {t(`years.${selectedYearIndex(year)}.partners.partnerships.press`)}
+                    </Typography>
+                </Box>
+
+                {/* Logos Partenaire Presse */}
+                <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
+                    <Card>
+                        <a href={t(`years.${selectedYearIndex(year)}.footer.partner-3`)} target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="/swissdevjobs.png" alt="ALP ICT Logo"
+                                 style={{height: '200px', width: 'auto', border: '1px'}}/>
+                        </a>
+                    </Card>
                 </Box>
             </Paper>
 
