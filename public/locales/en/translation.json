@@ -358,18 +358,16 @@
           },
           {
             "title": "Workshop 3b: Machine Learning Operations - MLOps",
-            "description": "This workshop helps participants implement an MLOps process for a Machine Learning experiment, transitioning from a Jupyter notebook to full cloud production. The goal is to provide technical skills for managing the lifecycle of Machine Learning models, promoting team collaboration, and automating operational processes to ensure reproducibility, reliability, and efficient deployment of models in production environments. Participants will also learn best practices for improving the deployment process and moving models out of the experimental phase.",
+            "description": "In this workshop, participants will explore the data management aspects of the Retrieval-Augmented-Generation (RAG) framework as applied to Large Language Models. The primary objective is to convert a machine learning experiment provided in a Jupyter Notebook into a production-ready application by integrating a Data Version Control (DVC) pipeline for efficient data management. This workshop aims to provide participants with the technical skills needed to manage the data lifecycle of Machine Learning models, promote collaboration among teams, and automate operational processes.",
             "schedule": {
               "time": "13h-16h",
               "equipment": "Personal laptop with WSL2 / Linux Ubuntu installed and ready to use."
             },
             "activities": [
-              "Icebreaker exercise.",
-              "Getting started with a simple machine learning experiment.",
-              "Transforming this experiment for model reproducibility and quality evaluation.",
-              "Collaborating effectively to develop a reliable and functional model.",
-              "Deploying the model to the cloud.",
-              "Automating model redeployment when changes are made."
+              "Initial setup.",
+              "Exploration of the RAG experiment.",
+              "Transformation of the experiment to reproduce and evaluate the quality of the model.",
+              "Effective collaboration to build a reliable and functional model over time.",
             ]
           }
         ]

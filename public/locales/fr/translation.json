@@ -357,19 +357,17 @@
             ]
           },
           {
-            "title": "Workshop 3b: Machine Learning Operations - MLOps",
-            "description": "Ce workshop aide les participants à implémenter un processus MLOps pour une expérience de Machine Learning, en passant d'un notebook Jupyter à un service de production complet dans le cloud. L'objectif est de fournir les compétences techniques nécessaires pour gérer le cycle de vie des modèles de Machine Learning, promouvoir la collaboration entre les équipes et automatiser les processus opérationnels afin d'assurer la reproductibilité, la fiabilité et le déploiement efficace des modèles dans des environnements de production. Les participants apprendront également les meilleures pratiques pour améliorer le processus de déploiement et sortir les modèles du cadre expérimental.",
+            "title": "Workshop 3b : Machine Learning Operations - MLOps",
+            "description": "Dans ce Workshop, les participant·es exploreront les aspects de la gestion des données dans le cadre RAG (Generation Augmentée par la Recherche) appliqué aux grands modèles de langage (LLM). L'objectif principal est de transformer une expérience de Machine Learning fournie dans un Jupyter Notebook en une application adaptée pour la production en intégrant un pipeline DVC pour une gestion efficace des données. Cet atelier vise à fournir aux participant·es les compétences techniques nécessaires pour gérer le cycle de vie des données des modèles de Machine Learning, promouvoir la collaboration dans les équipes et automatiser les processus opérationnels.",
             "schedule": {
               "time": "13h-16h",
               "equipment": "Ordinateur portable personnel avec WSL2 / Linux Ubuntu installé et prêt à l'emploi."
             },
             "activities": [
-              "Exercice de brise-glace.",
-              "Prise en main avec une simple expérience de machine learning.",
+              "Préparation initiale.",
+              "Prise en main d'une expérience simple RAG de machine learning.",
               "Transformation de cette expérience pour reproduire et évaluer la qualité du modèle.",
               "Collaboration efficace pour développer un modèle fiable et fonctionnel.",
-              "Déploiement du modèle sur le cloud.",
-              "Redéploiement automatique du modèle en cas de modifications."
             ]
           }
         ]
