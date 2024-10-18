@@ -282,7 +282,8 @@
               "Vous pourrez distribuer des documents promotionnels et des goodies.",
               "Des badges permettront de vous identifier comme partenaire de l’évènement."
             ]
-          }
+          },
+          "press": "Partenaire Presse"
         }
       },
       "workshops": {
@@ -358,6 +359,17 @@
               "Collaboration efficace pour développer un modèle fiable et fonctionnel.",
               "Déploiement du modèle sur le cloud.",
               "Redéploiement automatique du modèle en cas de modifications."
+            ]
+          },
+          {
+            "title": "Workshop 5 : IA pour les communautés énergétiques locales",
+            "description": "Détails prochainement disponibles.",
+            "schedule": {
+              "time": "15h30-17h30",
+              "equipment": "Détails prochainement disponibles."
+            },
+            "activities": [
+              "Détails prochainement disponibles."
             ]
           }
         ]
