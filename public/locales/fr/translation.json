@@ -296,10 +296,10 @@
         "topics-title": "Sujets",
         "workshops": [
           {
-            "title": "Workshop 1 : Workshop on Compute Infrastructures for IA applications in the wild",
+            "title": "Workshop 1: Workshop on Compute Infrastructures for IA applications in the wild",
             "description": "Avec l'avènement des chatbots, des grands modèles de langage (LLMs) et d'autres technologies d'IA générative, ainsi que d'autres progrès dans le domaine de l'IA, il y a une explosion de la demande en puissance de calcul. L'IA n'est plus simplement de l'informatique, c'est une science computationnelle. En tant que telle, elle ne peut plus se réaliser avec des équipements auto-gérés et occasionnels. Des infrastructures de calcul plus avancées sont nécessaires pour répondre aux besoins des utilisateurs en termes de puissance de calcul, de capacité de RAM GPU, d'environnements logiciels et de sécurité, tout en assurant une utilisation efficace des ressources de plus en plus coûteuses. L'objectif de ce Workshop est de réunir des personnes responsables des infrastructures de calcul (sur site, cloud ou hybride) destinées à prendre en charge les charges de travail IA (à la fois l'entraînement et l'inférence) dans le but de créer une communauté en Suisse.",
             "schedule": {
-              "time": "de 9h à 17h (à confirmer)",
+              "time": "de 8h30 à midi, puis de 13h à 17h",
               "equipment": "Aucun équipement requis"
             },
             "activities": [
@@ -315,10 +315,10 @@
             ]
           },
           {
-            "title": "Workshop 2 : Edge AI",
+            "title": "Workshop 2a: Edge AI : Tools, devices, and methods",
             "description": "Dans un monde de plus en plus connecté, la capacité de traiter les données à la source, c'est-à-dire plus près de l'endroit où elles sont générées, est devenue cruciale. Ce Workshop offre un aperçu complet mais concis de l'Edge AI, en se concentrant sur les dispositifs, les méthodes et les outils qui font de cette technologie un véritable changement de paradigme. Les participants exploreront comment l'Edge AI permet le traitement des données en temps réel, réduit la latence et améliore la confidentialité en minimisant la nécessité d'envoyer des données vers le cloud. À la fin du Workshop, les participants auront une compréhension large des aspects fondamentaux de l'Edge AI, les habilitant à explorer et à mettre en œuvre ces technologies dans leurs propres projets.",
             "schedule": {
-              "time": "9h00 à 17h",
+              "time": "de 8h30 à midi, puis de 13h à 15h",
               "equipment": "Équipement attendu : à confirmer."
             },
             "activities": [
@@ -332,10 +332,21 @@
             ]
           },
           {
-            "title": "Workshop 3 : Generation Augmentée par la Recherche (RAG)",
+            "title": "Workshop 2b: AI for Local Energy Systems",
+            "description": "Détails prochainement disponibles.",
+            "schedule": {
+              "time": "15h30-17h30",
+              "equipment": "Détails prochainement disponibles."
+            },
+            "activities": [
+              "Détails prochainement disponibles."
+            ]
+          },
+          {
+            "title": "Workshop 3a: Generation Augmentée par la Recherche (RAG)",
             "description": "Le cadre RAG (Generation Augmentée par la Recherche) combine la recherche et la génération au sein de grands modèles de langage (LLM) pour produire des réponses plus contextuelles et informatives. Ce Workshop propose une introduction technique à RAG, incluant des exemples concrets de son application pour améliorer les systèmes de gestion des connaissances. Les participants exploreront également l'auto-hébergement de LLMs afin d'assurer la confidentialité et la sécurité lors du déploiement des technologies d'IA générative. À la fin du Workshop, les participants seront capables d'interroger les LLMs sur le contenu de leurs documents associés, les dotant de l'expertise nécessaire pour implémenter RAG dans des scénarios réels.",
             "schedule": {
-              "time": "2 sessions indépendantes : 9h-12h30 et 13h30-17h",
+              "time": "8h30-12h",
               "equipment": "Ordinateur portable personnel requis."
             },
             "activities": [
@@ -346,10 +357,10 @@
             ]
           },
           {
-            "title": "Workshop 4 : MLOps",
+            "title": "Workshop 3b: Machine Learning Operations - MLOps",
             "description": "Ce workshop aide les participants à implémenter un processus MLOps pour une expérience de Machine Learning, en passant d'un notebook Jupyter à un service de production complet dans le cloud. L'objectif est de fournir les compétences techniques nécessaires pour gérer le cycle de vie des modèles de Machine Learning, promouvoir la collaboration entre les équipes et automatiser les processus opérationnels afin d'assurer la reproductibilité, la fiabilité et le déploiement efficace des modèles dans des environnements de production. Les participants apprendront également les meilleures pratiques pour améliorer le processus de déploiement et sortir les modèles du cadre expérimental.",
             "schedule": {
-              "time": "9h-12h30 et 13h30-17h",
+              "time": "13h-16h",
               "equipment": "Ordinateur portable personnel avec WSL2 / Linux Ubuntu installé et prêt à l'emploi."
             },
             "activities": [
@@ -359,17 +370,6 @@
               "Collaboration efficace pour développer un modèle fiable et fonctionnel.",
               "Déploiement du modèle sur le cloud.",
               "Redéploiement automatique du modèle en cas de modifications."
-            ]
-          },
-          {
-            "title": "Workshop 5 : IA pour les communautés énergétiques locales",
-            "description": "Détails prochainement disponibles.",
-            "schedule": {
-              "time": "15h30-17h30",
-              "equipment": "Détails prochainement disponibles."
-            },
-            "activities": [
-              "Détails prochainement disponibles."
             ]
           }
         ]
