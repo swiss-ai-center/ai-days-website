@@ -299,7 +299,7 @@
             "title": "Workshop 1: Workshop on Compute Infrastructures for IA applications in the wild",
             "description": "With the advent of Chatbots, LLMs, and other generative AI technologies, as well as other progress in the AI field, there has been an explosion in demand for computational power. AI is no longer merely computer science but computational science. It can no longer be sustained with self-managed, casual equipment. More advanced compute infrastructures are required to satisfy user needs in terms of power, GPU RAM capacity, software environments, and security, as well as to ensure efficient use of increasingly costly resources. The purpose of this workshop is to gather people responsible for compute infrastructure (on-prem, cloud, or hybrid) aimed at supporting AI workloads (both training and inference) with the goal of creating a community in Switzerland.",
             "schedule": {
-              "time": "9h to 17h (TBC)",
+              "time": "8h30-12h and 13h-17h",
               "equipment": "None required"
             },
             "activities": [
@@ -315,10 +315,10 @@
             ]
           },
           {
-            "title": "Workshop 2 : Edge AI",
+            "title": "Workshop 2a : Edge AI - Tools, devices, and methods",
             "description": "In an increasingly connected world, the ability to process data at the source, closer to where it is generated, has become crucial. This workshop provides a comprehensive but concise overview of Edge AI, focusing on the devices, methods, and tools that make this technology a game-changer. Participants will explore how Edge AI enables real-time data processing, reduces latency, and enhances privacy by minimizing the need to send data to the cloud. By the end of this workshop, participants will have a broad understanding of the fundamental aspects of Edge AI, empowering them to explore and implement these technologies in their own projects.",
             "schedule": {
-              "time": "9h00 to 17h",
+              "time": "8h30-12h and 13h-15h",
               "equipment": "Expected equipment: To be announced."
             },
             "activities": [
@@ -332,10 +332,21 @@
             ]
           },
           {
-            "title": "Workshop 3 : Retrieval-Augmented Generation (RAG)",
+            "title": "Workshop 2b: AI for Local Energy Systems",
+            "description": "To be announced.",
+            "schedule": {
+              "time": "15h30-17h30",
+              "equipment": "To be announced."
+            },
+            "activities": [
+              "To be announced."
+            ]
+          },
+          {
+            "title": "Workshop 3a: Retrieval-Augmented Generation (RAG)",
             "description": "The Retrieval-Augmented Generation (RAG) framework combines retrieval and generation within large language models (LLMs) to produce context-aware and informative responses. This workshop offers a technical introduction to RAG, including concrete examples of its application in enhancing knowledge management systems. Participants will also explore self-hosting LLMs to ensure privacy and security in the deployment of generative AI technologies. By the end of the workshop, participants will be able to query LLMs on the contents of their associated documents, empowering them with the expertise needed to implement RAG in real-world scenarios.",
             "schedule": {
-              "time": "2 independent sessions: 9h-12h30 and 13h30-17h",
+              "time": "8h30-12h",
               "equipment": "Personal laptop required."
             },
             "activities": [
@@ -357,17 +368,6 @@
               "Exploration of the RAG experiment.",
               "Transformation of the experiment to reproduce and evaluate the quality of the model.",
               "Effective collaboration to build a reliable and functional model over time.",
-            ]
-          },
-          {
-            "title": "Workshop 5 : AI for Local Energy Communities",
-            "description": "To be announced.",
-            "schedule": {
-              "time": "15h30-17h30",
-              "equipment": "To be announced."
-            },
-            "activities": [
-              "To be announced."
             ]
           }
         ]
