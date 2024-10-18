@@ -315,7 +315,7 @@
             ]
           },
           {
-            "title": "Workshop 2a : Edge AI : Tools, devices, and methods",
+            "title": "Workshop 2a : Edge AI - Tools, devices, and methods",
             "description": "In an increasingly connected world, the ability to process data at the source, closer to where it is generated, has become crucial. This workshop provides a comprehensive but concise overview of Edge AI, focusing on the devices, methods, and tools that make this technology a game-changer. Participants will explore how Edge AI enables real-time data processing, reduces latency, and enhances privacy by minimizing the need to send data to the cloud. By the end of this workshop, participants will have a broad understanding of the fundamental aspects of Edge AI, empowering them to explore and implement these technologies in their own projects.",
             "schedule": {
               "time": "8h30-12h and 13h-15h",
