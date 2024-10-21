@@ -92,8 +92,7 @@
           "title": "AI Days@HES-SO 2025",
           "paragraph1": "Although the event is public and open to all, it is primarily aimed at people involved in the management and strategy of one or more SMEs, to find out how they can benefit from advances in artificial intelligence in their activities.",
           "paragraph2": "Following the great success and interest in the previous years, the AI days’25 will take place for three days: the 27th and 28th of January in Geneva (Pathé Balexert movie theater complex) and the 29th of January in Lausanne (Ecole Hotelière - EHL). The program will include one day with hands-on workshops and two days with parallel sessions made up of : ",
-          "paragraph3":"<ul><li>round-table discussions, ateliers, poster and demo sessions, and speed-dating networking sessions</li><li>presentations on industrial advances and experiences, successful collaborations between academia and industry</li><li>novel academic and applied research results. Starting this year, the academic contributions will be subject to peer-review. Selected contributions will be published as part of the proceedings with CEUR (<a href=\"https://ceur-ws.org/\">https://ceur-ws.org/</a>)</li></ul>"
-
+          "paragraph3": "<ul><li>round-table discussions, ateliers, poster and demo sessions, and speed-dating networking sessions</li><li>presentations on industrial advances and experiences, successful collaborations between academia and industry</li><li>novel academic and applied research results. Starting this year, the academic contributions will be subject to peer-review. Selected contributions will be published as part of the proceedings with CEUR (<a href=\"https://ceur-ws.org/\">https://ceur-ws.org/</a>)</li></ul>"
         },
         "topics": [
           "Responsible AI",
@@ -367,7 +366,7 @@
               "Initial setup.",
               "Exploration of the RAG experiment.",
               "Transformation of the experiment to reproduce and evaluate the quality of the model.",
-              "Effective collaboration to build a reliable and functional model over time.",
+              "Effective collaboration to build a reliable and functional model over time."
             ]
           }
         ]

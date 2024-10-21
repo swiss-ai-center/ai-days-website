@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
                     >
                         <Box
                             component="a"
-                            href={t(`years.${selectedYearIndex(year)}.footer.partenaire-1`)}  // Lien vers HES-SO
+                            href={t(`years.${selectedYearIndex(year)}.footer.partner-1`)}  // Lien vers HES-SO
                             target="_blank"
                             rel="noopener noreferrer"
                             sx={{mx: 2}}
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
 
                         <Box
                             component="a"
-                            href={t(`years.${selectedYearIndex(year)}.footer.partenaire-2`)} // Lien vers HES-SO
+                            href={t(`years.${selectedYearIndex(year)}.footer.partner-2`)} // Lien vers HES-SO
                             target="_blank"
                             rel="noopener noreferrer"
                             sx={{mx: 2}}
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
 
                         <Box
                             component="a"
-                            href={t(`years.${selectedYearIndex(year)}.footer.partenaire-3`)} // Lien vers HES-SO
+                            href={t(`years.${selectedYearIndex(year)}.footer.partner-3`)} // Lien vers HES-SO
                             target="_blank"
                             rel="noopener noreferrer"
                             sx={{mx: 2}}

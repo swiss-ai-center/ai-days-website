@@ -93,7 +93,6 @@
           "paragraph1": "Dans ce cadre, le centre organise chaque année une série de conférences et présentations : les AI days. Cette manifestation est publique et ouverte à tous. Toutefois, la cible privilégiée reste les entrepreneurs et managers des PME de Suisse Romande et a pour but de présenter les avantages que pourraient procurer l’adoption de l’IA dans leur domaine d’activité.",
           "paragraph2": "Vu le succès des éditions précédentes, les AI days’25 auront lieu sur trois jours consécutifs, à savoir les 27 et 28 janvier 2025 à Genève (Cinéma Pathé Balexert) et le 29 janvier à Lausanne (Ecole Hotelière). Cet événement proposera des activités variées sous forme de sessions parallèles incluant:",
           "paragraph3": "<ul><li>des tables rondes, des workshops, des posters et des sessions de démonstrations et de speed-dating networking</li><li>des présentations académiques de développements récents, des innovations industrielles en lien avec l’IA, et des collaborations fructueuses entre les partenaires académiques et industriels</li><li>des résultats novateurs en recherche appliquée. Cette année pour la première fois, les contributions académiques seront soumises à une révision par les pairs et les contributions sélectionnées feront l’objet d’une publication avec l'institution CEUR (<a href=\"https://ceur-ws.org/\">https://ceur-ws.org/</a>).</li></ul>Des contributions sont recherchées dans les domaines suivants de l'Intelligence Artificielle (entre autres) :"
-
         },
         "topics": [
           "Durabilité",
@@ -367,7 +366,7 @@
               "Préparation initiale.",
               "Prise en main d'une expérience simple RAG de machine learning.",
               "Transformation de cette expérience pour reproduire et évaluer la qualité du modèle.",
-              "Collaboration efficace pour développer un modèle fiable et fonctionnel.",
+              "Collaboration efficace pour développer un modèle fiable et fonctionnel."
             ]
           }
         ]
