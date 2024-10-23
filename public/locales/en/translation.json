@@ -160,14 +160,14 @@
           "s6": "Torsten Braun, University of Bern, Switzerland",
           "s7": "Andrea Guerrieri, EPFL, Switzerland",
           "s8": "Matthew Vowels, University of Lausanne, Switzerland",
-          "s9": " Silvan Zahno, HES-SO Valais/Wallis, Switzerland",
+          "s9": "Silvan Zahno, HES-SO Valais/Wallis, Switzerland",
           "s10": "Mara Graziani, IBM Research, Switzerland",
           "s11": "Adrian Holzer, University of Neuchâtel, Switzerland",
           "s12": "Andreas Fischer, HES-SO Fribourg, Switzerland",
           "s13": "Ricardo Chavarriaga, ZHAW, Switzerland",
           "s14": "Snezana Nektarijevic, SDSC, Switzerland",
           "s15": "Bastian Grossenbacher, UNIFR, Switzerland",
-          "s16": "Corrine Fredouille, Université d'Avignon, France",
+          "s16": "Corinne Fredouille, Université d'Avignon, France",
           "s17": "Diego Collarana, Fraunhofer Institute, Germany",
           "s18": "Stéphane Galland, Université de Technologie de Belfort Montbéliard, France",
           "s19": "Alina Matei, University of Neuchâtel, Switzerland",
@@ -294,6 +294,10 @@
         }
       },
       "workshops": {
+        "header": {
+          "title": "Workshops dedicated to specific topics will take place on Monday January 27th",
+          "description": "Five workshops will run in 3 parallel tracks and room. Each workshop is under the responsibility of a specific committee, distinct from the main AI-days organisation committee. To register to a workshop, please use <a href=\"https://form.jotform.com/242613280391351\">the AI-days registration page</a>, tick Monday and select your preferred workshop(s). Notice: workshops 3a and 3b (RAG and MLOPS) will accept a limited number of participants. The earliest registrees will have priority.</p> Workshops 2a and 2b, as well as 3a and 3d will take place in the same room, one after the other."
+        },
         "title-27": "Workshops Day – January 27",
         "venue-27": "Pathé Balexert",
         "description-title": "Description",

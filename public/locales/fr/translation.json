@@ -160,14 +160,14 @@
           "s6": "Torsten Braun, University of Bern, Switzerland",
           "s7": "Andrea Guerrieri, EPFL, Switzerland",
           "s8": "Matthew Vowels, University of Lausanne, Switzerland",
-          "s9": " Silvan Zahno, HES-SO Valais/Wallis, Switzerland",
+          "s9": "Silvan Zahno, HES-SO Valais/Wallis, Switzerland",
           "s10": "Mara Graziani, IBM Research, Switzerland",
           "s11": "Adrian Holzer, University of Neuchâtel, Switzerland",
           "s12": "Andreas Fischer, HES-SO Fribourg, Switzerland",
           "s13": "Ricardo Chavarriaga, ZHAW, Switzerland",
           "s14": "Snezana Nektarijevic, SDSC, Switzerland",
           "s15": "Bastian Grossenbacher, UNIFR, Switzerland",
-          "s16": "Corrine Fredouille, Université d'Avignon, France",
+          "s16": "Corinne Fredouille, Université d'Avignon, France",
           "s17": "Diego Collarana, Fraunhofer Institute, Germany",
           "s18": "Stéphane Galland, Université de Technologie de Belfort Montbéliard, France",
           "s19": "Alina Matei, University of Neuchâtel, Switzerland",
@@ -294,6 +294,10 @@
         }
       },
       "workshops": {
+        "header": {
+          "title": "Le lundi 27 janvier est dédié à des workshops sur des thèmes spécifiques.",
+          "description": "Cinq workshops auront lieu dans 3 salles. Chaque workshop est sous la responsabilité d'un comité distinct et séparé du comité d'organisation des AI-days. Pour s'inscrire, utiliser <a href=\"https://form.jotform.com/242613280391351\">le formulaire d'inscription aux AI-days</a>, en sélectionnant le lundi, et en choisissant votre ou vos workshops préférés. Attention: les workshops 3a et 3b (RAG et MLOPS) ont un nombre de participants limité, les premiers inscrits auront la priorité.</p> Les workshops 2a et 2b, ainsi que 3a et 3b se succèdent dans la même salle."
+        },
         "title-27": "Journée des Workshops – 27 Janvier",
         "venue-27": "Pathé Balexert",
         "description-title": "Description",
