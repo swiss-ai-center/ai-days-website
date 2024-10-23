@@ -8,6 +8,7 @@ import {useSelector} from 'react-redux';
 import {Card} from 'primereact/card';
 import "./styles.css";
 import Footer from "../../components/Footer/footer";
+import parseHtml from "html-react-parser";
 
 interface Workshop {
     title: string;
@@ -87,6 +88,14 @@ const Workshops: React.FC = () => {
                 />
 
             </Paper>
+
+            {/* Entête workshops */}
+            <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
+                <Typography variant={"h4"}
+                            sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.workshops.header.title`)}</Typography>
+                <Typography variant={"body1"}
+                            pt={1}>{parseHtml(t(`years.${selectedYearIndex(year)}.workshops.header.description`))}</Typography>
+            </Box>
 
             {/* Affichage dynamique des workshops */}
             <div className={"div-cards"}>

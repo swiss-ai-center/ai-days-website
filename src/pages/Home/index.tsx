@@ -57,6 +57,24 @@ const Home: React.FC = () => {
                 />
             </Box>
 
+            {/* Call to Action */}
+            <Box sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                mb: 4,
+                mt: 4}}>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    sx={{py: 1.5, px: 4, fontSize: '1rem', fontWeight: 'bold', borderRadius: 2}}
+                >
+                    <a href="https://form.jotform.com/242613280391351" target="_blank" rel="noreferrer"
+                       style={{color: '#fff', textDecoration: 'none'}}>
+                        {t(`years.${selectedYearIndex(year)}.home.register`) || 'Inscrivez-vous maintenant'}
+                    </a>
+                </Button>
+            </Box>
+
             {/* Main Content Section */}
             <Paper elevation={2} sx={{p: 4, borderRadius: 3, boxShadow: 2}}>
                 <Box sx={{textAlign: 'justify', mb: 4}}>

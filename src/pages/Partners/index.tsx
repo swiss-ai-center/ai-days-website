@@ -29,7 +29,7 @@ const Partners: React.FC = () => {
         <Container maxWidth={"xl"}>
             <Box
                 sx={{
-                    backgroundImage: 'url("/partenaires.png")',
+                    backgroundImage: 'url("/partenaires.jpg")',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     height: '500px',
