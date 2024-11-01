@@ -119,15 +119,16 @@
               "description": "Un résumé de 300 mots au maximum accompagné d'un poster taille A0 (orientation portrait). Le poster devra contenir un titre, le nom du/des auteur(s), la méthodologie utilisée, les résultats obtenus et les conclusions. Veuillez noter que vous devrez imprimer, apporter et accrocher votre poster vous-même. Seul le résumé fera l’objet de publications. Les soumissions posters doivent être soumis <a href=\"mailto:valerie.schurchtodeschini@he-arc.ch,pamela.delgado@hevs.ch\">par email aux responsables du programme technique</a>."
             },
             {
-              "title": "Démonstration interactive",
-              "description": "Une démonstration interactive accompagnée d'une page de présentation et/ou de contexte. Le document d'accompagnement devra contenir un titre, le nom du/des auteur(s), la méthodologie utilisée, les résultats obtenus et les conclusions. (1 page de présentation et/ou du contexte + références illimitées). Veuillez noter que vous êtes responsable de votre démonstration que aucun matériel ne sera fourni. Le document doit être soumis <a href=\"mailto:valerie.schurchtodeschini@he-arc.ch,pamela.delgado@hevs.ch\">par email aux responsables du programme technique</a>."
+              "title": "Démonstration interactive (+ poster si nécessaire)",
+              "description": "Une démonstration interactive, décrite par une page de présentation et de contexte (pour le processus de sélection). Ce document de présentation de la démo devra contenir un titre, le nom du/des auteur(s), décrire ce qui sera démontré, et les conclusions que les visiteurs pourront en tirer. Il est possible d'accompagner votre démo d'un poster (qui peut être soumis en même temps que le document de description). (1 page de présentation et/ou du contexte + références illimitées). Veuillez noter que vous êtes responsable de votre démonstration que aucun matériel ne sera fourni, hormi la possibilité d'accrocher un poster. Le document d'accompagnement doit être soumis <a href=\"mailto:valerie.schurchtodeschini@he-arc.ch,pamela.delgado@hevs.ch\">par email aux responsables du programme technique</a>."
             }
           ]
         },
         "key-dates": {
           "title": "Dates clés",
           "dates": [
-            "Date limite de soumission : le 10 novembre 2024",
+            "Date limite de soumission (articles courts et industriels) : le <s>10 novembre 2024</s> 20 novembre 2024, 23h59 AoE",
+            "Date limite de soumission (démos et posters) : 15 décembre 2024, 23h59 AoE",
             "Notification à l’auteur : le 20 décembre 2024",
             "Dates de la conférence : du 27 au 29 janvier 2025"
           ]

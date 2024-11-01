@@ -119,15 +119,16 @@
               "description": "Abstract of 300 words maximum + poster size A0, in portrait orientation, unlimited references. The poster must contain a title, the name(s) of the author(s), the methodology used, the results obtained, and the conclusions. Please note that you must print, bring, and hang your poster yourself. Only the abstracts will be published in the proceedings. Poster submissions must be made <a href=\"mailto:valerie.schurchtodeschini@he-arc.ch,pamela.delgado@hevs.ch\">by sending an email to the program chairs</a>."
             },
             {
-              "title": "Interactive demonstration",
-              "description": "1-page presentation and/or background + unlimited references. The accompanying document should contain a title, the name(s) of the author(s), the methodology used, the results obtained, and the conclusions. Please note that you are responsible for your own demonstration and no materials will be provided. Demonstration submissions must be made <a href=\"mailto:valerie.schurchtodeschini@he-arc.ch,pamela.delgado@hevs.ch\">by sending an email to the program chairs</a>."
+              "title": "Interactive demonstration (+ optional poster)",
+              "description": "An interactive demonstration, described by a 1-page document (for the selection process). The accompanying document should contain a title, the name(s) of the author(s), should describe what will be demonstrated, and which conclusions visitors are expected to draw. It is possible to accompany the demo with a poster (which can be submitted as supporting document also the main 1-page document). Please note that you are responsible for your own demonstration and no materials will be provided, except the possibility to hand your poster, if any. Demonstration submissions must be made <a href=\"mailto:valerie.schurchtodeschini@he-arc.ch,pamela.delgado@hevs.ch\">by sending an email to the program chairs</a>."
             }
           ]
         },
         "key-dates": {
           "title": "Key Dates",
           "dates": [
-            "Submission deadline: 10 November 2024",
+            "Submission deadline (short and industrial papers): <s>November 10th, 2024</s> November 20th, 2024, 23h59 AoE",
+            "Submission deadline (demos and posters): December 15th, 2024, 23h59 AoE",
             "Author Notification: 20 December 2024",
             "Conference dates: 27 - 29 January 2025"
           ]

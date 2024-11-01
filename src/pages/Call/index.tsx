@@ -140,7 +140,7 @@ const Call: React.FC = () => {
                                 <ListItemIcon>
                                     <CalendarToday color={"primary"}/>
                                 </ListItemIcon>
-                                <ListItemText primary={date}/>
+                                <ListItemText primary={parseHtml(date)}/>
                             </ListItemButton>
                         ))}
                     </List>
