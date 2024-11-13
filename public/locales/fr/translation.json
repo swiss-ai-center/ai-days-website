@@ -306,6 +306,7 @@
         "equipment-title": "Equipements",
         "activities-title": "Activitiés",
         "topics-title": "Sujets",
+        "workshop-cta": "Voir PDF",
         "workshops": [
           {
             "title": "Workshop 1: Workshop on Compute Infrastructures for IA applications in the wild",
@@ -324,7 +325,8 @@
               "Comment les charges de travail sont mappées au matériel.",
               "Aspects particulièrement difficiles de l'infrastructure IA.",
               "Projets visant à améliorer l'infrastructure."
-            ]
+            ],
+            "pdfLink": "/PDF/Session1.pdf"
           },
           {
             "title": "Workshop 2a: Edge AI - Tools, devices, and methods",
@@ -341,7 +343,8 @@
             "topics": [
               "Introduction aux réseaux neuronaux légers et aux techniques de compression de modèles.",
               "Études de cas réels montrant comment l'Edge AI est appliquée."
-            ]
+            ],
+            "pdfLink": "/PDF/Session2a.pdf"
           },
           {
             "title": "Workshop 2b: AI for Local Energy Systems",
@@ -352,7 +355,8 @@
             },
             "activities": [
               "Détails prochainement disponibles."
-            ]
+            ],
+            "pdfLink": "/PDF/Session2b.pdf"
           },
           {
             "title": "Workshop 3a: Generation Augmentée par la Recherche (RAG)",
@@ -366,7 +370,8 @@
               "Exemples pratiques utilisant Google Colab.",
               "Implémentation de RAG dans des applications réelles.",
               "Discussions sur le déploiement pratique de RAG."
-            ]
+            ],
+            "pdfLink": "/PDF/Session3a.pdf"
           },
           {
             "title": "Workshop 3b : Machine Learning Operations - MLOps",
@@ -380,7 +385,8 @@
               "Prise en main d'une expérience simple RAG de machine learning.",
               "Transformation de cette expérience pour reproduire et évaluer la qualité du modèle.",
               "Collaboration efficace pour développer un modèle fiable et fonctionnel."
-            ]
+            ],
+            "pdfLink": "/PDF/Session3b.pdf"
           }
         ]
       },

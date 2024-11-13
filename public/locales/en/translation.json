@@ -306,6 +306,7 @@
         "equipment-title": "Equipment",
         "activities-title": "Activities",
         "topics-title": "Topics",
+        "workshop-cta": "View PDF",
         "workshops": [
           {
             "title": "Workshop 1: Workshop on Compute Infrastructures for IA applications in the wild",
@@ -324,7 +325,8 @@
               "How to map workloads onto hardware.",
               "Challenging aspects of AI infrastructure.",
               "Projects aimed at improving AI/ML infrastructure."
-            ]
+            ],
+            "pdfLink": "/PDF/Session1.pdf"
           },
           {
             "title": "Workshop 2a : Edge AI - Tools, devices, and methods",
@@ -341,7 +343,8 @@
             "topics": [
               "Introduction to lightweight neural networks and model compression techniques.",
               "Real-world case studies showing how Edge AI is applied."
-            ]
+            ],
+            "pdfLink": "/PDF/Session2a.pdf"
           },
           {
             "title": "Workshop 2b: AI for Local Energy Systems",
@@ -352,7 +355,8 @@
             },
             "activities": [
               "To be announced."
-            ]
+            ],
+            "pdfLink": "/PDF/Session2b.pdf"
           },
           {
             "title": "Workshop 3a: Retrieval-Augmented Generation (RAG)",
@@ -366,7 +370,8 @@
               "Hands-on examples using Google Colab.",
               "Real-world implementation of RAG applications.",
               "Discussions on practical RAG deployments."
-            ]
+            ],
+            "pdfLink": "/PDF/Session3a.pdf"
           },
           {
             "title": "Workshop 3b: Machine Learning Operations - MLOps",
@@ -380,7 +385,8 @@
               "Exploration of the RAG experiment.",
               "Transformation of the experiment to reproduce and evaluate the quality of the model.",
               "Effective collaboration to build a reliable and functional model over time."
-            ]
+            ],
+            "pdfLink": "/PDF/Session3b.pdf"
           }
         ]
       },
