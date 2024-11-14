@@ -11,6 +11,7 @@ import {useTranslation} from 'react-i18next';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import {useSelector} from 'react-redux';
 import "primereact/resources/themes/bootstrap4-light-purple/theme.css";
+import Speakers from "./pages/Speakers";
 
 function App() {
     const {t} = useTranslation();
@@ -34,6 +35,7 @@ function App() {
         call: Call,
         home: Home,
         contact: Contact,
+        speakers: Speakers,
         workshops: Workshops,
         partners: Partners,
     };

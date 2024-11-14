@@ -35,7 +35,7 @@
           {
             "name": "Intervenants",
             "component": "speakers",
-            "enabled": "false",
+            "enabled": "true",
             "url": "/speakers"
           },
           {
@@ -306,6 +306,7 @@
         "equipment-title": "Equipements",
         "activities-title": "Activitiés",
         "topics-title": "Sujets",
+        "workshop-cta": "Voir PDF",
         "workshops": [
           {
             "title": "Workshop 1: Workshop on Compute Infrastructures for IA applications in the wild",
@@ -324,7 +325,8 @@
               "Comment les charges de travail sont mappées au matériel.",
               "Aspects particulièrement difficiles de l'infrastructure IA.",
               "Projets visant à améliorer l'infrastructure."
-            ]
+            ],
+            "pdfLink": "/PDF/Session1.pdf"
           },
           {
             "title": "Workshop 2a: Edge AI - Tools, devices, and methods",
@@ -341,7 +343,8 @@
             "topics": [
               "Introduction aux réseaux neuronaux légers et aux techniques de compression de modèles.",
               "Études de cas réels montrant comment l'Edge AI est appliquée."
-            ]
+            ],
+            "pdfLink": "/PDF/Session2a.pdf"
           },
           {
             "title": "Workshop 2b: AI for Local Energy Systems",
@@ -352,7 +355,8 @@
             },
             "activities": [
               "Détails prochainement disponibles."
-            ]
+            ],
+            "pdfLink": "/PDF/Session2b.pdf"
           },
           {
             "title": "Workshop 3a: Generation Augmentée par la Recherche (RAG)",
@@ -366,7 +370,8 @@
               "Exemples pratiques utilisant Google Colab.",
               "Implémentation de RAG dans des applications réelles.",
               "Discussions sur le déploiement pratique de RAG."
-            ]
+            ],
+            "pdfLink": "/PDF/Session3a.pdf"
           },
           {
             "title": "Workshop 3b : Machine Learning Operations - MLOps",
@@ -380,9 +385,44 @@
               "Prise en main d'une expérience simple RAG de machine learning.",
               "Transformation de cette expérience pour reproduire et évaluer la qualité du modèle.",
               "Collaboration efficace pour développer un modèle fiable et fonctionnel."
-            ]
+            ],
+            "pdfLink": "/PDF/Session3b.pdf"
           }
         ]
+      },
+      "speakers": {
+        "hero": {
+          "title": "Nos Conférenciers Invités"
+        },
+        "invitedSpeakers": {
+          "sectionTitle": "Intervenants Invités",
+          "speakers": [
+            {
+              "name": "Giorgio Pauletto",
+              "bio": "Giorgio Pauletto est Directeur prospective, stratégie et innovation aux Services Industriels de Genève (SIG), une entreprise publique autonome dans les énergies renouvelables et l’environnement. Il est docteur en économie, statistiques et méthodes quantitatives de l'Université de Genève et a été chercheur à Stanford et Yale.",
+              "title": "L'intelligence artificielle sauvera-t-elle la planète ou l'épuisera-t-elle ?",
+              "para": "L’intelligence artificielle ouvre des perspectives prometteuses pour optimiser notre consommation d’énergie et soutenir la transition écologique. Mais son propre impact environnemental, lié à une forte consommation de ressources, soulève des questions. Est-elle vraiment une solution durable ou va-t-elle devenir un nouveau fardeau pour notre planète ?",
+              "photo": "/speakers/giorgio-pauletto.png"
+            },
+            {
+              "name": "Détails prochainement disponibles",
+              "bio": "Détails prochainement disponibles",
+              "title": "Détails prochainement disponibles",
+              "para": "Détails prochainement disponibles",
+              "photo": "/speakers/generic-profile.jpg"
+            }
+          ]
+        },
+        "moderatorsAndPanelists": {
+          "sectionTitle": "Modérateurs et Panélistes",
+          "panelists": [
+            {
+              "name": "Détails prochainement disponibles",
+              "bio": "Détails prochainement disponibles",
+              "photo": "/speakers/generic-profile.jpg"
+            }
+          ]
+        }
       },
       "footer": {
         "title": "Nos partenaires Platine",

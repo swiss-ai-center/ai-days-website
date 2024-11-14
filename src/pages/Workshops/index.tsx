@@ -1,4 +1,4 @@
-import {Paper} from '@mui/material';
+import {Paper, Button} from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
@@ -19,6 +19,7 @@ interface Workshop {
     };
     activities?: string[];
     topics?: string[];
+    pdfLink?: string; // Lien vers le PDF détaillé de la session
 }
 
 const Workshops: React.FC = () => {
@@ -86,15 +87,16 @@ const Workshops: React.FC = () => {
                         opacity: 0.7, // Transparent effect
                     }}
                 />
-
             </Paper>
 
             {/* Entête workshops */}
             <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
-                <Typography variant={"h4"}
-                            sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.workshops.header.title`)}</Typography>
-                <Typography variant={"body1"}
-                            pt={1}>{parseHtml(t(`years.${selectedYearIndex(year)}.workshops.header.description`))}</Typography>
+                <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
+                    {t(`years.${selectedYearIndex(year)}.workshops.header.title`)}
+                </Typography>
+                <Typography variant={"body1"} pt={1}>
+                    {parseHtml(t(`years.${selectedYearIndex(year)}.workshops.header.description`))}
+                </Typography>
             </Box>
 
             {/* Affichage dynamique des workshops */}
@@ -142,13 +144,25 @@ const Workshops: React.FC = () => {
                                 </>
                             )}
 
+                            {/* Bouton Voir PDF */}
+                            {workshop.pdfLink && (
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    href={workshop.pdfLink}
+                                    target="_blank"
+                                    sx={{mt: 2}}
+                                >
+                                    {t(`years.${selectedYearIndex(year)}.workshops.workshop-cta`)}
+                                </Button>
+                            )}
                         </Card>
                     ))
                 ) : (
                     <p>{t("no_workshops")}</p>
                 )}
             </div>
-            <Footer></Footer>
+            <Footer/>
         </Container>
     );
 };
