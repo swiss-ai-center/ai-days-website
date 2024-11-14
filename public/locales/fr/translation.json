@@ -35,7 +35,7 @@
           {
             "name": "Intervenants",
             "component": "speakers",
-            "enabled": "false",
+            "enabled": "true",
             "url": "/speakers"
           },
           {
@@ -389,6 +389,40 @@
             "pdfLink": "/PDF/Session3b.pdf"
           }
         ]
+      },
+      "speakers": {
+        "hero": {
+          "title": "Nos Conférenciers invités"
+        },
+        "invitedSpeakers": {
+          "sectionTitle": "Intervenants Invités",
+          "speakers": [
+            {
+              "name": "Giorgio Pauletto",
+              "bio": "Giorgio Pauletto est Directeur prospective, stratégie et innovation aux Services Industriels de Genève (SIG), une entreprise publique autonome dans les énergies renouvelables et l’environnement. Il est docteur en économie, statistiques et méthodes quantitatives de l'Université de Genève et a été chercheur à Stanford et Yale.",
+              "title": "L'intelligence artificielle sauvera-t-elle la planète ou l'épuisera-t-elle ?",
+              "para": "L’intelligence artificielle ouvre des perspectives prometteuses pour optimiser notre consommation d’énergie et soutenir la transition écologique. Mais son propre impact environnemental, lié à une forte consommation de ressources, soulève des questions. Est-elle vraiment une solution durable ou va-t-elle devenir un nouveau fardeau pour notre planète ?",
+              "photo": "/speakers/giorgio-pauletto.png"
+            },
+            {
+              "name": "Détails prochainement disponibles",
+              "bio": "Détails prochainement disponibles",
+              "title": "Détails prochainement disponibles",
+              "para": "Détails prochainement disponibles",
+              "photo": "/speakers/generic-profile.jpg"
+            }
+          ]
+        },
+        "moderatorsAndPanelists": {
+          "sectionTitle": "Modérateurs et Panélistes",
+          "panelists": [
+            {
+              "name": "Détails prochainement disponibles",
+              "bio": "Détails prochainement disponibles",
+              "photo": "/speakers/generic-profile.jpg"
+            }
+          ]
+        }
       },
       "footer": {
         "title": "Nos partenaires Platine",

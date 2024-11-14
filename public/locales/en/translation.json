@@ -35,7 +35,7 @@
           {
             "name": "Speakers",
             "component": "speakers",
-            "enabled": "false",
+            "enabled": "true",
             "url": "/speakers"
           },
           {
@@ -389,6 +389,40 @@
             "pdfLink": "/PDF/Session3b.pdf"
           }
         ]
+      },
+      "speakers": {
+        "hero": {
+          "title": "Our Guest Speakers"
+        },
+        "invitedSpeakers": {
+          "sectionTitle": "Invited Speakers",
+          "speakers": [
+            {
+              "name": "Giorgio Pauletto",
+              "bio": "Giorgio Pauletto is Director of Foresight, Strategy and Innovation at Services Industriels de Genève (SIG), an autonomous public company specializing in renewable energies and the environment. He holds a doctorate in economics, statistics and quantitative methods from the University of Geneva, and has been a researcher at Stanford and Yale",
+              "title": "Will artificial intelligence save the planet or deplete it?",
+              "para": "Artificial intelligence is opening up promising prospects for optimizing our energy consumption and supporting the ecological transition. But its own environmental impact, linked to high resource consumption, raises questions. Is it really a sustainable solution, or will it become a new burden for our planet?",
+              "photo": "/speakers/giorgio-pauletto.png"
+            },
+            {
+              "name": "To be annouced",
+              "bio": "To be annouced",
+              "title": "To be annouced",
+              "para": "To be annouced",
+              "photo": "/speakers/generic-profile.jpg"
+            }
+          ]
+        },
+        "moderatorsAndPanelists": {
+          "sectionTitle": "Moderators and Panelists",
+          "panelists": [
+            {
+              "name": "To be annouced",
+              "bio": "To be annouced",
+              "photo": "/speakers/generic-profile.jpg"
+            }
+          ]
+        }
       },
       "footer": {
         "title": "Our Platinum partners",
