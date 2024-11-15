@@ -125,9 +125,13 @@ const Speakers: React.FC = () => {
                                     sx={{borderRadius: 1}}
                                 />
                                 <CardContent>
-                                    <Typography variant="body2" color="text.secondary" align="center">
+                                    <Typography variant="h5" color="text.secondary" align="center">
                                         {panelist.name}
                                     </Typography>
+                                    <Typography variant="body2" color="text.secondary" align="center">
+                                        {panelist.position}
+                                    </Typography>
+
                                     <Typography variant="caption" display="block" color="text.secondary" align="center"
                                                 mt={1}>
                                         {panelist.bio}
