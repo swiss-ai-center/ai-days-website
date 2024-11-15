@@ -111,8 +111,8 @@
               "description": "5 “standard” pages + abstract up to 500 characters + unlimited references. For these submissions, novelty and conference topic fitting are the primary considerations. Candidate papers must be submitted through <a href=\"https://ai-days25.hotcrp.com\">https://ai-days25.hotcrp.com</a>. Please also used the following <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">overleaf template</a>. The papers selected for the conference will be publish in the conference proceedings, in partnership with CEUR (<a href=\"https://ceur-ws.org/\">https://ceur-ws.org/</a>)."
             },
             {
-              "title": "Industry papers",
-              "description": "1-page presentation abstract + 1-page industrial motivation and context + unlimited references. These presentations won’t make part of the proceedings. Candidate papers must be submitted through <a href=\"https://ai-days25.hotcrp.com\">https://ai-days25.hotcrp.com</a>. Please also used the following <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">overleaf template</a>."
+              "title": "Industrial application abstract",
+              "description": "One page document presenting an innovation or a project related to IA within a company. These presentations won’t make part of the proceedings. Candidate papers must be submitted through <a href=\"https://ai-days25.hotcrp.com\">https://ai-days25.hotcrp.com</a>. Please also used the following <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">overleaf template</a> or this <a href='templates/AI-days_industrial_template.docx' download>word template</a>"
             },
             {
               "title": "Posters",
@@ -127,7 +127,7 @@
         "key-dates": {
           "title": "Key Dates",
           "dates": [
-            "Submission deadline (short and industrial papers): <s>November 10th, 2024</s> November 20th, 2024, 23h59 AoE",
+            "Submission deadline (short papers and industrial application abstracts): <s>November 10th, 2024</s> November 20th, 2024, 23h59 AoE",
             "Submission deadline (demos and posters): December 15th, 2024, 23h59 AoE",
             "Author Notification: 20 December 2024",
             "Conference dates: 27 - 29 January 2025"
@@ -136,9 +136,9 @@
         "submission-guidelines": {
           "title": "Submission Guidelines",
           "paragraph1": "Authors must submit original contributions that are not being considered for publication in other conferences, workshops, or journals (non-peer-reviewed contexts, e.g., arXiv, is allowed). All submissions should cite and clearly differentiate from relevant prior publications, including those from the same authors.",
-          "paragraph2": "The reviews for academic submissions are double-blinded. Authors should make a good faith effort to anonymize their submissions, not identifying themselves explicitly or implicitly. In the case of industrial papers, disclosing the company/product is allowed; however, the submission should not reveal the author names directly.",
+          "paragraph2": "The reviews for academic submissions are double-blinded. Authors should make a good faith effort to anonymize their submissions, not identifying themselves explicitly or implicitly.",
           "paragraph3": "Use of English: following the requirements of the publication organism, academic contributions should be written in English.",
-          "paragraph4": "Both academic and industrial contributions must use the Latex format proposed <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">here</a>. Articles must include “academic” or “industrial” as a subtitle. Authors should submit a single PDF file, formatted for A4 paper and no larger than 10 MB. Any article submitted that does not comply with the length, file type or formatting requirements will be rejected without review. "
+          "paragraph4": "Articles must include “academic” or “industrial” as a subtitle. Authors should submit a single PDF file, formatted for A4 paper and no larger than 10 MB. Any article submitted that does not comply with the length, file type or formatting requirements will be rejected without review. "
         },
         "submission-address": {
           "title": "Submission Addresses",
