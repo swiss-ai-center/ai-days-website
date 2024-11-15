@@ -1,11 +1,11 @@
-import {Paper, Button} from '@mui/material';
+import { Paper, Button } from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import React from 'react';
-import {useTranslation} from 'react-i18next';
-import {useSelector} from 'react-redux';
-import {Card} from 'primereact/card';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { Card } from 'primereact/card';
 import "./styles.css";
 import Footer from "../../components/Footer/footer";
 import parseHtml from "html-react-parser";
@@ -90,7 +90,7 @@ const Workshops: React.FC = () => {
             </Paper>
 
             {/* Entête workshops */}
-            <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
+            <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}}>
                 <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
                     {t(`years.${selectedYearIndex(year)}.workshops.header.title`)}
                 </Typography>
@@ -104,7 +104,7 @@ const Workshops: React.FC = () => {
                 {workshops.length > 0 ? (
                     workshops.map((workshop: Workshop, index: number) => (
                         <Card key={index} title={workshop.title || t("no_title")} className={"card"}>
-                            <Typography variant={"h5"} sx={{fontWeight: 'bold'}}>
+                            <Typography variant={"h6"} sx={{fontWeight: 'bold'}}>
                                 {t(`years.${selectedYearIndex(year)}.workshops.description-title`)}
                             </Typography>
                             <p>{workshop.description || t("no_description")}</p>

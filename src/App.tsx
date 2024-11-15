@@ -114,7 +114,7 @@ function App() {
                 <Routes>
                     {pages.map((page, index) => {
                         //if not workshops
-                        if (page.enabled === "true" && page.component !== "workshops") {
+                        if (page.enabled === "true") {
                             return (
                                 <Route key={index} path={`${page.url}`}
                                        element={React.createElement(Components[page.component])}/>
@@ -122,7 +122,7 @@ function App() {
                         }
                         return null;
                     })}
-                    <Route path={"/workshops"} element={<Workshops/>}/>
+                    {/*<Route path={"/workshops"} element={<Workshops/>}/>*/}
                     <Route path={"*"} element={<Home/>}/>
                 </Routes>
             </Router>

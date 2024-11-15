@@ -70,7 +70,7 @@ const Speakers: React.FC = () => {
                     </Typography>
                     <Grid container spacing={4}>
                         {invitedSpeakersData.speakers.map((speaker, index) => (
-                            <Grid item xs={12} sm={6} md={4} key={index}>
+                            <Grid item xs={12} sm={6} md={4} key={index} flexGrow={1} display={"flex"}>
                                 <Card className="speaker-card">
                                     <CardMedia
                                         component="img"
@@ -79,12 +79,12 @@ const Speakers: React.FC = () => {
                                         alt={speaker.name}
                                         sx={{borderRadius: 1}}
                                     />
-                                    <CardContent>
-                                        <Typography variant="h5" component="div">
+                                    <CardContent sx={{textAlign: "justify"}}>
+                                        <Typography variant="h5" component="div" align="center">
                                             {speaker.name}
                                         </Typography>
                                         {speaker.title && (
-                                            <Typography variant="subtitle1" color="text.secondary">
+                                            <Typography variant="subtitle1" color="text.secondary" align="center">
                                                 {speaker.title}
                                             </Typography>
                                         )}
@@ -115,7 +115,7 @@ const Speakers: React.FC = () => {
                 </Typography>
                 <Grid container spacing={4}>
                     {Array.isArray(panelists) && panelists.map((panelist, index) => (
-                        <Grid item xs={6} sm={4} md={2} key={index}>
+                        <Grid item xs={6} sm={4} md={2} key={index} flexGrow={1} display={"flex"}>
                             <Card className="panelist-card">
                                 <CardMedia
                                     component="img"
@@ -132,7 +132,7 @@ const Speakers: React.FC = () => {
                                         {panelist.position}
                                     </Typography>
 
-                                    <Typography variant="caption" display="block" color="text.secondary" align="center"
+                                    <Typography variant="caption" display="block" color="text.secondary" align="justify"
                                                 mt={1}>
                                         {panelist.bio}
                                     </Typography>

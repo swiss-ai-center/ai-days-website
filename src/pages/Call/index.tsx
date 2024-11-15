@@ -147,7 +147,7 @@ const Call: React.FC = () => {
                 </Box>
 
                 {/* Cadre de soumission */}
-                <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', p: 2, textAlign: 'justify'}}>
                     <Typography variant={"h4"}
                                 sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-guidelines.title`)}</Typography>
                     <Typography variant={"body1"}
@@ -161,7 +161,7 @@ const Call: React.FC = () => {
                 </Box>
 
                 {/* Questions */}
-                <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', p: 2, textAlign: 'justify'}}>
                     <Typography variant={"h4"}
                                 sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.call-for-paper.questions.title`)}</Typography>
                     <Typography variant={"body1"}
