@@ -10,7 +10,6 @@ import React, { useCallback, useEffect } from 'react';
 import {useTranslation} from 'react-i18next';
 import { BrowserRouter as Router, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import {useSelector} from 'react-redux';
-import "primereact/resources/themes/bootstrap4-light-purple/theme.css";
 import Speakers from "./pages/Speakers";
 
 function NormalizeTrailingSlash() {
