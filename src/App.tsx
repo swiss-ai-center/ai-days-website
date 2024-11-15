@@ -6,12 +6,24 @@ import Call from 'pages/Call';
 import Home from 'pages/Home';
 import Workshops from 'pages/Workshops';
 import Partners from 'pages/Partners';
-import React, {useCallback} from 'react';
+import React, { useCallback, useEffect } from 'react';
 import {useTranslation} from 'react-i18next';
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import {useSelector} from 'react-redux';
-import "primereact/resources/themes/bootstrap4-light-purple/theme.css";
 import Speakers from "./pages/Speakers";
+
+function NormalizeTrailingSlash() {
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (location.pathname.endsWith('/') && location.pathname !== '/') {
+            navigate(location.pathname.slice(0, -1), { replace: true });
+        }
+    }, [location, navigate]);
+
+    return null;
+}
 
 function App() {
     const {t} = useTranslation();
@@ -110,11 +122,11 @@ function App() {
 
             {/* Main content */}
             <Router>
+                <NormalizeTrailingSlash/>
                 <Navbar/>
                 <Routes>
                     {pages.map((page, index) => {
-                        //if not workshops
-                        if (page.enabled === "true" && page.component !== "workshops") {
+                        if (page.enabled === "true") {
                             return (
                                 <Route key={index} path={`${page.url}`}
                                        element={React.createElement(Components[page.component])}/>
@@ -122,7 +134,6 @@ function App() {
                         }
                         return null;
                     })}
-                    <Route path={"/workshops"} element={<Workshops/>}/>
                     <Route path={"*"} element={<Home/>}/>
                 </Routes>
             </Router>

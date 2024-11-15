@@ -74,7 +74,7 @@ const Call: React.FC = () => {
             <Paper elevation={2} sx={{p: 4, borderRadius: 3, boxShadow: 2}}>
 
                 {/* Présentation du CSIA-PME */}
-                <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', p: 2, textAlign: 'justify'}}>
                     <Typography variant={"h4"}
                                 sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.call-for-paper.csia-pme.title`)}</Typography>
                     <Typography variant={"body1"}
@@ -82,7 +82,7 @@ const Call: React.FC = () => {
                 </Box>
 
                 {/* event-description  */}
-                <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', p: 2, textAlign: 'justify'}}>
                     <Typography variant={"h4"}
                                 sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.call-for-paper.event-description.title`)}</Typography>
                     <Typography variant={"body1"}
@@ -122,7 +122,7 @@ const Call: React.FC = () => {
                                     <ListItemText
                                         children={<Typography variant={"h5"}>{submission.title}</Typography>}/>
                                 </ListItemButton>
-                                <Collapse in={true} timeout="auto" unmountOnExit sx={{pl: 4}}>
+                                <Collapse in={true} timeout="auto" unmountOnExit sx={{pl: 9}}>
                                     <Typography variant={"body1"}>{parseHtml(submission.description)}</Typography>
                                 </Collapse>
                             </Box>
@@ -147,7 +147,7 @@ const Call: React.FC = () => {
                 </Box>
 
                 {/* Cadre de soumission */}
-                <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', p: 2, textAlign: 'justify'}}>
                     <Typography variant={"h4"}
                                 sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.call-for-paper.submission-guidelines.title`)}</Typography>
                     <Typography variant={"body1"}
@@ -161,7 +161,7 @@ const Call: React.FC = () => {
                 </Box>
 
                 {/* Questions */}
-                <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', p: 2, textAlign: 'justify'}}>
                     <Typography variant={"h4"}
                                 sx={{fontWeight: 'bold'}}>{t(`years.${selectedYearIndex(year)}.call-for-paper.questions.title`)}</Typography>
                     <Typography variant={"body1"}
@@ -181,7 +181,7 @@ const Call: React.FC = () => {
                     </List>
                 </Box>
             </Paper>
-            <Footer></Footer>
+            <Footer />
         </Container>
     );
 }

@@ -1,11 +1,10 @@
-import {Paper, Button} from '@mui/material';
+import { Paper, Button, Card, CardActions, Grid, CardHeader, CardContent } from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import React from 'react';
-import {useTranslation} from 'react-i18next';
-import {useSelector} from 'react-redux';
-import {Card} from 'primereact/card';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 import "./styles.css";
 import Footer from "../../components/Footer/footer";
 import parseHtml from "html-react-parser";
@@ -89,79 +88,96 @@ const Workshops: React.FC = () => {
                 />
             </Paper>
 
-            {/* Entête workshops */}
-            <Box sx={{display: 'flex', flexDirection: 'column', p: 2}}>
-                <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
-                    {t(`years.${selectedYearIndex(year)}.workshops.header.title`)}
-                </Typography>
-                <Typography variant={"body1"} pt={1}>
-                    {parseHtml(t(`years.${selectedYearIndex(year)}.workshops.header.description`))}
-                </Typography>
-            </Box>
 
-            {/* Affichage dynamique des workshops */}
-            <div className={"div-cards"}>
-                {workshops.length > 0 ? (
-                    workshops.map((workshop: Workshop, index: number) => (
-                        <Card key={index} title={workshop.title || t("no_title")} className={"card"}>
-                            <Typography variant={"h5"} sx={{fontWeight: 'bold'}}>
-                                {t(`years.${selectedYearIndex(year)}.workshops.description-title`)}
-                            </Typography>
-                            <p>{workshop.description || t("no_description")}</p>
+            <Paper elevation={2} sx={{p: 4, borderRadius: 3, boxShadow: 2}}>
+                {/* Entête workshops */}
+                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}}>
+                    <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
+                        {t(`years.${selectedYearIndex(year)}.workshops.header.title`)}
+                    </Typography>
+                    <Typography variant={"body1"} pt={1}>
+                        {parseHtml(t(`years.${selectedYearIndex(year)}.workshops.header.description`))}
+                    </Typography>
+                </Box>
 
-                            <Typography variant={"h6"} sx={{fontWeight: 'bold', mt: 2}}>
-                                {t(`years.${selectedYearIndex(year)}.workshops.time-title`)}
-                            </Typography>
-                            <p>{workshop.schedule?.time || t("no_time")}</p>
+                {/* Affichage dynamique des workshops */}
 
-                            <Typography variant={"h6"} sx={{fontWeight: 'bold', mt: 2}}>
-                                {t(`years.${selectedYearIndex(year)}.workshops.equipment-title`)}
-                            </Typography>
-                            <p>{workshop.schedule?.equipment || t("no_equipment_needed")}</p>
+                <Box mt={4}>
+                    <Grid container spacing={4}>
+                        {workshops.length > 0 ? (
+                            workshops.map((workshop: Workshop, index: number) => (
+                                <Grid item xs={12} sm={6} key={index} flexGrow={1} display={"flex"}>
+                                    <Card sx={{border: '1px solid lightgrey', width: '100%', p: 2, display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}} elevation={0}>
+                                        <CardContent>
+                                            <Typography variant={"h5"}
+                                                        mb={3}>{workshop.title || t("no_title")}</Typography>
+                                            <Typography variant={"h6"} sx={{fontWeight: 'bold'}}>
+                                                {t(`years.${selectedYearIndex(year)}.workshops.description-title`)}
+                                            </Typography>
+                                            <Typography
+                                                sx={{textAlign: 'justify'}}>{workshop.description || t("no_description")}</Typography>
 
-                            <Typography variant={"h6"} sx={{fontWeight: 'bold', mt: 2}}>
-                                {t(`years.${selectedYearIndex(year)}.workshops.activities-title`)}
-                            </Typography>
-                            {workshop.activities && workshop.activities.length > 0 && (
-                                <ul>
-                                    {workshop.activities.map((activity, i) => (
-                                        <li key={i}>{activity}</li>
-                                    ))}
-                                </ul>
-                            )}
+                                            <Typography variant={"h6"} sx={{fontWeight: 'bold', mt: 2}}>
+                                                {t(`years.${selectedYearIndex(year)}.workshops.time-title`)}
+                                            </Typography>
+                                            <Typography
+                                                sx={{textAlign: 'justify'}}>{workshop.schedule?.time || t("no_time")}</Typography>
 
-                            {/* Affichage conditionnel des topics */}
-                            {workshop.topics && workshop.topics.length > 0 && (
-                                <>
-                                    <Typography variant={"h6"} sx={{fontWeight: 'bold', mt: 2}}>
-                                        {t(`years.${selectedYearIndex(year)}.workshops.topics-title`)}
-                                    </Typography>
-                                    <ul>
-                                        {workshop.topics.map((topic, i) => (
-                                            <li key={i}>{topic}</li>
-                                        ))}
-                                    </ul>
-                                </>
-                            )}
+                                            <Typography variant={"h6"} sx={{fontWeight: 'bold', mt: 2}}>
+                                                {t(`years.${selectedYearIndex(year)}.workshops.equipment-title`)}
+                                            </Typography>
+                                            <Typography
+                                                sx={{textAlign: 'justify'}}>{workshop.schedule?.equipment || t("no_equipment_needed")}</Typography>
 
-                            {/* Bouton Voir PDF */}
-                            {workshop.pdfLink && (
-                                <Button
-                                    variant="contained"
-                                    color="primary"
-                                    href={workshop.pdfLink}
-                                    target="_blank"
-                                    sx={{mt: 2}}
-                                >
-                                    {t(`years.${selectedYearIndex(year)}.workshops.workshop-cta`)}
-                                </Button>
-                            )}
-                        </Card>
-                    ))
-                ) : (
-                    <p>{t("no_workshops")}</p>
-                )}
-            </div>
+                                            <Typography variant={"h6"} sx={{fontWeight: 'bold', mt: 2}}>
+                                                {t(`years.${selectedYearIndex(year)}.workshops.activities-title`)}
+                                            </Typography>
+                                            {workshop.activities && workshop.activities.length > 0 && (
+                                                <ul>
+                                                    {workshop.activities.map((activity, i) => (
+                                                        <li key={i}>{activity}</li>
+                                                    ))}
+                                                </ul>
+                                            )}
+
+                                            {/* Affichage conditionnel des topics */}
+                                            {workshop.topics && workshop.topics.length > 0 && (
+                                                <>
+                                                    <Typography variant={"h6"} sx={{fontWeight: 'bold', mt: 2}}>
+                                                        {t(`years.${selectedYearIndex(year)}.workshops.topics-title`)}
+                                                    </Typography>
+                                                    <ul>
+                                                        {workshop.topics.map((topic, i) => (
+                                                            <li key={i}>{topic}</li>
+                                                        ))}
+                                                    </ul>
+                                                </>
+                                            )}
+                                        </CardContent>
+                                        <CardActions>
+                                            {/* Bouton Voir PDF */}
+                                            {workshop.pdfLink && (
+                                                <Button
+                                                    variant="contained"
+                                                    color="primary"
+                                                    href={workshop.pdfLink}
+                                                    target="_blank"
+                                                    sx={{mt: 2}}
+                                                    disableElevation={true}
+                                                >
+                                                    {t(`years.${selectedYearIndex(year)}.workshops.workshop-cta`)}
+                                                </Button>
+                                            )}
+                                        </CardActions>
+                                    </Card>
+                                </Grid>
+                            ))
+                        ) : (
+                            <p>{t("no_workshops")}</p>
+                        )}
+                    </Grid>
+                </Box>
+            </Paper>
             <Footer/>
         </Container>
     );

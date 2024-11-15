@@ -1,12 +1,21 @@
-import {List, Paper, ListItem, ListItemIcon, ListItemText, Divider} from '@mui/material';
+import {
+    List,
+    Paper,
+    ListItem,
+    ListItemIcon,
+    ListItemText,
+    Divider,
+    Card,
+    CardMedia,
+    CardActionArea
+} from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import ExpandCircleDownRoundedIcon from '@mui/icons-material/ExpandCircleDownRounded';
 import React from 'react';
-import {useTranslation} from 'react-i18next';
-import {useSelector} from 'react-redux';
-import {Card} from 'primereact/card';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 import Footer from "../../components/Footer/footer";
 
 const Partners: React.FC = () => {
@@ -87,26 +96,41 @@ const Partners: React.FC = () => {
 
                 {/* Logos Partenaire Platine */}
                 <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
-                    <Card>
-                        <a href={t(`years.${selectedYearIndex(year)}.footer.partner-1`)} target="_blank"
-                           rel="noopener noreferrer">
-                            <img src="/mobiliere.png" alt="La Mobilière Logo"
-                                 style={{height: '200px', width: 'auto', border: '1px'}}/>
-                        </a>
+                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                        <CardActionArea onClick={
+                            () => window.open(t(`years.${selectedYearIndex(year)}.footer.partner-1`), "_blank")
+                        }>
+                            <CardMedia
+                                component="img"
+                                height="200px"
+                                image="/mobiliere.png"
+                                alt="La Mobilière Logo"
+                            />
+                        </CardActionArea>
                     </Card>
-                    <Card>
-                        <a href={t(`years.${selectedYearIndex(year)}.footer.partner-2`)} target="_blank"
-                           rel="noopener noreferrer">
-                            <img src="/ehl-logo.png" alt="EHL Hospitality Business School Logo"
-                                 style={{height: '200px', width: 'auto'}}/>
-                        </a>
+                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                        <CardActionArea onClick={
+                            () => window.open(t(`years.${selectedYearIndex(year)}.footer.partner-2`), "_blank")
+                        }>
+                            <CardMedia
+                                component="img"
+                                height="200px"
+                                image="/ehl-logo.png"
+                                alt="EHL Hospitality Business School Logo"
+                            />
+                        </CardActionArea>
                     </Card>
-                    <Card>
-                        <a href={t(`years.${selectedYearIndex(year)}.footer.partner-3`)} target="_blank"
-                           rel="noopener noreferrer">
-                            <img src="/hes-so.png" alt="HES-SO Logo"
-                                 style={{height: '200px', width: 'auto', border: '1px'}}/>
-                        </a>
+                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                        <CardActionArea onClick={
+                            () => window.open(t(`years.${selectedYearIndex(year)}.footer.partner-3`), "_blank")
+                        }>
+                            <CardMedia
+                                component="img"
+                                height="200px"
+                                image="/hes-so.png"
+                                alt="HES-SO Logo"
+                            />
+                        </CardActionArea>
                     </Card>
                 </Box>
 
@@ -122,7 +146,8 @@ const Partners: React.FC = () => {
                     <List>
                         {platineVisibilityAndPresence.map((item: string, index: number) => (
                             <ListItem key={index}>
-                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary"
+                                                                           sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
                                 <ListItemText primary={item}/>
                             </ListItem>
                         ))}
@@ -136,7 +161,8 @@ const Partners: React.FC = () => {
                     <List>
                         {platineMarketingAndCommunication.map((item: string, index: number) => (
                             <ListItem key={index}>
-                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary"
+                                                                           sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
                                 <ListItemText primary={item}/>
                             </ListItem>
                         ))}
@@ -152,12 +178,18 @@ const Partners: React.FC = () => {
 
                 {/* Logos Partenaire Or */}
                 <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
-                    <Card>
-                        <a href={t(`years.${selectedYearIndex(year)}.footer.partner-3`)} target="_blank"
-                           rel="noopener noreferrer">
-                            <img src="/alp_ict.png" alt="ALP ICT Logo"
-                                 style={{height: '200px', width: 'auto', border: '1px'}}/>
-                        </a>
+                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                        <CardActionArea onClick={
+                            () => window.open("https://alpict.ch/", "_blank")
+                        }>
+                            <CardMedia
+                                sx={{p: 2}}
+                                component="img"
+                                height="200px"
+                                image="/alp_ict.png"
+                                alt="ALP ICT Logo"
+                            />
+                        </CardActionArea>
                     </Card>
                 </Box>
 
@@ -173,7 +205,8 @@ const Partners: React.FC = () => {
                     <List>
                         {goldVisibilityAndPresence.map((item: string, index: number) => (
                             <ListItem key={index}>
-                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary"
+                                                                           sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
                                 <ListItemText primary={item}/>
                             </ListItem>
                         ))}
@@ -187,7 +220,8 @@ const Partners: React.FC = () => {
                     <List>
                         {goldMarketingAndCommunication.map((item: string, index: number) => (
                             <ListItem key={index}>
-                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary"
+                                                                           sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
                                 <ListItemText primary={item}/>
                             </ListItem>
                         ))}
@@ -213,7 +247,8 @@ const Partners: React.FC = () => {
                     <List>
                         {silverVisibilityAndPresence.map((item: string, index: number) => (
                             <ListItem key={index}>
-                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary"
+                                                                           sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
                                 <ListItemText primary={item}/>
                             </ListItem>
                         ))}
@@ -227,7 +262,8 @@ const Partners: React.FC = () => {
                     <List>
                         {silverMarketingAndCommunication.map((item: string, index: number) => (
                             <ListItem key={index}>
-                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary" sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
+                                <ListItemIcon><ExpandCircleDownRoundedIcon color="primary"
+                                                                           sx={{transform: 'rotate(-90deg)'}}/></ListItemIcon>
                                 <ListItemText primary={item}/>
                             </ListItem>
                         ))}
@@ -243,12 +279,18 @@ const Partners: React.FC = () => {
 
                 {/* Logos Partenaire Presse */}
                 <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
-                    <Card>
-                        <a href={t(`years.${selectedYearIndex(year)}.footer.partner-3`)} target="_blank"
-                           rel="noopener noreferrer">
-                            <img src="/swissdevjobs.png" alt="ALP ICT Logo"
-                                 style={{height: '200px', width: 'auto', border: '1px'}}/>
-                        </a>
+                    <Card elevation={0} sx={{border: '1px solid lightgrey'}}>
+                        <CardActionArea onClick={
+                            () => window.open("https://www.swissdevjobs.ch/", "_blank")
+                        }>
+                            <CardMedia
+                                sx={{p: 1}}
+                                component="img"
+                                height="200px"
+                                image="/swissdevjobs.png"
+                                alt="SwissDevJobs Logo"
+                            />
+                        </CardActionArea>
                     </Card>
                 </Box>
             </Paper>
