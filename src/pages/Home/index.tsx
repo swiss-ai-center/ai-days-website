@@ -1,9 +1,10 @@
 import React from 'react';
-import {Box, Container, Typography, Paper, Button, List, ListItem, ListItemIcon, ListItemText} from '@mui/material';
+import { Box, Container, Typography, Paper, Button, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import ExpandCircleDownRoundedIcon from '@mui/icons-material/ExpandCircleDownRounded';
-import {useTranslation} from 'react-i18next';
-import {useSelector} from 'react-redux';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 import './styles.css';
+import { Link } from 'react-router-dom';
 import Footer from "../../components/Footer/footer";
 
 const Home: React.FC = () => {
@@ -57,27 +58,26 @@ const Home: React.FC = () => {
                 />
             </Box>
 
-            {/* Call to Action */}
-            <Box sx={{
-                display: 'flex',
-                justifyContent: 'center',
-                mb: 4,
-                mt: 4}}>
-                <Button
-                    variant="contained"
-                    color="primary"
-                    sx={{py: 1.5, px: 4, fontSize: '1rem', fontWeight: 'bold', borderRadius: 2}}
-                >
-                    <a href="https://form.jotform.com/242613280391351" target="_blank" rel="noreferrer"
-                       style={{color: '#fff', textDecoration: 'none'}}>
-                        {t(`years.${selectedYearIndex(year)}.home.register`) || 'Inscrivez-vous maintenant'}
-                    </a>
-                </Button>
-            </Box>
-
             {/* Main Content Section */}
             <Paper elevation={2} sx={{p: 4, borderRadius: 3, boxShadow: 2}}>
-                <Box sx={{textAlign: 'justify', mb: 4}}>
+
+                {/* Call to Action */}
+                <Box sx={{display: 'flex', justifyContent: 'center', mb: 4}}>
+                    <Link to={"https://form.jotform.com/242613280391351"} target={"_blank"}
+                          style={{textDecoration: 'none'}} rel={"noreferrer"}>
+                        <Button
+                            variant={"contained"}
+                            disableElevation={true}
+                            color={"primary"}
+                            size={"large"}
+                            sx={{py: 1.5, px: 4, fontSize: '1rem', fontWeight: 'bold', borderRadius: 2}}
+                        >
+                            {t(`years.${selectedYearIndex(year)}.home.register`) || 'Inscrivez-vous maintenant'}
+                        </Button>
+                    </Link>
+                </Box>
+
+                <Box sx={{textAlign: 'justify'}}>
                     <Typography variant="body1" paragraph>
                         {t(`years.${selectedYearIndex(year)}.home.description.par1`)}
                     </Typography>
@@ -101,22 +101,24 @@ const Home: React.FC = () => {
                     ))}
                 </List>
 
-                <Typography variant="body1" paragraph>
+                <Typography variant="body1" mt={2} paragraph>
                     {t(`years.${selectedYearIndex(year)}.home.description.end`)}
                 </Typography>
 
                 {/* Call to Action */}
                 <Box sx={{display: 'flex', justifyContent: 'center', mt: 4}}>
-                    <Button
-                        variant="contained"
-                        color="primary"
-                        sx={{py: 1.5, px: 4, fontSize: '1rem', fontWeight: 'bold', borderRadius: 2}}
-                    >
-                        <a href="https://form.jotform.com/242613280391351" target="_blank" rel="noreferrer"
-                           style={{color: '#fff', textDecoration: 'none'}}>
+                    <Link to={"https://form.jotform.com/242613280391351"} target={"_blank"}
+                          style={{textDecoration: 'none'}} rel={"noreferrer"}>
+                        <Button
+                            variant={"contained"}
+                            disableElevation={true}
+                            color={"primary"}
+                            size={"large"}
+                            sx={{py: 1.5, px: 4, fontSize: '1rem', fontWeight: 'bold', borderRadius: 2}}
+                        >
                             {t(`years.${selectedYearIndex(year)}.home.register`) || 'Inscrivez-vous maintenant'}
-                        </a>
-                    </Button>
+                        </Button>
+                    </Link>
                 </Box>
             </Paper>
             <Footer/>

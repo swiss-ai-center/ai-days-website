@@ -120,7 +120,10 @@ const Contact: React.FC = () => {
                                 flexGrow: 1,
                                 display: 'flex',
                                 flexDirection: 'column',
-                                justifyContent: 'space-between'
+                                justifyContent: 'space-between',
+                                ':last-child': {
+                                    paddingBottom: 2
+                                }
                             }}>
                                 <Box sx={{mb: 2}}>
                                     <Typography gutterBottom variant="h5" component="div">
