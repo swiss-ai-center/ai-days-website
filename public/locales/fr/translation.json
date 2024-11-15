@@ -111,8 +111,8 @@
               "description": "Un article académique de maximum 5 pages \"standard\" (résumé de 500 caractères au maximum + références illimitées). La sélection se fera sur la base de la nouveauté et de l'adéquation avec le thème de la conférence. Les soumissions se font via le site suivant <a href=\"https://ai-days25.hotcrp.com\">https://ai-days25.hotcrp.com</a> ainsi que sur la base de ce <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">template overleaf</a>. Les papiers retenus seront publiés dans des actes de la conférence, en collaboration avec l'institution CEUR (<a href=\"https://ceur-ws.org/\">https://ceur-ws.org/</a>)"
             },
             {
-              "title": "Article en lien avec un développement industriel",
-              "description": "Une page de présentation d'une innovation ou d'un projet en lien avec l'IA dans une entreprise, accompagnée d'une page de présentation du contexte industriel et/ou de l'entreprise. Ces présentations ne feront pas l'objet de publication. Les soumissions se font via le site suivant <a href=\"https://ai-days25.hotcrp.com\">https://ai-days25.hotcrp.com</a> ainsi que sur la base de ce <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">template overleaf</a>."
+              "title": "Résumé d'une application industrielle",
+              "description": "Une page de présentation d'une innovation ou d'un projet en lien avec l'IA dans une entreprise. Ces présentations ne feront pas l'objet de publication. Les soumissions se font via le site suivant <a href=\"https://ai-days25.hotcrp.com\">https://ai-days25.hotcrp.com</a> ainsi que sur la base de ce <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">template overleaf</a> ou de ce <a href='templates/AI-days_industrial_template.docx' download>template word</a>"
             },
             {
               "title": "Poster",
@@ -127,7 +127,7 @@
         "key-dates": {
           "title": "Dates clés",
           "dates": [
-            "Date limite de soumission (articles courts et industriels) : le <s>10 novembre 2024</s> 20 novembre 2024, 23h59 AoE",
+            "Date limite de soumission (articles courts et résumé d'application industrielle) : le <s>10 novembre 2024</s> 20 novembre 2024, 23h59 AoE",
             "Date limite de soumission (démos et posters) : 15 décembre 2024, 23h59 AoE",
             "Notification à l’auteur : le 20 décembre 2024",
             "Dates de la conférence : du 27 au 29 janvier 2025"
@@ -136,9 +136,9 @@
         "submission-guidelines": {
           "title": "Cadre général de présentation des soumissions",
           "paragraph1": "Les auteurs doivent soumettre des contributions originales qui ne sont pas considérées comme publications dans d'autres conférences, Workshops ou revues (les contextes non évalués par des pairs comme arXiv, sont autorisés). Toutes les sources doivent être citées et clairement identifiées, y compris les publications précédentes du / des même(s) auteur(s).",
-          "paragraph2": "Les évaluations des soumissions académiques se font en double aveugle. Les auteurs doivent s'efforcer de rendre leurs articles anonymes et non identifiable explicitement ou implicitement. Dans le cas d'articles industriels, la divulgation de l'entreprise/du produit est acceptable, mais la soumission ne doit pas révéler directement le nom des auteurs.",
+          "paragraph2": "Les évaluations des soumissions académiques se font en double aveugle. Les auteurs doivent s'efforcer de rendre leurs articles anonymes et non identifiable explicitement ou implicitement.",
           "paragraph3": "Veuillez prendre note que les articles académiques devront être rédigés en anglais.",
-          "paragraph4": "Tant les contributions académiques que industrielles doivent utiliser le format Latex proposé <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">ici</a>. Les articles doivent inclure comme sous-titre les mentions “académiques” ou “industriel”. Les auteurs ne doivent soumettre qu’un seul fichier PDF, formaté pour du papier A4 et dont la taille ne dépasse pas 10 Mo. Tout article soumis ne respectant pas les exigences en matière de longueur, de type de fichier ou de formatage sera rejeté sans examen. "
+          "paragraph4": "Les articles doivent inclure comme sous-titre les mentions “académiques” ou “industriel”. Les auteurs ne doivent soumettre qu’un seul fichier PDF, formaté pour du papier A4 et dont la taille ne dépasse pas 10 Mo. Tout article soumis ne respectant pas les exigences en matière de longueur, de type de fichier ou de formatage sera rejeté sans examen. "
         },
         "submission-address": {
           "title": "Adresse des soumissions",
