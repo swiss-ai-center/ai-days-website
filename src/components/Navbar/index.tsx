@@ -127,13 +127,14 @@ function Navbar() {
                     <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
                         {pages.map((page) => (
                             <Link
+                                key={page.url}
                                 to={page.url}
                                 style={{
                                     textDecoration: "none",
                                     pointerEvents: page.enabled === "true" ? "auto" : "none"
                                 }}
                                 onClick={() => setCurrentPage(page.component)}>
-                                <Button key={page.url} color={"secondary"}
+                                <Button color={"secondary"}
                                         variant={currentPage === page.component ? "contained" : "text"}
                                         disableElevation={true}
                                         disabled={page.enabled !== "true"}

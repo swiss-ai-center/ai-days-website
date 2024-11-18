@@ -1,29 +1,16 @@
-import {createTheme, CssBaseline, PaletteMode, ThemeProvider} from '@mui/material';
-import {grey} from '@mui/material/colors';
+import { createTheme, CssBaseline, PaletteMode, ThemeProvider } from '@mui/material';
+import { grey } from '@mui/material/colors';
 import Navbar from 'components/Navbar';
 import Contact from 'pages/Contact';
 import Call from 'pages/Call';
 import Home from 'pages/Home';
 import Workshops from 'pages/Workshops';
 import Partners from 'pages/Partners';
-import React, { useCallback, useEffect } from 'react';
-import {useTranslation} from 'react-i18next';
-import { BrowserRouter as Router, Route, Routes, useLocation, useNavigate } from "react-router-dom";
-import {useSelector} from 'react-redux';
 import Speakers from "./pages/Speakers";
-
-function NormalizeTrailingSlash() {
-    const location = useLocation();
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        if (location.pathname.endsWith('/') && location.pathname !== '/') {
-            navigate(location.pathname.slice(0, -1), { replace: true });
-        }
-    }, [location, navigate]);
-
-    return null;
-}
+import React, { useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 function App() {
     const {t} = useTranslation();
@@ -122,7 +109,6 @@ function App() {
 
             {/* Main content */}
             <Router>
-                <NormalizeTrailingSlash/>
                 <Navbar/>
                 <Routes>
                     {pages.map((page, index) => {
