@@ -6,14 +6,16 @@ metadata:
     cert-manager.io/issuer: "letsencrypt"
     nginx.ingress.kubernetes.io/proxy-body-size: "16m"
     nginx.org/client-max-body-size: "16m"
+    nginx.ingress.kubernetes.io/rewrite-target: "/$1"
+    nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   ingressClassName: nginx
   rules:
     - host: ai-days.swiss-ai-center.ch
       http:
         paths:
-          - path: /
-            pathType: Prefix
+          - path: "/?(.*)"
+            pathType: ImplementationSpecific
             backend:
               service:
                 name: ai-days-website-service
