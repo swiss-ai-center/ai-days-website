@@ -403,28 +403,28 @@
                 "bio": "Olivier Naef est responsable du domaine Ingénierie et Architecture de la HES-SO, comptant 6 hautes écoles, 19 filières Bachelor et 4 filières Master, pour environ 4'200 étudiantes et étudiants. Il est membre de la Conférence spécialisée des domaines techniques, architecture et Life Sciences (FTAL).",
                 "title": "L’intelligence artificielle : un enjeu sociétal et technologique",
                 "para": "",
-                "photo": "/speakers/olivier-naef.jpg"
+                "photo": "/speaker_pics/olivier-naef.jpg"
               },
               {
                 "name": "Jérôme Koller, La Mobilière",
                 "bio": "Jérôme Koller est responsable de la stratégie d'entreprise et du portefeuille de projets à La Mobilière et membre du comité directeur élargi. Il supervise la gestion stratégique et financière de l’organisation agile de la Mobilière, et conduit les efforts de transformation et de digitalisation de 1300 employés. Fortement engagé dans la création de valeur via l'IA, il a précédemment dirigé une équipe de 25 data scientists en tant que responsable des données et de l'analytique, où il a introduit l'IA jusqu'à l'interface client.",
                 "title": "Sera annoncé prochainement",
                 "para": "",
-                "photo": "/speakers/jerome-koller.jpg"
+                "photo": "/speaker_pics/jerome-koller.jpg"
               },
               {
                 "name": "Giorgio Pauletto, SIG",
                 "bio": "Giorgio Pauletto est Directeur prospective, stratégie et innovation aux Services Industriels de Genève (SIG), une entreprise publique autonome dans les énergies renouvelables et l’environnement. Il est docteur en économie, statistiques et méthodes quantitatives de l'Université de Genève et a été chercheur à Stanford et Yale.",
                 "title": "L'intelligence artificielle sauvera-t-elle la planète ou l'épuisera-t-elle ?",
                 "para": "L’intelligence artificielle ouvre des perspectives prometteuses pour optimiser notre consommation d’énergie et soutenir la transition écologique. Mais son propre impact environnemental, lié à une forte consommation de ressources, soulève des questions. Est-elle vraiment une solution durable ou va-t-elle devenir un nouveau fardeau pour notre planète ?",
-                "photo": "/speakers/giorgio-pauletto.png"
+                "photo": "/speaker_pics/giorgio-pauletto.png"
               },
               {
                 "name": "Sandro Saitta, viadata",
                 "bio": "Sandro Saitta is passionate about helping companies become data-driven. He has worked across various industries to promote data usage and is currently a Data & AI advisor at viadata, a company specializing in executive advising and corporate training. He holds a Ph.D. in EPFL.",
                 "title": "AI for SME - How to get started and overcome key challenges?",
                 "para": "In today's digital landscape, Artificial Intelligence (AI) is a powerful tool for SMEs seeking innovation and growth. This presentation demystifies AI, cutting through the hype. By exploring fundamental concepts, we clarify what AI can and can't do. We’ll guide SMEs on how to initiate AI projects through both top-down and bottom-up approaches, using frameworks like the impact-feasibility matrix and the data initiative canvas. Additionally, we address key challenges in AI adoption, discussing various dimensions such as data quality, people skills, change management and offering actionable tips to overcome them.",
-                "photo": "/speakers/sandro-saitta.png"
+                "photo": "/speaker_pics/sandro-saitta.png"
               }
           ]
         },
@@ -435,67 +435,67 @@
               "name": "Isabelle Hering",
               "position": "Avocate et médiatrice, Etude Hering, Nyon",
               "bio": "Isabelle Hering est spécialisée dans les domaines du droit de l’informatique, de la propriété intellectuelle, du droit des affaires et de la protection des données. Elle est certifiée CIPP/E (RGPD) et fonctionne comme DPO externe pour plusieurs institutions publiques et entreprises privées.",
-              "photo": "/speakers/isabelle-hering.png"
+              "photo": "/speaker_pics/isabelle-hering.png"
             },
             {
               "name": "Luc Olivier Erard",
               "position": "Journaliste, Arc-Info",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Silvia Quarteroni",
               "position": "Chief Transformation Officer & Head of Innovation, SDSC",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Xavier Comtesse",
               "position": "Manufacture Thinking",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Robert van Kommer",
               "position": "InnoSuisse coach",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "David Wannier",
               "position": "HES-SO Valais-Wallis",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Pierre Jean Alet",
               "position": "CSEM",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Laurent Raeber",
               "position": "Suisse énergie Parc",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Delphine Seitiée",
               "position": "Alp ICT",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Jean-Gabriel Piguet",
               "position": "Service d’éthique appliquée, HES-SO Valais-Wallis",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Ewen Nedelec",
               "position": "Wise4Future",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             }
           ]
         }
