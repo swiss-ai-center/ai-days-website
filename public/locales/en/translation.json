@@ -424,7 +424,7 @@
               "bio": "Jan Kerschgens est actuellement responsable de l’initiative d’intelligence artificielle pour le Canton de Vaud, basée à Innovaud. Auparavant, il a travaillé dans des centres de recherche de l’EPFL dédiés à l’intelligence artificielle et à la robotique, ainsi qu’au sein du Pôle de recherche national suisse en robotique et dans le secteur privé.",
               "title": "L’intelligence artificielle dans le Canton de Vaud",
               "para": "",
-              "photo": "/speakers/jan-kerschgens.jpg"
+              "photo": "/speaker_pics/jan-kerschgens.jpg"
             },
             {
               "name": "Sandro Saitta, viadata",
@@ -442,67 +442,67 @@
               "name": "Isabelle Hering",
               "position": "Avocate et médiatrice, Etude Hering, Nyon",
               "bio": "Isabelle Hering est spécialisée dans les domaines du droit de l’informatique, de la propriété intellectuelle, du droit des affaires et de la protection des données. Elle est certifiée CIPP/E (RGPD) et fonctionne comme DPO externe pour plusieurs institutions publiques et entreprises privées.",
-              "photo": "/speakers/isabelle-hering.png"
+              "photo": "/speaker_pics/isabelle-hering.png"
             },
             {
               "name": "Luc Olivier Erard",
               "position": "Journaliste, Arc-Info",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Silvia Quarteroni",
               "position": "Chief Transformation Officer & Head of Innovation, SDSC",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Xavier Comtesse",
               "position": "Manufacture Thinking",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Robert van Kommer",
               "position": "InnoSuisse coach",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "David Wannier",
               "position": "HES-SO Valais-Wallis",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Pierre Jean Alet",
               "position": "CSEM",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Laurent Raeber",
               "position": "Suisse énergie Parc",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Delphine Seitiée",
               "position": "Alp ICT",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Jean-Gabriel Piguet",
               "position": "Service d’éthique appliquée, HES-SO Valais-Wallis",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             },
             {
               "name": "Ewen Nedelec",
               "position": "Wise4Future",
               "bio": "",
-              "photo": "/speakers/generic-profile.jpg"
+              "photo": "/speaker_pics/generic-profile.jpg"
             }
           ]
         }
