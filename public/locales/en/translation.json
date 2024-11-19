@@ -408,7 +408,7 @@
             {
               "name": "Jérôme Koller, La Mobilière",
               "bio": "Jérôme Koller est responsable de la stratégie d'entreprise et du portefeuille de projets à La Mobilière et membre du comité directeur élargi. Il supervise la gestion stratégique et financière de l’organisation agile de la Mobilière, et conduit les efforts de transformation et de digitalisation de 1300 employés. Fortement engagé dans la création de valeur via l'IA, il a précédemment dirigé une équipe de 25 data scientists en tant que responsable des données et de l'analytique, où il a introduit l'IA jusqu'à l'interface client.",
-              "title": "Sera annoncé prochainement",
+              "title": "La Mobilière ou La MobiliAIre ? L’IA démocratisée sans complexe.",
               "para": "",
               "photo": "/speaker_pics/jerome-koller.jpg"
             },
@@ -418,6 +418,13 @@
               "title": "L'intelligence artificielle sauvera-t-elle la planète ou l'épuisera-t-elle ?",
               "para": "L’intelligence artificielle ouvre des perspectives prometteuses pour optimiser notre consommation d’énergie et soutenir la transition écologique. Mais son propre impact environnemental, lié à une forte consommation de ressources, soulève des questions. Est-elle vraiment une solution durable ou va-t-elle devenir un nouveau fardeau pour notre planète ?",
               "photo": "/speaker_pics/giorgio-pauletto.png"
+            },
+            {
+              "name": "Jan Kerschgens, Innovaud",
+              "bio": "Jan Kerschgens est actuellement responsable de l’initiative d’intelligence artificielle pour le Canton de Vaud, basée à Innovaud. Auparavant, il a travaillé dans des centres de recherche de l’EPFL dédiés à l’intelligence artificielle et à la robotique, ainsi qu’au sein du Pôle de recherche national suisse en robotique et dans le secteur privé.",
+              "title": "L’intelligence artificielle dans le Canton de Vaud",
+              "para": "",
+              "photo": "/speakers/jan-kerschgens.jpg"
             },
             {
               "name": "Sandro Saitta, viadata",
