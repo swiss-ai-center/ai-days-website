@@ -1,3 +1,4 @@
+import Footer from 'components/Footer/footer';
 import React from 'react';
 import {
     Container,
@@ -27,11 +28,11 @@ interface YearData {
 }
 
 const Schedule: React.FC = () => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     // Récupération de l'année sélectionnée dans le store Redux
     const year = useSelector((state: any) => state.year.value);
-    const years: YearData[] = t("years", { returnObjects: true });
+    const years: YearData[] = t("years", {returnObjects: true});
 
     // Fonction pour trouver l'index de l'année sélectionnée
     const selectedYearIndex = (yearToFind: string) => {
@@ -67,7 +68,7 @@ const Schedule: React.FC = () => {
                     textShadow: '2px 2px 4px rgba(0,0,0,0.6)',
                 }}
             >
-                <Typography variant="h2" sx={{ fontWeight: 'bold' }}>
+                <Typography variant="h2" sx={{fontWeight: 'bold'}}>
                     {heroTitle}
                 </Typography>
                 {/* HES-SO Logo in Bottom Right Corner */}
@@ -112,7 +113,6 @@ const Schedule: React.FC = () => {
                             alt={`Schedule for ${day.date}`}
                             sx={{
                                 objectFit: 'contain', // Garde l'image centrée et visible
-                                backgroundColor: '#f5f5f5', // Ajoute un fond pour améliorer l'esthétique
                             }}
                         />
                         <CardContent
@@ -121,7 +121,7 @@ const Schedule: React.FC = () => {
                                 padding: '20px 40px', // Plus d'espace pour respirer
                             }}
                         >
-                            <Typography variant="h5" component="div" sx={{ fontWeight: 'bold', mb: 1 }}>
+                            <Typography variant="h5" component="div" sx={{fontWeight: 'bold', my: 1}}>
                                 {day.date}
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
@@ -130,18 +130,12 @@ const Schedule: React.FC = () => {
                         </CardContent>
                     </Card>
                     {index < schedule.length - 1 && (
-                        <Divider
-                            sx={{
-                                mt: 4,
-                                mb: 4,
-                                width: '80%', // Ajoute un séparateur entre les cartes
-                                backgroundColor: '#ddd',
-                                height: 1,
-                            }}
-                        />
+                        <Divider variant={"fullWidth"} sx={{width: '100%', height: '6px', borderRadius: '3px', backgroundColor: 'primary.main', mt: 4}}/>
                     )}
                 </Box>
             ))}
+
+            <Footer/>
         </Container>
     );
 };

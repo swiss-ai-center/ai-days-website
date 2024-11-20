@@ -191,7 +191,7 @@ const Contact: React.FC = () => {
                     </List>
                 </Box>
             </Paper>
-            <Footer></Footer>
+            <Footer/>
         </Container>
     );
 };
