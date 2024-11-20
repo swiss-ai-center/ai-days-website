@@ -11,6 +11,7 @@ import React, { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useSelector } from 'react-redux';
+import Schedule from "./pages/Schedule";
 
 function App() {
     const {t} = useTranslation();
@@ -35,6 +36,7 @@ function App() {
         home: Home,
         contact: Contact,
         speakers: Speakers,
+        schedule: Schedule,
         workshops: Workshops,
         partners: Partners,
     };

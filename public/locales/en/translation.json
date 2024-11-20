@@ -23,7 +23,7 @@
           {
             "name": "Schedule",
             "component": "schedule",
-            "enabled": "false",
+            "enabled": "true",
             "url": "/schedule"
           },
           {
@@ -388,6 +388,26 @@
               "Effective collaboration to build a reliable and functional model over time."
             ],
             "pdfLink": "/PDF/Session3b.pdf"
+          }
+        ]
+      },
+      "schedule": {
+        "herotitle": "Schedule",
+        "days": [
+          {
+            "date": "27th January 2025",
+            "location": "Balexert Geneva",
+            "planning-pic": "/schedule_pics/27.01.25.png"
+          },
+          {
+            "date": "28th January 2025",
+            "location": "Balexert Geneva",
+            "planning-pic": "/schedule_pics/28.01.25.png"
+          },
+          {
+            "date": "29th January 2025",
+            "location": "EHL Lausanne",
+            "planning-pic": "/schedule_pics/29.01.25.png"
           }
         ]
       },
