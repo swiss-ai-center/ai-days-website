@@ -6,6 +6,7 @@ import {
     Card,
     CardMedia,
     CardContent,
+    Divider,
 } from '@mui/material';
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
@@ -92,13 +93,17 @@ const Schedule: React.FC = () => {
                         mb: 4,
                         display: 'flex',
                         justifyContent: 'center',
+                        flexDirection: 'column',
+                        alignItems: 'center',
                     }}
                 >
                     <Card
                         sx={{
                             width: '100%',
-                            maxWidth: 800, // Uniforme pour toutes les cards
-                            boxShadow: 3,
+                            padding: '20px',
+                            boxShadow: 4,
+                            borderRadius: 2,
+                            overflow: 'hidden', // Assure que les images restent bien encadrées
                         }}
                     >
                         <CardMedia
@@ -106,11 +111,17 @@ const Schedule: React.FC = () => {
                             image={day["planning-pic"]}
                             alt={`Schedule for ${day.date}`}
                             sx={{
-                                objectFit: 'contain', // S'assure que l'image est totalement visible
+                                objectFit: 'contain', // Garde l'image centrée et visible
+                                backgroundColor: '#f5f5f5', // Ajoute un fond pour améliorer l'esthétique
                             }}
                         />
-                        <CardContent>
-                            <Typography variant="h5" component="div" sx={{ fontWeight: 'bold' }}>
+                        <CardContent
+                            sx={{
+                                textAlign: 'center', // Centrer le texte
+                                padding: '20px 40px', // Plus d'espace pour respirer
+                            }}
+                        >
+                            <Typography variant="h5" component="div" sx={{ fontWeight: 'bold', mb: 1 }}>
                                 {day.date}
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
@@ -118,6 +129,17 @@ const Schedule: React.FC = () => {
                             </Typography>
                         </CardContent>
                     </Card>
+                    {index < schedule.length - 1 && (
+                        <Divider
+                            sx={{
+                                mt: 4,
+                                mb: 4,
+                                width: '80%', // Ajoute un séparateur entre les cartes
+                                backgroundColor: '#ddd',
+                                height: 1,
+                            }}
+                        />
+                    )}
                 </Box>
             ))}
         </Container>
