@@ -112,7 +112,7 @@
             },
             {
               "title": "Industrial application abstract",
-              "description": "One page document presenting an innovation or a project related to IA within a company. These presentations won’t make part of the proceedings. Candidate papers must be submitted through <a href=\"https://ai-days25.hotcrp.com\">https://ai-days25.hotcrp.com</a>. Please also used the following <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">overleaf template</a> or this <a href='templates/AI-days_industrial_template.docx' download>word template</a>"
+              "description": "One page (+références) document presenting an innovation or a project related to IA within a company. These presentations won’t make part of the proceedings. Candidate papers must be submitted <a href=\"mailto:valerie.schurchtodeschini@he-arc.ch,pamela.delgado@hevs.ch\">by sending an email to the program chairs</a>. Please also used the following <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">overleaf template</a> or this <a href='templates/AI-days_industrial_template.docx' download>word template</a>"
             },
             {
               "title": "Posters",
@@ -127,7 +127,8 @@
         "key-dates": {
           "title": "Key Dates",
           "dates": [
-            "Submission deadline (short papers and industrial application abstracts): <s>November 10th, 2024</s> November 20th, 2024, 23h59 AoE",
+            "<s>Submission deadline (short papers): November 20th, 2024, 23h59 AoE</s>",
+            "Submission deadline (industrial application abstracts): <s>November 20th, 2024</s> December 5th, 2024, 23h59 AoE",
             "Submission deadline (demos and posters): December 15th, 2024, 23h59 AoE",
             "Author Notification: 20 December 2024",
             "Conference dates: 27 - 29 January 2025"
