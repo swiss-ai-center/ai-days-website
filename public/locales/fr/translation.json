@@ -407,7 +407,7 @@
           {
             "date": "29 Janvier 2025",
             "location": "EHL Lausanne",
-            "planning-pic": "/schedule_pics/29.01.25.png"
+            "planning-pic": "/schedule_pics/29.01.25.jpg"
           }
         ]
       },
@@ -442,15 +442,15 @@
             {
               "name": "Jan Kerschgens, Innovaud",
               "bio": "Jan Kerschgens est actuellement responsable de l’initiative d’intelligence artificielle pour le Canton de Vaud, basée à Innovaud. Auparavant, il a travaillé dans des centres de recherche de l’EPFL dédiés à l’intelligence artificielle et à la robotique, ainsi qu’au sein du Pôle de recherche national suisse en robotique et dans le secteur privé.",
-              "title": "L’intelligence artificielle dans le Canton de Vaud",
+              "title": "L’intelligence artificielle dans le Canton de Vaud (à confirmer)",
               "para": "",
               "photo": "/speaker_pics/jan-kerschgens.jpg"
             },
             {
               "name": "Sandro Saitta, viadata",
-              "bio": "Sandro Saitta is passionate about helping companies become data-driven. He has worked across various industries to promote data usage and is currently a Data & AI advisor at viadata, a company specializing in executive advising and corporate training. He holds a Ph.D. in EPFL.",
-              "title": "AI for SME - How to get started and overcome key challenges?",
-              "para": "In today's digital landscape, Artificial Intelligence (AI) is a powerful tool for SMEs seeking innovation and growth. This presentation demystifies AI, cutting through the hype. By exploring fundamental concepts, we clarify what AI can and can't do. We’ll guide SMEs on how to initiate AI projects through both top-down and bottom-up approaches, using frameworks like the impact-feasibility matrix and the data initiative canvas. Additionally, we address key challenges in AI adoption, discussing various dimensions such as data quality, people skills, change management and offering actionable tips to overcome them.",
+              "bio": "Sandro Saitta est passionné par l'accompagnement des entreprises vers une approche axées sur les données. Ayant travaillé dans divers secteurs pour promouvoir l'utilisation des données, il est actuellement conseiller en données et intelligence artificielle chez viadata, une société spécialisée dans le conseil exécutif et la formation en entreprise. Il est titulaire d'un doctorat de l'EPFL.",
+              "title": "L'IA pour les PME - Comment démarrer et surmonter les principaux défis ?",
+              "para": "Dans le paysage numérique actuel, l'Intelligence Artificielle (IA) est un outil puissant pour les PME en quête d'innovation et de croissance. Cette présentation démystifie l'IA en dépassant les idées reçues. En explorant les concepts fondamentaux, les possibilités réelles de ce que l'IA peut accomplir sont clarifiées. Les PME sont guidées dans l'initiation de projets d'IA à l'aide de canevas. Les principaux défis liés à l'adoption de l'IA sont abordés, en discutant de dimensions telles que la qualité des données, les compétences humaines et la gestion du changement.",
               "photo": "/speaker_pics/sandro-saitta.png"
             }
           ]
