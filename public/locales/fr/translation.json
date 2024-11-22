@@ -112,11 +112,11 @@
             },
             {
               "title": "Résumé d'une application industrielle",
-              "description": "Une page de présentation d'une innovation ou d'un projet en lien avec l'IA dans une entreprise. Ces présentations ne feront pas l'objet de publication. Les soumissions se font via le site suivant <a href=\"https://ai-days25.hotcrp.com\">https://ai-days25.hotcrp.com</a> ainsi que sur la base de ce <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">template overleaf</a> ou de ce <a href='templates/AI-days_industrial_template.docx' download>template word</a>"
+              "description": "Une page (+références) de présentation d'une innovation ou d'un projet en lien avec l'IA dans une entreprise. Ces présentations ne feront pas l'objet de publication. Les soumissions <a href=\"mailto:valerie.schurchtodeschini@he-arc.ch,pamela.delgado@hevs.ch\">par email aux responsables du programme technique</a> ainsi que sur la base de ce <a href=\"https://www.overleaf.com/6864366429jwskwysfdfgy#409ae6\">template overleaf</a> ou de ce <a href='templates/AI-days_industrial_template.docx' download>template word</a>"
             },
             {
               "title": "Poster",
-              "description": "Un résumé de 300 mots au maximum accompagné d'un poster taille A0 (orientation portrait). Le poster devra contenir un titre, le nom du/des auteur(s), la méthodologie utilisée, les résultats obtenus et les conclusions. Veuillez noter que vous devrez imprimer, apporter et accrocher votre poster vous-même. Seul le résumé fera l’objet de publications. Les soumissions posters doivent être soumis <a href=\"mailto:valerie.schurchtodeschini@he-arc.ch,pamela.delgado@hevs.ch\">par email aux responsables du programme technique</a>."
+              "description": "Un résumé de 300 mots au maximum accompagné d'un poster taille A0 (orientation portrait). Le poster devra contenir un titre, le nom du/des auteur(s), la méthodologie utilisée, les résultats obtenus et les conclusions. Veuillez noter que vous devrez imprimer, apporter et accrocher votre poster vous-même. Seul le résumé fera l’objet de publications. Les propositions posters doivent être soumises <a href=\"mailto:valerie.schurchtodeschini@he-arc.ch,pamela.delgado@hevs.ch\">par email aux responsables du programme technique</a>."
             },
             {
               "title": "Démonstration interactive (+ poster si nécessaire)",
@@ -127,7 +127,8 @@
         "key-dates": {
           "title": "Dates clés",
           "dates": [
-            "Date limite de soumission (articles courts et résumé d'application industrielle) : le <s>10 novembre 2024</s> 20 novembre 2024, 23h59 AoE",
+            "<s>Date limite de soumission (articles courts) : le 10 novembre 2024 20 novembre 2024, 23h59 AoE</s>",
+            "Date limite de soumission (résumé d'application industrielle) : le <s>20 novembre 2024</s> 5 décembre 2024, 23h59 AoE",
             "Date limite de soumission (démos et posters) : 15 décembre 2024, 23h59 AoE",
             "Notification à l’auteur : le 20 décembre 2024",
             "Dates de la conférence : du 27 au 29 janvier 2025"
