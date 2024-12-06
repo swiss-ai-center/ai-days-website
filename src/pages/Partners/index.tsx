@@ -26,6 +26,7 @@ const Partners: React.FC = () => {
     const years: { year: string }[] = t("years", {returnObjects: true});
     const selectedYearIndex = (yearToFind: string) => years.findIndex((yearObj) => yearObj.year === yearToFind);
 
+/*
     const platineVisibilityAndPresence: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.visibility-and-presence`, {returnObjects: true});
     const platineMarketingAndCommunication: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.marketing-and-communication`, {returnObjects: true});
 
@@ -34,6 +35,7 @@ const Partners: React.FC = () => {
 
     const silverVisibilityAndPresence: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.visibility-and-presence`, {returnObjects: true});
     const silverMarketingAndCommunication: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.marketing-and-communication`, {returnObjects: true});
+*/
 
     return (
         <Container maxWidth={"xl"}>
@@ -135,7 +137,7 @@ const Partners: React.FC = () => {
                     </Card>
                 </Box>
 
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
+                {/*<Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.description`)}
                     </Typography>
@@ -169,7 +171,7 @@ const Partners: React.FC = () => {
                         ))}
                     </List>
                 </Box>
-
+*/}
                 {/* Partenaire Or */}
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
@@ -208,7 +210,7 @@ const Partners: React.FC = () => {
                     </Card>
                 </Box>
 
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
+               {/* <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.description`)}
                     </Typography>
@@ -241,16 +243,16 @@ const Partners: React.FC = () => {
                             </ListItem>
                         ))}
                     </List>
-                </Box>
+                </Box>*/}
 
-                {/* Partenaire Argent */}
+               {/*  Partenaire Argent
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.title`)}
                     </Typography>
-                </Box>
+                </Box>*/}
 
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
+               {/* <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.description`)}
                     </Typography>
@@ -283,7 +285,7 @@ const Partners: React.FC = () => {
                             </ListItem>
                         ))}
                     </List>
-                </Box>
+                </Box>*/}
 
                 {/* Partenaire presse */}
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
