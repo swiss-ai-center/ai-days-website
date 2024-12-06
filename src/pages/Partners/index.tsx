@@ -17,6 +17,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import Footer from "../../components/Footer/footer";
+import './styles.css';
 
 const Partners: React.FC = () => {
     const {t} = useTranslation();
