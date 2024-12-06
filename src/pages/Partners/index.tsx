@@ -14,9 +14,10 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import ExpandCircleDownRoundedIcon from '@mui/icons-material/ExpandCircleDownRounded';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { useSelector } from 'react-redux';
+import {useTranslation} from 'react-i18next';
+import {useSelector} from 'react-redux';
 import Footer from "../../components/Footer/footer";
+import './styles.css';
 
 const Partners: React.FC = () => {
     const {t} = useTranslation();
@@ -25,6 +26,7 @@ const Partners: React.FC = () => {
     const years: { year: string }[] = t("years", {returnObjects: true});
     const selectedYearIndex = (yearToFind: string) => years.findIndex((yearObj) => yearObj.year === yearToFind);
 
+/*
     const platineVisibilityAndPresence: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.visibility-and-presence`, {returnObjects: true});
     const platineMarketingAndCommunication: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.marketing-and-communication`, {returnObjects: true});
 
@@ -33,6 +35,7 @@ const Partners: React.FC = () => {
 
     const silverVisibilityAndPresence: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.visibility-and-presence`, {returnObjects: true});
     const silverMarketingAndCommunication: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.marketing-and-communication`, {returnObjects: true});
+*/
 
     return (
         <Container maxWidth={"xl"}>
@@ -134,7 +137,7 @@ const Partners: React.FC = () => {
                     </Card>
                 </Box>
 
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
+                {/*<Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.description`)}
                     </Typography>
@@ -168,7 +171,7 @@ const Partners: React.FC = () => {
                         ))}
                     </List>
                 </Box>
-
+*/}
                 {/* Partenaire Or */}
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
@@ -191,9 +194,23 @@ const Partners: React.FC = () => {
                             />
                         </CardActionArea>
                     </Card>
+
+                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                        <CardActionArea onClick={
+                            () => window.open("https://icosys.ch/", "_blank")
+                        }>
+                            <CardMedia
+                                sx={{p: 2}}
+                                component="img"
+                                height="200px"
+                                image="/icosys-logo.png"
+                                alt="iCoSys Logo"
+                            />
+                        </CardActionArea>
+                    </Card>
                 </Box>
 
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
+               {/* <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.description`)}
                     </Typography>
@@ -226,16 +243,16 @@ const Partners: React.FC = () => {
                             </ListItem>
                         ))}
                     </List>
-                </Box>
+                </Box>*/}
 
-                {/* Partenaire Argent */}
+               {/*  Partenaire Argent
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.title`)}
                     </Typography>
-                </Box>
+                </Box>*/}
 
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
+               {/* <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.description`)}
                     </Typography>
@@ -268,7 +285,7 @@ const Partners: React.FC = () => {
                             </ListItem>
                         ))}
                     </List>
-                </Box>
+                </Box>*/}
 
                 {/* Partenaire presse */}
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
@@ -289,6 +306,20 @@ const Partners: React.FC = () => {
                                 height="200px"
                                 image="/swissdevjobs.png"
                                 alt="SwissDevJobs Logo"
+                            />
+                        </CardActionArea>
+                    </Card>
+
+                    <Card elevation={0} sx={{border: '1px solid lightgrey'}}>
+                        <CardActionArea onClick={
+                            () => window.open("https://www.arcinfo.ch/", "_blank")
+                        }>
+                            <CardMedia
+                                sx={{p: 1}}
+                                component="img"
+                                height="200px"
+                                image="/arcinfo-logo.png"
+                                alt="Arcinfo Logo"
                             />
                         </CardActionArea>
                     </Card>
