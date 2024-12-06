@@ -14,8 +14,8 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import ExpandCircleDownRoundedIcon from '@mui/icons-material/ExpandCircleDownRounded';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { useSelector } from 'react-redux';
+import {useTranslation} from 'react-i18next';
+import {useSelector} from 'react-redux';
 import Footer from "../../components/Footer/footer";
 import './styles.css';
 
@@ -192,6 +192,20 @@ const Partners: React.FC = () => {
                             />
                         </CardActionArea>
                     </Card>
+
+                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                        <CardActionArea onClick={
+                            () => window.open("https://icosys.ch/", "_blank")
+                        }>
+                            <CardMedia
+                                sx={{p: 2}}
+                                component="img"
+                                height="200px"
+                                image="/icosys-logo.png"
+                                alt="ALP ICT Logo"
+                            />
+                        </CardActionArea>
+                    </Card>
                 </Box>
 
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
@@ -290,6 +304,20 @@ const Partners: React.FC = () => {
                                 height="200px"
                                 image="/swissdevjobs.png"
                                 alt="SwissDevJobs Logo"
+                            />
+                        </CardActionArea>
+                    </Card>
+
+                    <Card elevation={0} sx={{border: '1px solid lightgrey'}}>
+                        <CardActionArea onClick={
+                            () => window.open("https://www.arcinfo.ch/", "_blank")
+                        }>
+                            <CardMedia
+                                sx={{p: 1}}
+                                component="img"
+                                height="100px"
+                                image="/arcinfo-logo.png"
+                                alt="Arcinfo Logo"
                             />
                         </CardActionArea>
                     </Card>
