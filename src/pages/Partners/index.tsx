@@ -204,7 +204,7 @@ const Partners: React.FC = () => {
                                 component="img"
                                 height="200px"
                                 image="/icosys-logo.png"
-                                alt="ALP ICT Logo"
+                                alt="iCoSys Logo"
                             />
                         </CardActionArea>
                     </Card>
@@ -317,7 +317,7 @@ const Partners: React.FC = () => {
                             <CardMedia
                                 sx={{p: 1}}
                                 component="img"
-                                height="100px"
+                                height="200px"
                                 image="/arcinfo-logo.png"
                                 alt="Arcinfo Logo"
                             />
