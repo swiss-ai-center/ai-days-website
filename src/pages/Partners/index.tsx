@@ -17,6 +17,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import Footer from "../../components/Footer/footer";
+import './styles.css';
 
 const Partners: React.FC = () => {
     const {t} = useTranslation();
@@ -191,6 +192,20 @@ const Partners: React.FC = () => {
                             />
                         </CardActionArea>
                     </Card>
+
+                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                        <CardActionArea onClick={
+                            () => window.open("https://icosys.ch/", "_blank")
+                        }>
+                            <CardMedia
+                                sx={{p: 2}}
+                                component="img"
+                                height="200px"
+                                image="/icosys-logo.png"
+                                alt="iCoSys Logo"
+                            />
+                        </CardActionArea>
+                    </Card>
                 </Box>
 
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
@@ -228,7 +243,7 @@ const Partners: React.FC = () => {
                     </List>
                 </Box>
 
-                {/* Partenaire Argent */}
+                {/*  Partenaire Argent */}
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.title`)}
@@ -289,6 +304,20 @@ const Partners: React.FC = () => {
                                 height="200px"
                                 image="/swissdevjobs.png"
                                 alt="SwissDevJobs Logo"
+                            />
+                        </CardActionArea>
+                    </Card>
+
+                    <Card elevation={0} sx={{border: '1px solid lightgrey'}}>
+                        <CardActionArea onClick={
+                            () => window.open("https://www.arcinfo.ch/", "_blank")
+                        }>
+                            <CardMedia
+                                sx={{p: 1}}
+                                component="img"
+                                height="200px"
+                                image="/arcinfo-logo.png"
+                                alt="Arcinfo Logo"
                             />
                         </CardActionArea>
                     </Card>
