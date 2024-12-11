@@ -206,7 +206,7 @@ const Partners: React.FC = () => {
                                     component="img"
                                     height="200px"
                                     image="/icosys-logo.png"
-                                    alt="ALP ICT Logo"
+                                    alt="iCoSys Logo"
                                 />
                             </CardActionArea>
                         </Card>
