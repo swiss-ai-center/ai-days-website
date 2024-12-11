@@ -26,16 +26,16 @@ const Partners: React.FC = () => {
     const years: { year: string }[] = t("years", {returnObjects: true});
     const selectedYearIndex = (yearToFind: string) => years.findIndex((yearObj) => yearObj.year === yearToFind);
 
-/*
-    const platineVisibilityAndPresence: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.visibility-and-presence`, {returnObjects: true});
-    const platineMarketingAndCommunication: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.marketing-and-communication`, {returnObjects: true});
+    /*
+        const platineVisibilityAndPresence: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.visibility-and-presence`, {returnObjects: true});
+        const platineMarketingAndCommunication: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.marketing-and-communication`, {returnObjects: true});
 
-    const goldVisibilityAndPresence: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.visibility-and-presence`, {returnObjects: true});
-    const goldMarketingAndCommunication: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.marketing-and-communication`, {returnObjects: true});
+        const goldVisibilityAndPresence: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.visibility-and-presence`, {returnObjects: true});
+        const goldMarketingAndCommunication: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.marketing-and-communication`, {returnObjects: true});
 
-    const silverVisibilityAndPresence: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.visibility-and-presence`, {returnObjects: true});
-    const silverMarketingAndCommunication: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.marketing-and-communication`, {returnObjects: true});
-*/
+        const silverVisibilityAndPresence: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.visibility-and-presence`, {returnObjects: true});
+        const silverMarketingAndCommunication: string[] = t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.marketing-and-communication`, {returnObjects: true});
+    */
 
     return (
         <Container maxWidth={"xl"}>
@@ -98,45 +98,46 @@ const Partners: React.FC = () => {
                 </Box>
 
                 {/* Logos Partenaire Platine */}
-                <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
-                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                        <CardActionArea onClick={
-                            () => window.open(t(`years.${selectedYearIndex(year)}.footer.partner-1`), "_blank")
-                        }>
-                            <CardMedia
-                                component="img"
-                                height="200px"
-                                image="/mobiliere.png"
-                                alt="La Mobilière Logo"
-                            />
-                        </CardActionArea>
-                    </Card>
-                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                        <CardActionArea onClick={
-                            () => window.open(t(`years.${selectedYearIndex(year)}.footer.partner-2`), "_blank")
-                        }>
-                            <CardMedia
-                                component="img"
-                                height="200px"
-                                image="/ehl-logo.png"
-                                alt="EHL Hospitality Business School Logo"
-                            />
-                        </CardActionArea>
-                    </Card>
-                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                        <CardActionArea onClick={
-                            () => window.open(t(`years.${selectedYearIndex(year)}.footer.partner-3`), "_blank")
-                        }>
-                            <CardMedia
-                                component="img"
-                                height="200px"
-                                image="/hes-so.png"
-                                alt="HES-SO Logo"
-                            />
-                        </CardActionArea>
-                    </Card>
-                </Box>
-
+                <div className={"partner-img"}>
+                    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open(t(`years.${selectedYearIndex(year)}.footer.partner-1`), "_blank")
+                            }>
+                                <CardMedia
+                                    component="img"
+                                    height="200px"
+                                    image="/mobiliere.png"
+                                    alt="La Mobilière Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open(t(`years.${selectedYearIndex(year)}.footer.partner-2`), "_blank")
+                            }>
+                                <CardMedia
+                                    component="img"
+                                    height="200px"
+                                    image="/ehl-logo.png"
+                                    alt="EHL Hospitality Business School Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open(t(`years.${selectedYearIndex(year)}.footer.partner-3`), "_blank")
+                            }>
+                                <CardMedia
+                                    component="img"
+                                    height="200px"
+                                    image="/hes-so.png"
+                                    alt="HES-SO Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
+                    </Box>
+                </div>
                 {/*<Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.platine.description`)}
@@ -173,44 +174,45 @@ const Partners: React.FC = () => {
                 </Box>
 */}
                 {/* Partenaire Or */}
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
-                    <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
-                        {t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.title`)}
-                    </Typography>
-                </Box>
+                <div className={"partner-img"}>
+                    <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
+                        <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
+                            {t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.title`)}
+                        </Typography>
+                    </Box>
 
-                {/* Logos Partenaire Or */}
-                <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
-                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                        <CardActionArea onClick={
-                            () => window.open("https://alpict.ch/", "_blank")
-                        }>
-                            <CardMedia
-                                sx={{p: 2}}
-                                component="img"
-                                height="200px"
-                                image="/alp_ict.png"
-                                alt="ALP ICT Logo"
-                            />
-                        </CardActionArea>
-                    </Card>
+                    {/* Logos Partenaire Or */}
+                    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open("https://alpict.ch/", "_blank")
+                            }>
+                                <CardMedia
+                                    sx={{p: 2}}
+                                    component="img"
+                                    height="200px"
+                                    image="/alp_ict.png"
+                                    alt="ALP ICT Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
 
-                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                        <CardActionArea onClick={
-                            () => window.open("https://icosys.ch/", "_blank")
-                        }>
-                            <CardMedia
-                                sx={{p: 2}}
-                                component="img"
-                                height="200px"
-                                image="/icosys-logo.png"
-                                alt="iCoSys Logo"
-                            />
-                        </CardActionArea>
-                    </Card>
-                </Box>
-
-               {/* <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open("https://icosys.ch/", "_blank")
+                            }>
+                                <CardMedia
+                                    sx={{p: 2}}
+                                    component="img"
+                                    height="200px"
+                                    image="/icosys-logo.png"
+                                    alt="iCoSys Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
+                    </Box>
+                </div>
+                {/* <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.description`)}
                     </Typography>
@@ -245,14 +247,14 @@ const Partners: React.FC = () => {
                     </List>
                 </Box>*/}
 
-               {/*  Partenaire Argent
+                {/*  Partenaire Argent
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.title`)}
                     </Typography>
                 </Box>*/}
 
-               {/* <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
+                {/* <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.description`)}
                     </Typography>
@@ -288,42 +290,44 @@ const Partners: React.FC = () => {
                 </Box>*/}
 
                 {/* Partenaire presse */}
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
-                    <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
-                        {t(`years.${selectedYearIndex(year)}.partners.partnerships.press`)}
-                    </Typography>
-                </Box>
+                <div className={"partner-img"}>
+                    <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
+                        <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
+                            {t(`years.${selectedYearIndex(year)}.partners.partnerships.press`)}
+                        </Typography>
+                    </Box>
 
-                {/* Logos Partenaire Presse */}
-                <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
-                    <Card elevation={0} sx={{border: '1px solid lightgrey'}}>
-                        <CardActionArea onClick={
-                            () => window.open("https://www.swissdevjobs.ch/", "_blank")
-                        }>
-                            <CardMedia
-                                sx={{p: 1}}
-                                component="img"
-                                height="200px"
-                                image="/swissdevjobs.png"
-                                alt="SwissDevJobs Logo"
-                            />
-                        </CardActionArea>
-                    </Card>
+                    {/* Logos Partenaire Presse */}
+                    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
+                        <Card elevation={0} sx={{border: '1px solid lightgrey'}}>
+                            <CardActionArea onClick={
+                                () => window.open("https://www.swissdevjobs.ch/", "_blank")
+                            }>
+                                <CardMedia
+                                    sx={{p: 1}}
+                                    component="img"
+                                    height="200px"
+                                    image="/swissdevjobs.png"
+                                    alt="SwissDevJobs Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
 
-                    <Card elevation={0} sx={{border: '1px solid lightgrey'}}>
-                        <CardActionArea onClick={
-                            () => window.open("https://www.arcinfo.ch/", "_blank")
-                        }>
-                            <CardMedia
-                                sx={{p: 1}}
-                                component="img"
-                                height="200px"
-                                image="/arcinfo-logo.png"
-                                alt="Arcinfo Logo"
-                            />
-                        </CardActionArea>
-                    </Card>
-                </Box>
+                        <Card elevation={0} sx={{border: '1px solid lightgrey'}}>
+                            <CardActionArea onClick={
+                                () => window.open("https://www.arcinfo.ch/", "_blank")
+                            }>
+                                <CardMedia
+                                    sx={{p: 1}}
+                                    component="img"
+                                    height="100px"
+                                    image="/arcinfo-logo.png"
+                                    alt="Arcinfo Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
+                    </Box>
+                </div>
             </Paper>
 
             {/* Footer */}
