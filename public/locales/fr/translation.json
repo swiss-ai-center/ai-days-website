@@ -45,7 +45,7 @@
             "url": "/partners"
           },
           {
-            "name": "Informations pratiques",
+            "name": "Lieux & organisation",
             "component": "contact",
             "enabled": "true",
             "url": "/contact"
