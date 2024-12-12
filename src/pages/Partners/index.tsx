@@ -126,6 +126,18 @@ const Partners: React.FC = () => {
                         </Card>
                         <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
                             <CardActionArea onClick={
+                                () => window.open("https://www.opi.ch/", "_blank")
+                            }>
+                                <CardMedia
+                                    component="img"
+                                    width="200px"
+                                    image="/opi-logo.svg"
+                                    alt="OPI Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
                                 () => window.open(t(`years.${selectedYearIndex(year)}.footer.partner-3`), "_blank")
                             }>
                                 <CardMedia
