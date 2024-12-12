@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
                     >
                         HES-SO
                     </Link>
-                    {' 2022-' + new Date().getFullYear() + '.'}
+                    {' 2022-' + new Date().getFullYear() + '. Contact: ai-days-2025 at swiss-ai-center.ch'}
                 </Typography>
             </Container>
         </Box>
