@@ -259,12 +259,29 @@ const Partners: React.FC = () => {
                     </List>
                 </Box>*/}
 
-                {/*  Partenaire Argent
+                {/*  Partenaire Argent */}
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.title`)}
                     </Typography>
-                </Box>*/}
+                </Box>
+                {/* Logos Partenaire Or */}
+                <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
+                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                        <CardActionArea onClick={
+                            () => window.open("https://www.dina.ch", "_blank")
+                        }>
+                            <CardMedia
+                                sx={{p: 2}}
+                                component="img"
+                                height="200px"
+                                image="/logo_dina.jpg"
+                                alt="Dina Logo"
+                            />
+                        </CardActionArea>
+                    </Card>
+
+                </Box>
 
                 {/* <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>

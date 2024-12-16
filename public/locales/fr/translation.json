@@ -247,13 +247,13 @@
       },
       "partners": {
         "title": "Partenaires",
-        "introduction": "Nous avons le plaisir de vous inviter à devenir partenaire de l'édition 2025 des AI Days, un événement en pleine croissance dédié à l'application de l'intelligence artificielle dans les PME. Organisé par le Swiss AI Center de la HES-SO, cet événement gratuit se tiendra du 27 au 29 janvier 2025 à Genève et Lausanne. Il réunit un public toujours plus large de professionnels engagés dans l'innovation technologique et bénéficie d’une belle couverture médiatique.",
-        "contact": "Nous serions ravis de discuter plus en détail des modalités de soutien et de personnaliser une collaboration qui répond à vos objectifs de promotion économique. Nous sommes convaincus que votre contribution aura un impact significatif sur le succès de cet événement et sur le développement des PME en Suisse Romande.",
+        "introduction": "Un grand merci à nos partenaires sans lesquels cette édition des AI-days ne pourrait exister.",
+        "contact": "Vous souhaitez nous soutenir pour l'édition suivante, ou rejoindre le comité industriel ? Contactez-nous à l'adresse info [at] swiss-ai-center.ch.",
         "visibility-and-presence": "Visibilité et présence",
         "marketing-and-communication": "Marketing et communication",
         "partnerships": {
           "platine": {
-            "title": "Partenaire Platine",
+            "title": "Partenaires Platine",
             "description": "Vous êtes l’un des partenaires stratégiques de l’événement.",
             "visibility-and-presence": [
               "Un plan sur mesure, adapté à vos besoins en termes de visibilité et de présence, sera élaboré en partenariat avec l’équipe d’organisation pour l’ensemble de la conférence.",
@@ -269,7 +269,7 @@
             ]
           },
           "gold": {
-            "title": "Partenaire Or",
+            "title": "Partenaires Or",
             "description": "Vous participez au financement de la conférence avez des objectifs précis en termes de visibilité et de présence.",
             "visibility-and-presence": [
               "Un plan sur mesure, adapté à vos besoins en termes de visibilité et de présence, sera élaboré en partenariat avec l’équipe d’organisation pour une journée de la conférence.",
@@ -282,7 +282,7 @@
             ]
           },
           "silver": {
-            "title": "Partenaire Argent",
+            "title": "Partenaires Argent",
             "description": "Vous participez au financement de la conférence.",
             "visibility-and-presence": [
               "Votre logo apparaîtra sur le site Internet de la conférence dans la catégorie Argent."
@@ -292,7 +292,7 @@
               "Des badges permettront de vous identifier comme partenaire de l’évènement."
             ]
           },
-          "press": "Partenaire Presse"
+          "press": "Partenaires Presse"
         }
       },
       "workshops": {
