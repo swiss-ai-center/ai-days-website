@@ -98,12 +98,25 @@ const Partners: React.FC = () => {
                 </Box>
 
                 {/* Logos Partenaire Platine */}
-                <div className={"partner-img"}>
-                    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
+                <div className="partner-img">
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            justifyContent: 'center',
+                            gap: 4,
+                            py: 4,
+                        }}
+                    >
                         <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                            <CardActionArea onClick={
-                                () => window.open(t(`years.${selectedYearIndex(year)}.footer.partner-1`), "_blank")
-                            }>
+                            <CardActionArea
+                                onClick={() =>
+                                    window.open(
+                                        t(`years.${selectedYearIndex(year)}.footer.partner-1`),
+                                        "_blank"
+                                    )
+                                }
+                            >
                                 <CardMedia
                                     component="img"
                                     height="200px"
@@ -113,9 +126,14 @@ const Partners: React.FC = () => {
                             </CardActionArea>
                         </Card>
                         <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                            <CardActionArea onClick={
-                                () => window.open(t(`years.${selectedYearIndex(year)}.footer.partner-2`), "_blank")
-                            }>
+                            <CardActionArea
+                                onClick={() =>
+                                    window.open(
+                                        t(`years.${selectedYearIndex(year)}.footer.partner-2`),
+                                        "_blank"
+                                    )
+                                }
+                            >
                                 <CardMedia
                                     component="img"
                                     height="200px"
@@ -125,26 +143,39 @@ const Partners: React.FC = () => {
                             </CardActionArea>
                         </Card>
                         <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                            <CardActionArea onClick={
-                                () => window.open("https://www.opi.ch/", "_blank")
-                            }>
+                            <CardActionArea onClick={() => window.open("https://www.opi.ch/", "_blank")}>
                                 <CardMedia
                                     component="img"
-                                    width="200px"
+                                    height="200px"
                                     image="/opi-logo.svg"
                                     alt="OPI Logo"
                                 />
                             </CardActionArea>
                         </Card>
                         <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                            <CardActionArea onClick={
-                                () => window.open(t(`years.${selectedYearIndex(year)}.footer.partner-3`), "_blank")
-                            }>
+                            <CardActionArea
+                                onClick={() =>
+                                    window.open(
+                                        t(`years.${selectedYearIndex(year)}.footer.partner-3`),
+                                        "_blank"
+                                    )
+                                }
+                            >
                                 <CardMedia
                                     component="img"
                                     height="200px"
                                     image="/hes-so.png"
                                     alt="HES-SO Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={() => window.open("https://heig-vd.ch", "_blank")}>
+                                <CardMedia
+                                    component="img"
+                                    height="200px"
+                                    image="/logo_heig-vd.png"
+                                    alt="HEIG-VD Logo"
                                 />
                             </CardActionArea>
                         </Card>
@@ -186,23 +217,29 @@ const Partners: React.FC = () => {
                 </Box>
 */}
                 {/* Partenaire Or */}
-                <div className={"partner-img"}>
+                <div className="partner-img">
                     <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
-                        <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
+                        <Typography variant="h4" sx={{fontWeight: 'bold'}}>
                             {t(`years.${selectedYearIndex(year)}.partners.partnerships.gold.title`)}
                         </Typography>
                     </Box>
 
                     {/* Logos Partenaire Or */}
-                    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            justifyContent: 'center',
+                            gap: 4,
+                            py: 4,
+                        }}
+                    >
                         <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                            <CardActionArea onClick={
-                                () => window.open("https://alpict.ch/", "_blank")
-                            }>
+                            <CardActionArea onClick={() => window.open("https://alpict.ch/", "_blank")}>
                                 <CardMedia
-                                    sx={{p: 2}}
+                                    sx={{objectFit: 'contain', p: 2}}
                                     component="img"
-                                    height="200px"
+                                    height="150px"
                                     image="/alp_ict.png"
                                     alt="ALP ICT Logo"
                                 />
@@ -210,15 +247,51 @@ const Partners: React.FC = () => {
                         </Card>
 
                         <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                            <CardActionArea onClick={
-                                () => window.open("https://icosys.ch/", "_blank")
-                            }>
+                            <CardActionArea onClick={() => window.open("https://icosys.ch/", "_blank")}>
                                 <CardMedia
-                                    sx={{p: 2}}
+                                    sx={{objectFit: 'contain', p: 2}}
                                     component="img"
-                                    height="200px"
+                                    height="150px"
                                     image="/icosys-logo.png"
                                     alt="iCoSys Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
+
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea
+                                onClick={() => window.open("https://www.purestorage.com/solutions/ai.html", "_blank")}
+                            >
+                                <CardMedia
+                                    sx={{objectFit: 'contain', p: 2}}
+                                    component="img"
+                                    height="150px"
+                                    image="/logo_pure.svg"
+                                    alt="PureStorage"
+                                />
+                            </CardActionArea>
+                        </Card>
+
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={() => window.open("https://www.exoscale.com", "_blank")}>
+                                <CardMedia
+                                    sx={{objectFit: 'contain', p: 2}}
+                                    component="img"
+                                    height="150px"
+                                    image="/logo_exoscale.jpg"
+                                    alt="Exoscale"
+                                />
+                            </CardActionArea>
+                        </Card>
+
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={() => window.open("https://www.innovaud.ch/en/", "_blank")}>
+                                <CardMedia
+                                    sx={{objectFit: 'contain', p: 2}}
+                                    component="img"
+                                    height="150px"
+                                    image="/logo_innovaud.png"
+                                    alt="InnoVaud"
                                 />
                             </CardActionArea>
                         </Card>
@@ -259,12 +332,44 @@ const Partners: React.FC = () => {
                     </List>
                 </Box>*/}
 
-                {/*  Partenaire Argent
+                {/*  Partenaire Argent */}
                 <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
                     <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.title`)}
                     </Typography>
-                </Box>*/}
+                </Box>
+
+                <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
+
+                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                        <CardActionArea onClick={
+                            () => window.open("https://www.dina.ch", "_blank")
+                        }>
+                            <CardMedia
+                                sx={{objectFit: 'contain', p: 2}}
+                                component="img"
+                                height="100px"
+                                image="/logo_dina.jpg"
+                                alt="Dina Logo"
+                            />
+                        </CardActionArea>
+                    </Card>
+
+                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                        <CardActionArea onClick={
+                            () => window.open("https://www.e4company.com", "_blank")
+                        }>
+                            <CardMedia
+                                sx={{objectFit: 'contain', p: 2}}
+                                component="img"
+                                height="100px"
+                                image="/logo-e4.png"
+                                alt="E4 Logo"
+                            />
+                        </CardActionArea>
+                    </Card>
+
+                </Box>
 
                 {/* <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>
@@ -318,7 +423,7 @@ const Partners: React.FC = () => {
                                 <CardMedia
                                     sx={{p: 1}}
                                     component="img"
-                                    height="200px"
+                                    height="100px"
                                     image="/swissdevjobs.png"
                                     alt="SwissDevJobs Logo"
                                 />

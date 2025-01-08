@@ -247,13 +247,13 @@
       },
       "partners": {
         "title": "Partners",
-        "introduction": "We are pleased to invite you to become a partner of the 2025 AI Days, a growing event dedicated to the application of artificial intelligence in SMEs. Organized by the Swiss AI Center of HES-SO, this free event will be held from January 27th to 29th, 2025, in Geneva and Lausanne. It brings together a steadily growing audience of professionals engaged in technological innovation and benefits from significant media coverage.",
-        "contact": "We would be happy to discuss the sponsorship opportunities in more detail and to tailor a collaboration that meets your business promotion objectives. We are confident that your contribution will significantly impact the success of this event and the development of SMEs in French-speaking Switzerland.",
+        "introduction": "Many thanks to our partners, without which this edition would not exist.",
+        "contact": "Are you interested in supporting us for the next edition, or to join the center industry panel? Contact us at info [at] swiss-ai-center.ch",
         "visibility-and-presence": "Visibility and Presence",
         "marketing-and-communication": "Marketing and Communication",
         "partnerships": {
           "platine": {
-            "title": "Platinum Partner",
+            "title": "Platinum Partners",
             "description": "You are one of the strategic partners of the event.",
             "visibility-and-presence": [
               "A customized plan tailored to your visibility and presence needs will be developed in collaboration with the organizing team for the entire conference.",
@@ -269,7 +269,7 @@
             ]
           },
           "gold": {
-            "title": "Gold Partner",
+            "title": "Gold Partners",
             "description": "You contribute to the conference’s funding with specific visibility and presence objectives.",
             "visibility-and-presence": [
               "A customized plan tailored to your visibility and presence needs will be developed in collaboration with the organizing team for one day of the conference.",
@@ -282,7 +282,7 @@
             ]
           },
           "silver": {
-            "title": "Silver Partner",
+            "title": "Silver Partners",
             "description": "You contribute to the conference’s funding.",
             "visibility-and-presence": [
               "Your logo will appear on the conference website under the Silver category."
@@ -292,7 +292,7 @@
               "Badges will identify you as a partner of the event."
             ]
           },
-          "press": "Press Partner"
+          "press": "Media Partners"
         }
       },
       "workshops": {
@@ -350,14 +350,12 @@
           },
           {
             "title": "Workshop 2b: AI for Local Energy Systems",
-            "description": "To be announced.",
+            "description": "This workshop is organised by the HES-SO's flagship project: Smart Energy District. It aims to present some projects in “AI applied to the energy sector”, with a particular focus on local energy communities. The workshop targets Distribution System Operators (DSOs), municipalities and companies interested in digitalization applied to energy.",
             "schedule": {
               "time": "15h30-17h30",
-              "equipment": "To be announced."
+              "equipment": "None"
             },
-            "activities": [
-              "To be announced."
-            ],
+            "activities": [],
             "pdfLink": "/PDF/Session2b.pdf"
           },
           {
@@ -533,7 +531,9 @@
         "terms": " HES-SO. All rights reserved.",
         "partner-1": "https://www.mobiliere.ch",
         "partner-2": "https://www.ehl.edu",
-        "partner-3": "https://www.hes-so.ch"
+        "partner-3": "https://www.hes-so.ch",
+        "partner-4": "https://heig-vd.ch",
+        "partner-5": "https://www.opi.ch/"
       }
     }
   ]
