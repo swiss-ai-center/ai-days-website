@@ -148,6 +148,19 @@ const Partners: React.FC = () => {
                                 />
                             </CardActionArea>
                         </Card>
+
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open("https://heig-vd.ch", "_blank")
+                            }>
+                                <CardMedia
+                                    component="img"
+                                    height="200px"
+                                    image="/logo_heig-vd.png"
+                                    alt="HEIG-VD"
+                                />
+                            </CardActionArea>
+                        </Card>
                     </Box>
                 </div>
                 {/*<Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
@@ -222,6 +235,49 @@ const Partners: React.FC = () => {
                                 />
                             </CardActionArea>
                         </Card>
+
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open("https://www.purestorage.com/solutions/ai.html", "_blank")
+                            }>
+                                <CardMedia
+                                    sx={{p: 2}}
+                                    component="img"
+                                    height="200px"
+                                    image="/logo_pure.svg"
+                                    alt="PureStorage"
+                                />
+                            </CardActionArea>
+                        </Card>
+
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open("https://www.exoscale.com", "_blank")
+                            }>
+                                <CardMedia
+                                    sx={{p: 2}}
+                                    component="img"
+                                    height="200px"
+                                    image="/logo_exoscale.jpg"
+                                    alt="Exoscale"
+                                />
+                            </CardActionArea>
+                        </Card>
+
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open("https://www.innovaud.ch/en/", "_blank")
+                            }>
+                                <CardMedia
+                                    sx={{p: 2}}
+                                    component="img"
+                                    height="200px"
+                                    image="/logo_innovaud.png"
+                                    alt="InnoVaud"
+                                />
+                            </CardActionArea>
+                        </Card>
+
                     </Box>
                 </div>
                 {/* <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
@@ -274,9 +330,23 @@ const Partners: React.FC = () => {
                             <CardMedia
                                 sx={{p: 2}}
                                 component="img"
-                                height="200px"
+                                width="200px"
                                 image="/logo_dina.jpg"
                                 alt="Dina Logo"
+                            />
+                        </CardActionArea>
+                    </Card>
+
+                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                        <CardActionArea onClick={
+                            () => window.open("https://www.e4company.com", "_blank")
+                        }>
+                            <CardMedia
+                                sx={{p: 2}}
+                                component="img"
+                                width="200px"
+                                image="/logo-e4.png"
+                                alt="E4 Logo"
                             />
                         </CardActionArea>
                     </Card>
