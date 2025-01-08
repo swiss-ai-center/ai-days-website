@@ -350,14 +350,12 @@
           },
           {
             "title": "Workshop 2b: AI for Local Energy Systems",
-            "description": "To be announced.",
+            "description": "This workshop is organised by the HES-SO's flagship project: Smart Energy District. It aims to present some projects in “AI applied to the energy sector”, with a particular focus on local energy communities. The workshop targets Distribution System Operators (DSOs), municipalities and companies interested in digitalization applied to energy.",
             "schedule": {
               "time": "15h30-17h30",
-              "equipment": "To be announced."
+              "equipment": "None"
             },
-            "activities": [
-              "To be announced."
-            ],
+            "activities": [],
             "pdfLink": "/PDF/Session2b.pdf"
           },
           {

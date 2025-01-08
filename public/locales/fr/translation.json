@@ -350,14 +350,12 @@
           },
           {
             "title": "Workshop 2b: AI for Local Energy Systems",
-            "description": "Détails prochainement disponibles.",
+            "description": "Ce workshop est organisé par le projet phare de la HES-SO : Smart Energy District. Il vise à présenter quelques projets dans le domaine de l’AI appliquée au secteur de l’énergie, en particulier les « local energy communities ». Il s’adresse aux Gestionnaires de Réseaux de Distribution (GRDs), aux communes et municipalités ainsi qu’aux entreprises qui opèrent dans ce domaine.",
             "schedule": {
               "time": "15h30-17h30",
-              "equipment": "Détails prochainement disponibles."
+              "equipment": "Aucun"
             },
-            "activities": [
-              "Détails prochainement disponibles."
-            ],
+            "activities": [],
             "pdfLink": "/PDF/Session2b.pdf"
           },
           {
