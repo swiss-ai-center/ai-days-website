@@ -76,18 +76,6 @@ const Partners: React.FC = () => {
 
             <Paper elevation={2} sx={{p: 4, borderRadius: 3, boxShadow: 2}}>
 
-                {/* Introduction */}
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}} p={2}>
-                    <Typography variant={"body1"} py={1}>
-                        {t(`years.${selectedYearIndex(year)}.partners.introduction`)}
-                    </Typography>
-                </Box>
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}} p={2}>
-                    <Typography variant={"body1"} py={1}>
-                        {t(`years.${selectedYearIndex(year)}.partners.contact`)}
-                    </Typography>
-                </Box>
-
                 <Divider variant={"middle"} sx={{pt: 2}}/>
 
                 {/* Partenaire Platine */}
@@ -122,6 +110,17 @@ const Partners: React.FC = () => {
                                     height="200px"
                                     image="/mobiliere.png"
                                     alt="La Mobilière Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={() => window.open("https://eksperiens.ch", "_blank")}>
+                                <CardMedia
+                                    sx={{objectFit: 'contain', p: 2}}
+                                    component="img"
+                                    height="200px"
+                                    image="/logo_eksperiens_2025.png"
+                                    alt="Eksperiens"
                                 />
                             </CardActionArea>
                         </Card>
@@ -174,7 +173,7 @@ const Partners: React.FC = () => {
                                 <CardMedia
                                     component="img"
                                     height="200px"
-                                    image="/logo_heig-vd.png"
+                                    image="/IICT_HEIG.png"
                                     alt="HEIG-VD Logo"
                                 />
                             </CardActionArea>
@@ -292,18 +291,6 @@ const Partners: React.FC = () => {
                                     height="150px"
                                     image="/logo_innovaud.png"
                                     alt="InnoVaud"
-                                />
-                            </CardActionArea>
-                        </Card>
-
-                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                            <CardActionArea onClick={() => window.open("https://eksperiens.ch", "_blank")}>
-                                <CardMedia
-                                    sx={{objectFit: 'contain', p: 2}}
-                                    component="img"
-                                    height="150px"
-                                    image="/logo_eksperiens_2025.png"
-                                    alt="Eksperiens"
                                 />
                             </CardActionArea>
                         </Card>
@@ -510,6 +497,18 @@ const Partners: React.FC = () => {
                     </Box>
                 </div>
             </Paper>
+
+            {/* Introduction */}
+            <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}} p={2}>
+                <Typography variant={"body1"} py={1}>
+                    {t(`years.${selectedYearIndex(year)}.partners.introduction`)}
+                </Typography>
+            </Box>
+            <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}} p={2}>
+                <Typography variant={"body1"} py={1}>
+                    {t(`years.${selectedYearIndex(year)}.partners.contact`)}
+                </Typography>
+            </Box>
 
             {/* Footer */}
             <Footer/>

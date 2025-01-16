@@ -40,53 +40,64 @@ const Footer: React.FC = () => {
                             rel="noopener noreferrer"
                             sx={{mx: 2}}
                         >
-                            <Box component="img" src={"mobiliere.png"} alt="La Mobilière"
+                            <Box component="img" src={t(`years.${selectedYearIndex(year)}.footer.partner-1.icon`)} alt="La Mobilière"
                                  sx={{height: '50px', objectFit: 'contain'}}/>
                         </Box>
 
                         <Box
                             component="a"
-                            href={t(`years.${selectedYearIndex(year)}.footer.partner-2`)} // Lien vers EHL
+                            href={t(`years.${selectedYearIndex(year)}.footer.partner-2.link`)} // Lien vers EHL
                             target="_blank"
                             rel="noopener noreferrer"
                             sx={{mx: 2}}
                         >
-                            <Box component="img" src={"ehl-logo.png"} alt="EHL"
+                            <Box component="img" src={t(`years.${selectedYearIndex(year)}.footer.partner-2.icon`)} alt="EHL"
                                  sx={{height: '50px', objectFit: 'contain'}}/>
                         </Box>
 
                         <Box
                             component="a"
-                            href={t(`years.${selectedYearIndex(year)}.footer.partner-5`)} // Lien vers OPI
+                            href={t(`years.${selectedYearIndex(year)}.footer.partner-5.link`)} // Lien vers OPI
                             target="_blank"
                             rel="noopener noreferrer"
                             sx={{mx: 2}}
                         >
-                            <Box component="img" src={"opi-logo.svg"} alt="OPI"
-                                 sx={{height: '20px', objectFit: 'contain'}}/>
+                            <Box component="img" src={t(`years.${selectedYearIndex(year)}.footer.partner-5.icon`)} alt="OPI"
+                                 sx={{height: '40px', objectFit: 'contain'}}/>
                         </Box>
 
 
                         <Box
                             component="a"
-                            href={t(`years.${selectedYearIndex(year)}.footer.partner-3`)} // Lien vers HES-SO
+                            href={t(`years.${selectedYearIndex(year)}.footer.partner-3.link`)} // Lien vers HES-SO
                             target="_blank"
                             rel="noopener noreferrer"
                             sx={{mx: 2}}
                         >
-                            <Box component="img" src={"hes-so.png"} alt="HES-SO"
+                            <Box component="img" src={t(`years.${selectedYearIndex(year)}.footer.partner-3.icon`)} alt="HES-SO"
                                  sx={{height: '50px', objectFit: 'contain'}}/>
                         </Box>
 
                         <Box
                             component="a"
-                            href={t(`years.${selectedYearIndex(year)}.footer.partner-4`)} // Lien vers HEIG
+                            href={t(`years.${selectedYearIndex(year)}.footer.partner-4.link`)} // Lien vers HEIG
                             target="_blank"
                             rel="noopener noreferrer"
                             sx={{mx: 2}}
                         >
-                            <Box component="img" src={"logo_heig-vd.png"} alt="HEIG"
-                                 sx={{height: '20px', objectFit: 'contain'}}/>
+                            <Box component="img" src={t(`years.${selectedYearIndex(year)}.footer.partner-4.icon`)} alt="HEIG"
+                                 sx={{height: '40px', objectFit: 'contain'}}/>
+                        </Box>
+
+                        <Box
+                            component="a"
+                            href={t(`years.${selectedYearIndex(year)}.footer.partner-6.link`)} // Lien vers HEIG
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            sx={{mx: 2}}
+                        >
+                            <Box component="img" src={t(`years.${selectedYearIndex(year)}.footer.partner-6.icon`)} alt="HEIG"
+                                 sx={{height: '40px', objectFit: 'contain'}}/>
                         </Box>
 
                     </Box>

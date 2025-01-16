@@ -529,11 +529,30 @@
       "footer": {
         "title": "Nos partenaires Platine",
         "terms": " HES-SO. All rights reserved.",
-        "partner-1": "https://www.mobiliere.ch",
-        "partner-2": "https://www.ehl.edu",
-        "partner-3": "https://www.hes-so.ch",
-        "partner-4": "https://heig-vd.ch",
-        "partner-5": "https://www.opi.ch/"
+        "partner-1": {
+          "link": "https://www.mobiliere.ch",
+          "icon": "mobiliere.png"
+        },
+        "partner-2": {
+          "link": "https://eksperiens.ch",
+          "icon": "logo_eksperiens_2025.png"
+        },
+        "partner-3": {
+          "link": "https://www.ehl.edu",
+          "icon": "ehl-logo.png"
+        },
+        "partner-4": {
+          "link": "https://www.hes-so.ch",
+          "icon": "hes-so.png"
+        },
+        "partner-5": {
+          "link": "https://heig-vd.ch/recherche/instituts/iict/",
+          "icon": "IICT_HEIG.png"
+        },
+        "partner-6": {
+          "link": "https://www.opi.ch/",
+          "icon": "opi-logo.svg"
+        }
       }
     }
   ]
