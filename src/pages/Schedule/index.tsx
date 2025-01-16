@@ -1,5 +1,5 @@
-import Footer from 'components/Footer/footer';
 import React from 'react';
+import Footer from 'components/Footer/footer';
 import {
     Container,
     Typography,
@@ -8,6 +8,7 @@ import {
     CardMedia,
     CardContent,
     Divider,
+    Button,
 } from '@mui/material';
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
@@ -16,7 +17,7 @@ import { useSelector } from "react-redux";
 interface DaySchedule {
     date: string;
     location: string;
-    "planning-pic": string;
+    "planning-pic": string[];
 }
 
 interface YearData {
@@ -24,15 +25,16 @@ interface YearData {
     schedule: {
         herotitle: string;
         days: DaySchedule[];
+        pdfLink: string; // Global PDF link for the schedule
     };
 }
 
 const Schedule: React.FC = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     // Récupération de l'année sélectionnée dans le store Redux
     const year = useSelector((state: any) => state.year.value);
-    const years: YearData[] = t("years", {returnObjects: true});
+    const years: YearData[] = t("years", { returnObjects: true });
 
     // Fonction pour trouver l'index de l'année sélectionnée
     const selectedYearIndex = (yearToFind: string) => {
@@ -47,6 +49,7 @@ const Schedule: React.FC = () => {
     const schedule = t(`years.${selectedYear}.schedule.days`, {
         returnObjects: true,
     }) as DaySchedule[];
+    const pdfLink = t(`years.${selectedYear}.schedule.pdfLink`);
 
     return (
         <Container maxWidth="xl">
@@ -68,7 +71,7 @@ const Schedule: React.FC = () => {
                     textShadow: '2px 2px 4px rgba(0,0,0,0.6)',
                 }}
             >
-                <Typography variant="h2" sx={{fontWeight: 'bold'}}>
+                <Typography variant="h2" sx={{ fontWeight: 'bold' }}>
                     {heroTitle}
                 </Typography>
                 {/* HES-SO Logo in Bottom Right Corner */}
@@ -80,10 +83,23 @@ const Schedule: React.FC = () => {
                         position: 'absolute',
                         bottom: '10px',
                         right: '10px',
-                        width: '120px', // Adjust size as needed
-                        opacity: 0.7, // Transparent effect
+                        width: '120px',
+                        opacity: 0.7,
                     }}
                 />
+            </Box>
+
+            {/* Download Button */}
+            <Box sx={{ textAlign: 'center', mb: 4 }}>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    href={pdfLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Télécharger le programme complet
+                </Button>
             </Box>
 
             {/* Schedule Cards */}
@@ -93,7 +109,6 @@ const Schedule: React.FC = () => {
                     sx={{
                         mb: 4,
                         display: 'flex',
-                        justifyContent: 'center',
                         flexDirection: 'column',
                         alignItems: 'center',
                     }}
@@ -104,38 +119,50 @@ const Schedule: React.FC = () => {
                             padding: '20px',
                             boxShadow: 4,
                             borderRadius: 2,
-                            overflow: 'hidden', // Assure que les images restent bien encadrées
+                            overflow: 'hidden',
                         }}
                     >
-                        <CardMedia
-                            component="img"
-                            image={day["planning-pic"]}
-                            alt={`Schedule for ${day.date}`}
-                            sx={{
-                                objectFit: 'contain', // Garde l'image centrée et visible
-                            }}
-                        />
-                        <CardContent
-                            sx={{
-                                textAlign: 'center', // Centrer le texte
-                                padding: '20px 40px', // Plus d'espace pour respirer
-                            }}
-                        >
-                            <Typography variant="h5" component="div" sx={{fontWeight: 'bold', my: 1}}>
+                        <CardContent sx={{ textAlign: 'center', padding: '20px 40px' }}>
+                            <Typography variant="h5" component="div" sx={{ fontWeight: 'bold', my: 1 }}>
                                 {day.date}
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
                                 {day.location}
                             </Typography>
                         </CardContent>
+
+                        {/* Loop through planning-pic array */}
+                        {day["planning-pic"].map((pic, imgIndex) => (
+                            <CardMedia
+                                key={imgIndex}
+                                component="img"
+                                image={pic}
+                                alt={`Schedule for ${day.date}`}
+                                sx={{
+                                    objectFit: 'contain',
+                                    padding:5,
+                                    mb: imgIndex < day["planning-pic"].length - 1 ? 2 : 0,
+                                }}
+                            />
+                        ))}
                     </Card>
+
                     {index < schedule.length - 1 && (
-                        <Divider variant={"fullWidth"} sx={{width: '100%', height: '6px', borderRadius: '3px', backgroundColor: 'primary.main', mt: 4}}/>
+                        <Divider
+                            variant="fullWidth"
+                            sx={{
+                                width: '100%',
+                                height: '6px',
+                                borderRadius: '3px',
+                                backgroundColor: 'primary.main',
+                                mt: 4,
+                            }}
+                        />
                     )}
                 </Box>
             ))}
 
-            <Footer/>
+            <Footer />
         </Container>
     );
 };

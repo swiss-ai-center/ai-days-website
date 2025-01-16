@@ -392,21 +392,30 @@
       },
       "schedule": {
         "herotitle": "Programme",
+        "pdfLink": "/PDF/program.pdf",
         "days": [
           {
             "date": "27 Janvier 2025",
             "location": "Balexert Genève",
-            "planning-pic": "/schedule_pics/27.01.25.png"
+            "planning-pic": [
+              "/schedule_pics/27.png"
+            ]
           },
           {
             "date": "28 Janvier 2025",
             "location": "Balexert Genève",
-            "planning-pic": "/schedule_pics/28.01.25.png"
+            "planning-pic": [
+              "/schedule_pics/28m.png",
+              "/schedule_pics/28a.png"
+            ]
           },
           {
             "date": "29 Janvier 2025",
             "location": "EHL Lausanne",
-            "planning-pic": "/schedule_pics/29.01.25.jpg"
+            "planning-pic": [
+              "/schedule_pics/29m.png",
+              "/schedule_pics/29a.png"
+            ]
           }
         ]
       },
