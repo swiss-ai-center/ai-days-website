@@ -392,21 +392,30 @@
       },
       "schedule": {
         "herotitle": "Programme",
+        "pdfLink": "/PDF/program.pdf",
         "days": [
           {
             "date": "27 Janvier 2025",
             "location": "Balexert Genève",
-            "planning-pic": "/schedule_pics/27.01.25.png"
+            "planning-pic": [
+              "/schedule_pics/27.png"
+            ]
           },
           {
             "date": "28 Janvier 2025",
             "location": "Balexert Genève",
-            "planning-pic": "/schedule_pics/28.01.25.png"
+            "planning-pic": [
+              "/schedule_pics/28m.png",
+              "/schedule_pics/28a.png"
+            ]
           },
           {
             "date": "29 Janvier 2025",
             "location": "EHL Lausanne",
-            "planning-pic": "/schedule_pics/29.01.25.jpg"
+            "planning-pic": [
+              "/schedule_pics/29m.png",
+              "/schedule_pics/29a.png"
+            ]
           }
         ]
       },
@@ -529,11 +538,30 @@
       "footer": {
         "title": "Nos partenaires Platine",
         "terms": " HES-SO. All rights reserved.",
-        "partner-1": "https://www.mobiliere.ch",
-        "partner-2": "https://www.ehl.edu",
-        "partner-3": "https://www.hes-so.ch",
-        "partner-4": "https://heig-vd.ch",
-        "partner-5": "https://www.opi.ch/"
+        "partner-1": {
+          "link": "https://www.mobiliere.ch",
+          "icon": "mobiliere.png"
+        },
+        "partner-2": {
+          "link": "https://eksperiens.ch",
+          "icon": "logo_eksperiens_2025.png"
+        },
+        "partner-3": {
+          "link": "https://www.ehl.edu",
+          "icon": "ehl-logo.png"
+        },
+        "partner-4": {
+          "link": "https://www.hes-so.ch",
+          "icon": "hes-so.png"
+        },
+        "partner-5": {
+          "link": "https://heig-vd.ch/recherche/instituts/iict/",
+          "icon": "IICT_HEIG.png"
+        },
+        "partner-6": {
+          "link": "https://www.opi.ch/",
+          "icon": "opi-logo.svg"
+        }
       }
     }
   ]

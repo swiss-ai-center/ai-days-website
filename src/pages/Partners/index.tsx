@@ -76,18 +76,6 @@ const Partners: React.FC = () => {
 
             <Paper elevation={2} sx={{p: 4, borderRadius: 3, boxShadow: 2}}>
 
-                {/* Introduction */}
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}} p={2}>
-                    <Typography variant={"body1"} py={1}>
-                        {t(`years.${selectedYearIndex(year)}.partners.introduction`)}
-                    </Typography>
-                </Box>
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}} p={2}>
-                    <Typography variant={"body1"} py={1}>
-                        {t(`years.${selectedYearIndex(year)}.partners.contact`)}
-                    </Typography>
-                </Box>
-
                 <Divider variant={"middle"} sx={{pt: 2}}/>
 
                 {/* Partenaire Platine */}
@@ -122,6 +110,17 @@ const Partners: React.FC = () => {
                                     height="200px"
                                     image="/mobiliere.png"
                                     alt="La Mobilière Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={() => window.open("https://eksperiens.ch", "_blank")}>
+                                <CardMedia
+                                    sx={{objectFit: 'contain', p: 2}}
+                                    component="img"
+                                    height="200px"
+                                    image="/logo_eksperiens_2025.png"
+                                    alt="Eksperiens"
                                 />
                             </CardActionArea>
                         </Card>
@@ -174,7 +173,7 @@ const Partners: React.FC = () => {
                                 <CardMedia
                                     component="img"
                                     height="200px"
-                                    image="/logo_heig-vd.png"
+                                    image="/IICT_HEIG.png"
                                     alt="HEIG-VD Logo"
                                 />
                             </CardActionArea>
@@ -333,44 +332,96 @@ const Partners: React.FC = () => {
                 </Box>*/}
 
                 {/*  Partenaire Argent */}
-                <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
-                    <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
-                        {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.title`)}
-                    </Typography>
-                </Box>
+                <div className="partner-img">
+                    <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2, pt: 4}}>
+                        <Typography variant={"h4"} sx={{fontWeight: 'bold'}}>
+                            {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.title`)}
+                        </Typography>
+                    </Box>
 
-                <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4, py: 4}}>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            justifyContent: 'center',
+                            gap: 4,
+                            py: 4,
+                        }}
+                    >
 
-                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                        <CardActionArea onClick={
-                            () => window.open("https://www.dina.ch", "_blank")
-                        }>
-                            <CardMedia
-                                sx={{objectFit: 'contain', p: 2}}
-                                component="img"
-                                height="100px"
-                                image="/logo_dina.jpg"
-                                alt="Dina Logo"
-                            />
-                        </CardActionArea>
-                    </Card>
 
-                    <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
-                        <CardActionArea onClick={
-                            () => window.open("https://www.e4company.com", "_blank")
-                        }>
-                            <CardMedia
-                                sx={{objectFit: 'contain', p: 2}}
-                                component="img"
-                                height="100px"
-                                image="/logo-e4.png"
-                                alt="E4 Logo"
-                            />
-                        </CardActionArea>
-                    </Card>
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open("https://www.dina.ch", "_blank")
+                            }>
+                                <CardMedia
+                                    sx={{objectFit: 'contain', p: 2}}
+                                    component="img"
+                                    height="130px"
+                                    image="/logo_dina.jpg"
+                                    alt="Dina Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
 
-                </Box>
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open("https://www.e4company.com", "_blank")
+                            }>
+                                <CardMedia
+                                    sx={{objectFit: 'contain', p: 2}}
+                                    component="img"
+                                    height="130px"
+                                    image="/logo-e4.png"
+                                    alt="E4 Logo"
+                                />
+                            </CardActionArea>
+                        </Card>
 
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open("https://www.hevs.ch/en/schools/school-of-engineering/", "_blank")
+                            }>
+                                <CardMedia
+                                    sx={{objectFit: 'contain', p: 2}}
+                                    component="img"
+                                    height="130px"
+                                    image="/logo_hei_vs.png"
+                                    alt="HEI-VS"
+                                />
+                            </CardActionArea>
+                        </Card>
+
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open("https://www.he-arc.ch/en/domain/engineering/", "_blank")
+                            }>
+                                <CardMedia
+                                    sx={{objectFit: 'contain', p: 2}}
+                                    component="img"
+                                    height="130px"
+                                    image="/logo_he-arc.jpeg"
+                                    alt="HE-ARC-Ing"
+                                />
+                            </CardActionArea>
+                        </Card>
+
+                        <Card sx={{border: '1px solid lightgrey'}} elevation={0}>
+                            <CardActionArea onClick={
+                                () => window.open("https://www.hepia.ch/", "_blank")
+                            }>
+                                <CardMedia
+                                    sx={{objectFit: 'contain', p: 2}}
+                                    component="img"
+                                    height="130px"
+                                    image="/logo_hepia.png"
+                                    alt="HEPIA"
+                                />
+                            </CardActionArea>
+                        </Card>
+
+                    </Box>
+                </div>
                 {/* <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'left', p: 2}}>
                     <Typography variant={"body1"} py={1}>
                         {t(`years.${selectedYearIndex(year)}.partners.partnerships.silver.description`)}
@@ -446,6 +497,18 @@ const Partners: React.FC = () => {
                     </Box>
                 </div>
             </Paper>
+
+            {/* Introduction */}
+            <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}} p={2}>
+                <Typography variant={"body1"} py={1}>
+                    {t(`years.${selectedYearIndex(year)}.partners.introduction`)}
+                </Typography>
+            </Box>
+            <Box sx={{display: 'flex', flexDirection: 'column', textAlign: 'justify'}} p={2}>
+                <Typography variant={"body1"} py={1}>
+                    {t(`years.${selectedYearIndex(year)}.partners.contact`)}
+                </Typography>
+            </Box>
 
             {/* Footer */}
             <Footer/>
