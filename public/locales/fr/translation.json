@@ -405,16 +405,16 @@
             "date": "28 Janvier 2025",
             "location": "Balexert Genève",
             "planning-pic": [
-              "/schedule_pics/28m.png",
-              "/schedule_pics/28a.png"
+              "/schedule_pics/28m.svg",
+              "/schedule_pics/28a.svg"
             ]
           },
           {
             "date": "29 Janvier 2025",
             "location": "EHL Lausanne",
             "planning-pic": [
-              "/schedule_pics/29m.png",
-              "/schedule_pics/29a.png"
+              "/schedule_pics/29m.svg",
+              "/schedule_pics/29a.svg"
             ]
           }
         ]
