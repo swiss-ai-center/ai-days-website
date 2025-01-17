@@ -1,10 +1,9 @@
 import React from 'react';
-import { Box, Container, Typography, Paper, Button, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import {Box, Container, Typography, Paper, Button, List, ListItem, ListItemIcon, ListItemText} from '@mui/material';
 import ExpandCircleDownRoundedIcon from '@mui/icons-material/ExpandCircleDownRounded';
-import { useTranslation } from 'react-i18next';
-import { useSelector } from 'react-redux';
+import {useTranslation} from 'react-i18next';
+import {useSelector} from 'react-redux';
 import './styles.css';
-import { Link } from 'react-router-dom';
 import Footer from "../../components/Footer/footer";
 
 const Home: React.FC = () => {
@@ -33,7 +32,7 @@ const Home: React.FC = () => {
                     boxShadow: 3,
                     position: 'relative',
                     color: '#fff',
-                    textShadow: '2px 2px 4px rgba(0,0,0,0.6)'
+                    textShadow: '2px 2px 4px rgba(0,0,0,0.6)',
                 }}
             >
                 <Typography variant="h2" sx={{fontWeight: 'bold'}}>
@@ -52,29 +51,26 @@ const Home: React.FC = () => {
                         position: 'absolute',
                         bottom: '10px',
                         right: '10px',
-                        width: '120px', // Adjust size as needed
-                        opacity: 0.7, // Transparent effect
+                        width: '120px',
+                        opacity: 0.7,
                     }}
                 />
             </Box>
 
             {/* Main Content Section */}
             <Paper elevation={2} sx={{p: 4, borderRadius: 3, boxShadow: 2}}>
-
                 {/* Call to Action */}
                 <Box sx={{display: 'flex', justifyContent: 'center', mb: 4}}>
-                    <Link to={"https://form.jotform.com/242613280391351"} target={"_blank"}
-                          style={{textDecoration: 'none'}} rel={"noreferrer"}>
-                        <Button
-                            variant={"contained"}
-                            disableElevation={true}
-                            color={"primary"}
-                            size={"large"}
-                            sx={{py: 1.5, px: 4, fontSize: '1rem', fontWeight: 'bold', borderRadius: 2}}
-                        >
-                            {t(`years.${selectedYearIndex(year)}.home.register`) || 'Inscrivez-vous maintenant'}
-                        </Button>
-                    </Link>
+                    <Button
+                        variant="contained"
+                        disableElevation={true}
+                        color="primary"
+                        size="large"
+                        sx={{py: 1.5, px: 4, fontSize: '1rem', fontWeight: 'bold', borderRadius: 2}}
+                        disabled
+                    >
+                        {t(`years.${selectedYearIndex(year)}.home.register`) || 'Inscrivez-vous maintenant'}
+                    </Button>
                 </Box>
 
                 <Box sx={{textAlign: 'justify'}}>
@@ -107,18 +103,16 @@ const Home: React.FC = () => {
 
                 {/* Call to Action */}
                 <Box sx={{display: 'flex', justifyContent: 'center', mt: 4}}>
-                    <Link to={"https://form.jotform.com/242613280391351"} target={"_blank"}
-                          style={{textDecoration: 'none'}} rel={"noreferrer"}>
-                        <Button
-                            variant={"contained"}
-                            disableElevation={true}
-                            color={"primary"}
-                            size={"large"}
-                            sx={{py: 1.5, px: 4, fontSize: '1rem', fontWeight: 'bold', borderRadius: 2}}
-                        >
-                            {t(`years.${selectedYearIndex(year)}.home.register`) || 'Inscrivez-vous maintenant'}
-                        </Button>
-                    </Link>
+                    <Button
+                        variant="contained"
+                        disableElevation={true}
+                        color="primary"
+                        size="large"
+                        sx={{py: 1.5, px: 4, fontSize: '1rem', fontWeight: 'bold', borderRadius: 2}}
+                        disabled
+                    >
+                        {t(`years.${selectedYearIndex(year)}.home.register`) || 'Inscrivez-vous maintenant'}
+                    </Button>
                 </Box>
             </Paper>
             <Footer/>
