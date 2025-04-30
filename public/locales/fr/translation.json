@@ -460,6 +460,13 @@
               "title": "L'IA pour les PME - Comment démarrer et surmonter les principaux défis ?",
               "para": "Dans le paysage numérique actuel, l'Intelligence Artificielle (IA) est un outil puissant pour les PME en quête d'innovation et de croissance. Cette présentation démystifie l'IA en dépassant les idées reçues. En explorant les concepts fondamentaux, les possibilités réelles de ce que l'IA peut accomplir sont clarifiées. Les PME sont guidées dans l'initiation de projets d'IA à l'aide de canevas. Les principaux défis liés à l'adoption de l'IA sont abordés, en discutant de dimensions telles que la qualité des données, les compétences humaines et la gestion du changement.",
               "photo": "/speaker_pics/sandro-saitta.png"
+            },
+            {
+              "name": "Nabil Abdennadher, HES-SO, HEPIA",
+              "bio": "Nabil Abdennadher is Full Professor University of Applied Sciences, Western Switzerland (HES-SO, HEPIA). Nabil Abdennadher was head of the inIT research institute at HEPIA from 2010 to 2022. He is currently head of the Large-Scale Distributed Systems research group, representative of the Innovation DataBooster initiative in Swiss Romandie and member of the Editorial Board of the Journal of Reliable Intelligent Environments.",
+              "title": "Towards an AI-based edge-to-cloud framework for digital energy services",
+              "para": "New forms of electricity production and consumption are disrupting the energy market. Along the same lines, digital transformation is reshaping the electricity market. To name a few, internet of things, edge-to-cloud computing and AI techniques will allow the proliferation of intelligent versions of today's “smart meter”. We can expect that, soon, new “digital energy services” will emerge. These services will rely on an AI-based edge-to-cloud framework. This framework must support IT technology such as Internet of Things (to collect and gather data), Artificial Intelligence (to set up predictive models and self-adapt), Cloud and Edge computing (to store and process data), collaborative models to insure collaboration, etc.\n\nThis presentation details the different components of the ML-based edge-to-cloud framework developed within two European projects: SWARM and LASAGNE.",
+              "photo": "/speaker_pics/NA.jpg"
             }
           ]
         },
