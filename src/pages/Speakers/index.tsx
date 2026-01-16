@@ -132,11 +132,13 @@ const Speakers: React.FC = () => {
                                         <Typography variant="body2" color="text.secondary" align="center">
                                             {panelist.position}
                                         </Typography>
-
-                                        <Typography variant="caption" display="block" color="text.secondary"
-                                                    align="justify"
-                                                    mt={1}>
-                                            {panelist.bio}
+                                        {panelist.committee_role && (
+                                          <Typography variant="caption" display="block" color="text.secondary" align="center" mt={1} sx={{fontWeight: 'bold'}}>
+                                            {panelist.committee_role}
+                                          </Typography>
+                                        )}
+                                        <Typography variant="caption" display="block" color="text.secondary" align="justify" mt={1}>
+                                          {panelist.bio}
                                         </Typography>
                                     </CardContent>
                                 </Card>
